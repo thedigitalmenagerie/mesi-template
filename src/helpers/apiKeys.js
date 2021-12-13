@@ -9,4 +9,11 @@ const firebaseConfig = {
   measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
 
-export default firebaseConfig;
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
+
+const MESIConfig = {
+  baseUrl: process.env.REACT_APP_API_URL,
+};
+
+export { firebaseConfig, MESIConfig };

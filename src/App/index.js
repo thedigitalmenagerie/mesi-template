@@ -1,38 +1,29 @@
-import React, { useState } from 'react';
-import './App.scss';
+/* eslint-disable no-shadow */
+import React, { useState, useEffect } from 'react';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from '../Helpers/Routes';
 
-function App() {
-  const [domWriting, setDomWriting] = useState('Nothing Here!');
+export default function App() {
+  const [user, setUser] = useState({});
 
-  const handleClick = (e) => {
-    console.warn(`You clicked ${e.target.id}`);
-    setDomWriting(`You clicked ${e.target.id}! Check the Console!`);
-  };
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        user.getIdToken().then((token) => sessionStorage.setItem('token', token));
+        setUser(user);
+      } else {
+        setUser(false);
+      }
+    });
+  }, []);
 
   return (
     <div className='App'>
-      <h2>INSIDE APP COMPONENT</h2>
-      <div>
-        <button
-          id='this-button'
-          className='btn btn-info'
-          onClick={handleClick}
-        >
-          I am THIS button
-        </button>
-      </div>
-      <div>
-        <button
-          id='that-button'
-          className='btn btn-primary mt-3'
-          onClick={handleClick}
-        >
-          I am THAT button
-        </button>
-      </div>
-      <h3>{domWriting}</h3>
+      <Router>
+        <Routes user={user} setUser={setUser}/>
+      </Router>
     </div>
   );
 }
-
-export default App;
