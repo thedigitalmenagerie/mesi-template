@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LandingPage from '../Views/LandingPage/LandingPage';
 
@@ -26,9 +26,7 @@ function Routes({ user }) {
           exact
           path='/'
           component={() => (
-            <LandingPage
-              user={user}
-            />
+            user ? <Redirect to="/dashboard" /> : <LandingPage />
           )}
           user={user}
         />

@@ -26,7 +26,6 @@ const signInUser = (setUser) => {
         Email: us?.email,
       };
       addUser(userInfo).then(setUser);
-      window.location.href = '/';
     }
   });
 };
