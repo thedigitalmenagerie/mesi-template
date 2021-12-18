@@ -35,13 +35,14 @@ export default function HouseholdForms({
   hasKids,
   hasRomance,
   stepId,
-  // setHouseholds,
   steps,
   users,
 }) {
   const [showMembers, setShowMembers] = React.useState(false);
 
   const [selectedMembers, setSelectedMembers] = React.useState([]);
+
+  const [members, setMembers] = React.useState([]);
 
   const [household, setHousehold] = useState({
     householdName: householdName || '',
@@ -69,22 +70,21 @@ export default function HouseholdForms({
   const selectMember = (e) => {
     if (e.target.checked) {
       setSelectedMembers((prev) => [...prev, e.target.value]);
+      const member = {
+        householdId: household.id,
+        userId: e.target.value,
+        communityAgreement: false,
+        newVow: false,
+        redeal: false,
+      };
+      members.push(member);
     } else {
       setSelectedMembers((prev) => prev.filter((i) => i !== e.target.value));
     }
   };
 
   const handleClick = () => {
-    selectedMembers?.map(console.warn(selectedMembers.value));
-    const memberObj = {
-      id: null,
-      householdId: household.id,
-      userId: users.id,
-      communityAgreement: false,
-      newVow: false,
-      reDeal: false,
-    };
-    addHouseholdMember(memberObj).then((memberArray) => setSelectedMembers(memberArray));
+    members.forEach((member) => addHouseholdMember(member).then((response) => setMembers(response)));
   };
 
   const handleSubmit = (e) => {
