@@ -16,6 +16,8 @@
     "react-modal-hover": "^1.1.13",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-select": "^5.2.1",
+    "react-strap": "0.0.1",
     "reactjs-popup": "^2.0.5",
     "reactstrap": "^8.9.0",
     "styled-components": "^5.3.3",

@@ -1,7 +1,8 @@
 import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import LandingPage from '../Views/LandingPage/LandingPage';
+import { Dash } from '../Views/Dash/Dash';
 
 // const PrivateRoute = ({ component: Component, user, ...rest }) => {
 //   // eslint-disable-next-line no-confusing-arrow
@@ -18,7 +19,14 @@ import LandingPage from '../Views/LandingPage/LandingPage';
 //   user: PropTypes.any,
 // };
 
-function Routes({ user }) {
+function Routes({
+  user,
+  setUser,
+  steps,
+  setSteps,
+  users,
+  setUsers
+}) {
   return (
     <div>
       <Switch>
@@ -26,9 +34,31 @@ function Routes({ user }) {
           exact
           path='/'
           component={() => (
-            user ? <Redirect to="/dashboard" /> : <LandingPage />
+            <LandingPage
+              user={user}
+            />
           )}
           user={user}
+        />
+        <Route
+          exact
+          path='/dashboard'
+          component={() => (
+            <Dash
+              user={user}
+              setUser={setUser}
+              steps={steps}
+              setSteps={setSteps}
+              users={users}
+              setUsers={setUsers}
+            />
+          )}
+          user={user}
+          setUser={setUser}
+          steps={steps}
+          setSteps={setSteps}
+          users={users}
+          setUsers={setUsers}
         />
       </Switch>
     </div>
@@ -37,6 +67,11 @@ function Routes({ user }) {
 
 Routes.propTypes = {
   user: PropTypes.any,
+  setUser: PropTypes.func,
+  steps: PropTypes.any,
+  setSteps: PropTypes.func,
+  users: PropTypes.any,
+  setUsers: PropTypes.func,
 };
 
 export default Routes;

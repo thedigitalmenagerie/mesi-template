@@ -44,6 +44,7 @@ function LandingPage({ user }) {
               {
                 (user)
                   ? <SignOutButton className='SignOutButton'>
+                      DASH
                     </SignOutButton>
                   : <SignInButton className='SignInButton' onClick={signInUser}>
                       SIGN IN

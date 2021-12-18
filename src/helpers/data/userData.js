@@ -21,4 +21,15 @@ const addUser = (user) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-export { getUsers, getUser, addUser };
+const getUserByEmail = (email) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/api/users/email/${email}`)
+    .then((response) => resolve(response.data))
+    .catch((error) => reject(error));
+});
+
+export {
+  getUsers,
+  getUser,
+  addUser,
+  getUserByEmail
+};

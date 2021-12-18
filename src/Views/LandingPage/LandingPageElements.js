@@ -129,5 +129,8 @@ export const SignInButton = styled.button`
 `;
 
 export const SignOutButton = styled.button`
-background: #5D7B6F;
+  background: #EAE7D6;
+  color: #5D7B6F;
+  width: 100px;
+  border-radius: 10px;
 `;
