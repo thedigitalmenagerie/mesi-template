@@ -6,25 +6,41 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Routes from '../Helpers/Routes';
 import { getUserByEmail, getUsers } from '../Helpers/Data/userData';
 import { getSteps } from '../Helpers/Data/stepsData';
+import { getHouseholdWithDetails } from '../Helpers/Data/householdMembersData';
 
 export default function App() {
   const [user, setUser] = useState({});
   const [steps, setSteps] = useState([]);
   const [users, setUsers] = useState([]);
+  const [households, setHouseholds] = useState([]);
 
   useEffect(() => {
-    firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
-        user.getIdToken().then((token) => sessionStorage.setItem('token', token));
-        getUserByEmail(user.email).then((response) => setUser(response));
+    firebase.auth().onAuthStateChanged((userObj) => {
+      if (userObj) {
+        userObj.getIdToken().then((token) => sessionStorage.setItem('token', token));
+        getUserByEmail(userObj.email).then((responseObj) => {
+          if (responseObj !== '') {
+            setUser(responseObj);
+          } else {
+            setUser(false);
+          }
+        });
+        console.warn(user.id);
         getSteps().then((response) => setSteps(response));
         getUsers().then((response) => setUsers(response));
-        setUser(user);
       } else {
         setUser(false);
       }
     });
   }, []);
+
+  useEffect(() => {
+    if (user) {
+      getHouseholdWithDetails(user.id).then((response) => setHouseholds(response));
+    } else {
+      console.warn('What');
+    }
+  }, [user]);
 
   return (
     <div className='App'>
@@ -36,6 +52,8 @@ export default function App() {
           setSteps={setSteps}
           users={users}
           setUsers={setUsers}
+          households={households}
+          setHouseholds={setHouseholds}
         />
       </Router>
     </div>

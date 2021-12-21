@@ -1,7 +1,7 @@
 /* eslint-disable arrow-body-style */
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable react/prop-types */
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import HouseholdForms from '../../Components/Forms/HouseholdForms/HouseholdForm';
 import { HouseholdCards } from '../../Components/Cards/HouseholdCards/HouseholdCards';
@@ -16,20 +16,20 @@ import {
   Modal,
   HouseholdTopRow,
   ButtonContainer,
+  HouseholdBottomRow,
 } from './DashElements';
-import { getHouseholdWithDetails } from '../../Helpers/Data/householdMembersData';
 import NavBar from '../../Components/NavBar/NavBar';
 import add from '../../Assets/addHouseholdButton.png';
 import exitModal from '../../Assets/exitModal.png';
 
-export const Dash = ({ user, steps, users }) => {
+export const Dash = ({
+  user,
+  steps,
+  users,
+  households,
+  setHouseholds
+}) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
-  const [households, setHouseholds] = useState([]);
-
-  useEffect(() => {
-    getHouseholdWithDetails(user.id).then((householdArray) => setHouseholds(householdArray));
-  }, []);
-  console.warn(user.id);
 
   function openModal() {
     setIsOpen(true);
@@ -51,6 +51,7 @@ export const Dash = ({ user, steps, users }) => {
             </AddHouseholdButton>
           </AddButtonContainer>
           </HouseholdTopRow>
+          <HouseholdBottomRow>
           <Modal
             isOpen={modalIsOpen}
             className="Modal"
@@ -71,12 +72,12 @@ export const Dash = ({ user, steps, users }) => {
           {households?.map((householdInfo) => (
             <HouseholdCards
               key={householdInfo.id}
-              id={householdInfo.id}
+              householdId={householdInfo.householdId}
               householdName={householdInfo.householdName}
               hasPets={householdInfo.hasPets}
               hasKids={householdInfo.hasKids}
               hasRomance={householdInfo.hasRomance}
-              stepId={householdInfo.stepdId}
+              stepName={householdInfo.stepName}
               setHouseholds={setHouseholds}
               households={households}
               user={user}
@@ -84,6 +85,7 @@ export const Dash = ({ user, steps, users }) => {
               users={users}
             />
           ))}
+          </HouseholdBottomRow>
         </HouseholdWrapper>
       </HouseholdContainer>
   );
@@ -93,6 +95,8 @@ Dash.propTypes = {
   households: PropTypes.any,
   setHouseholds: PropTypes.func,
   user: PropTypes.any,
+  steps: PropTypes.any,
+  users: PropTypes.any,
 };
 
 export default Dash;

@@ -26,6 +26,10 @@ export const NavRight = styled.div`
 export const NavRightMessage = styled.div`
   display: flex;
   justify-content: flex-end;
+
+  @media screen and (max-width: 490px) {
+    display: none;
+  }
 `;
 
 export const LogoButton = styled.button`

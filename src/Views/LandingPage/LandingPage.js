@@ -1,13 +1,13 @@
 /* eslint-disable import/prefer-default-export */
 import React from 'react';
 import PropTypes from 'prop-types';
+// import { Link } from 'react-router-dom';
 import { signInUser } from '../../Helpers/auth';
 import {
   LandingPageContainer,
   LandingPageBottom,
   LandingPageTop,
   Logo,
-  Link,
   About,
   SignIn,
   Description,
@@ -18,7 +18,7 @@ import {
   AcronymI,
   ButtonContainer,
   SignInButton,
-  SignOutButton
+  Link,
 } from './LandingPageElements';
 import LOGO from '../../Assets/LOGO.png';
 
@@ -33,8 +33,9 @@ function LandingPage({ user }) {
                 <Link className='FairPlayLink'
                   href="https://www.fairplaylife.com/about-the-book"
                   target='_blank'
-                  rel='noopener noreferrer'>
-                    Fair Play
+                  rel='noopener noreferrer'
+                >
+                  Fair Play
                 </Link>
               .</About>
         <SignIn className='SignIn'>
@@ -43,9 +44,9 @@ function LandingPage({ user }) {
             && <ButtonContainer className='ButtonContainer'>
               {
                 (user)
-                  ? <SignOutButton className='SignOutButton'>
-                      DASH
-                    </SignOutButton>
+                  ? <Link href="/dashboard" className='goToDash'>
+                      GO TO DASH
+                    </Link>
                   : <SignInButton className='SignInButton' onClick={signInUser}>
                       SIGN IN
                     </SignInButton>

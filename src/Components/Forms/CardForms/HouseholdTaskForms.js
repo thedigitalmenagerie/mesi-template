@@ -22,7 +22,7 @@ import {
   Input2,
   Img,
   HouseholdMemberForm
-} from './HouseholdFormElements';
+} from './HouseholdTaskFormElements';
 import {
   addHouseholdMember,
 } from '../../../Helpers/Data/householdMembersData';
@@ -32,7 +32,7 @@ import pets from '../../../Assets/petsGreen.png';
 import kids from '../../../Assets/kidsTan.png';
 import romance from '../../../Assets/romanceBlue.png';
 
-export default function HouseholdForms({
+export default function HouseholdTaskForms({
   id,
   householdName,
   hasPets,
@@ -221,7 +221,7 @@ export default function HouseholdForms({
   );
 }
 
-HouseholdForms.propTypes = {
+HouseholdTaskForms.propTypes = {
   setHouseholds: PropTypes.func,
   id: PropTypes.string,
   householdName: PropTypes.string,

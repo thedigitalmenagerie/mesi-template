@@ -1,57 +1,97 @@
 /* eslint-disable arrow-body-style */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import HouseholdForms from '../../Forms/HouseholdForms/HouseholdForm';
+import { getHouseholdMembers } from '../../../Helpers/Data/householdMembersData';
 import {
   HouseholdCard,
+  HouseholdTop,
+  HouseholdTopLeft,
+  HouseholdTopRight,
+  HouseholdMiddle,
+  HouseholdBottom,
+  HouseholdBottomLeft,
+  HouseholdBottomRight,
   HouseholdCardImg,
-  HouseholdCardHeader,
-  HouseholdCardButtons,
   HouseholdCardDelete,
-  HouseholdCardFooter,
+  HouseholdTypeContainer,
   Button,
   Modal,
+  Img
 } from './HouseholdCardElements';
+import home from '../../../Assets/homeLogo.png';
+import pets from '../../../Assets/petsGreen.png';
+import kids from '../../../Assets/kidsgreen.png';
+import romance from '../../../Assets/romanceBlue.png';
 
 export const HouseholdCards = ({
   user,
   setHouseholds,
-  id,
+  householdId,
   householdName,
   hasPets,
   hasKids,
   hasRomance,
-  stepId,
+  stepName,
   steps,
   users,
 }) => {
-  console.warn(user);
-
   const history = useHistory();
+  const [householdMembers, setHouseholdMembers] = useState([]);
+  console.warn(householdMembers);
 
   const handleClick = (type) => {
     switch (type) {
       case 'view':
-        history.push(`/households/${id}`);
+        if (stepName === 'One') {
+          history.push(`/dashboard/communityagreement/${householdId}`);
+        } else {
+          history.push(`/dashboard/${householdId}`);
+        }
         break;
       default:
         console.warn('Nothing selected');
     }
   };
 
+  useEffect(() => {
+    getHouseholdMembers(householdId).then((response) => setHouseholdMembers(response));
+  }, []);
+
   return (
-    <HouseholdCard className='HouseholdCard' key={id} id='HouseholdCard'>
-      <HouseholdCardHeader className='HouseholdCardHeader'>
-          <HouseholdCardButtons className='HouseholdCardButtons'>
-          </HouseholdCardButtons>
-      </HouseholdCardHeader>
-      <Button className="HouseholdCardButton">
-        <HouseholdCardImg className='HouseholdCardImg' onClick={() => handleClick('view')} />
-      </Button>
-      <HouseholdCardFooter className='HouseholdCardFooter'>
-        {householdName} {hasPets} {hasKids} {hasRomance} {stepId} {steps.name}
-      </HouseholdCardFooter>
+    <HouseholdCard className='HouseholdCard' key={householdId} id='HouseholdCard'>
+      <HouseholdTop className='HouseholdTop'>
+        <HouseholdTopLeft className='HouseholdTopLeft'>
+          { hasPets === 'true'
+            ? <div></div>
+            : <HouseholdTypeContainer className="HouseholdTypeContainer"><Img src={pets}/></HouseholdTypeContainer>
+          }
+          { hasKids === 'true'
+            ? <div></div>
+            : <HouseholdTypeContainer><Img src={kids}/></HouseholdTypeContainer>
+          }
+          { hasRomance === 'true'
+            ? <div></div>
+            : <HouseholdTypeContainer><Img src={romance}/></HouseholdTypeContainer>
+          }
+        </HouseholdTopLeft>
+        <HouseholdTopRight className="HouseholdTopRight">
+          {householdName}
+        </HouseholdTopRight>
+      </HouseholdTop>
+      <HouseholdMiddle className="HouseholdMiddle">
+          <Button className="HouseholdCardButton">
+            <HouseholdCardImg className='HouseholdCardImg' src={home} onClick={() => handleClick('view')} />
+          </Button>
+        </HouseholdMiddle>
+      <HouseholdBottom className="HouseholdBottom">
+          <HouseholdBottomLeft className="HouseholdBottomLeft">
+           Phase {stepName}
+          </HouseholdBottomLeft>
+          <HouseholdBottomRight className="HouseholdBottomRight">
+          </HouseholdBottomRight>
+        </HouseholdBottom>
         <Modal
           className='Modal'
         >
@@ -59,13 +99,13 @@ export const HouseholdCards = ({
             <HouseholdCardDelete/>
           </Button>
           <HouseholdForms
-            id={id}
+            householdId={householdId}
             user={user}
             householdName={householdName}
             hasPets={hasPets}
             hasKids={hasKids}
             hasRomance={hasRomance}
-            stepId={stepId}
+            stepName={stepName}
             setHouseholds={setHouseholds}
             steps={steps}
             users={users}
@@ -77,12 +117,13 @@ export const HouseholdCards = ({
 
 HouseholdCards.propTypes = {
   user: PropTypes.any,
-  id: PropTypes.string.isRequired,
+  householdId: PropTypes.string.isRequired,
   householdName: PropTypes.string.isRequired,
   hasPets: PropTypes.bool,
   hasKids: PropTypes.bool,
   hasRomance: PropTypes.bool,
   stepId: PropTypes.string,
+  stepName: PropTypes.string,
   setHouseholds: PropTypes.func,
   steps: PropTypes.any,
   users: PropTypes.any,

@@ -15,6 +15,7 @@ import {
 } from './NavBarElements';
 import LOGO from '../../Assets/LOGO.png';
 import exit from '../../Assets/signOut.png';
+import { signOutUser } from '../../Helpers/auth';
 
 function NavBar({ user }) {
   return (
@@ -30,7 +31,7 @@ function NavBar({ user }) {
             Welcome, {user.firstName}!
         </NavRightMessage>
         <SignOutButtonContianer>
-            <SignOutButton>
+            <SignOutButton onClick={signOutUser}>
                 <SignOutButtonImg src={exit}/>
             </SignOutButton>
         </SignOutButtonContianer>

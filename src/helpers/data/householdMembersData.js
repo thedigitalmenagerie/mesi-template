@@ -16,7 +16,14 @@ const addHouseholdMember = (householdMember) => new Promise((resolve, reject) =>
     .catch((error) => reject(error));
 });
 
+const getHouseholdMembers = (householdId) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/api/householdMembers/byHousehold/${householdId}`)
+    .then((response) => resolve(response.data))
+    .catch((error) => reject(error));
+});
+
 export {
   getHouseholdWithDetails,
   addHouseholdMember,
+  getHouseholdMembers
 };

@@ -1,16 +1,13 @@
 /* eslint-disable quotes */
 import styled from 'styled-components';
 
-export const HouseholdContainer = styled.div`
+export const HouseholdTaskCardContainer = styled.div`
   color: #EAE7D6;
-  height: 100%;
 `;
 
 export const Modal = styled.div`
 position: fixed;
 z-index: 999;
-width: 100%;
-height: 100%;
 background: #5D7B6F;
 display: flex;
 flex-direction: column;
@@ -22,16 +19,14 @@ opacity:  ${({ isOpen }) => (isOpen ? '100%' : '0')};
 top: ${({ isOpen }) => (isOpen ? '0' : '100%')};
 `;
 
-export const HouseholdWrapper = styled.div`
+export const HouseholdTaskCardWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 75%;
   justify-content: center;
   align-items: center;
 `;
 
-export const HouseholdTopRow = styled.div`
+export const HouseholdTaskCardTopRow = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -39,16 +34,16 @@ export const HouseholdTopRow = styled.div`
   align-items: center;
 `;
 
-export const HouseholdBottomRow = styled.div`
+export const HouseholdTaskCardBottomRow = styled.div`
   display: flex;
-  flex-direction: row-wrap;
-  width: 100%;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   padding-top: 50px;
+  height: 75%;
 `;
 
-export const AddHouseholdButtonImg = styled.img`
+export const AddHouseholdTaskCardButtonImg = styled.img`
   width: 25px;
 `;
 
@@ -57,7 +52,6 @@ margin-left: 10px;
 `;
 
 export const ButtonContainer = styled.div`
-width: 100%;
 display: flex;
 justify-content: flex-end;
 `;
@@ -78,7 +72,7 @@ export const ButtonImg = styled.img`
   width: 20px;
 `;
 
-export const AddHouseholdButton = styled.button`
+export const AddHouseholdTaskCardButton = styled.button`
 display: flex;
 flex-direction: row;
 justify-content: flex-end;
