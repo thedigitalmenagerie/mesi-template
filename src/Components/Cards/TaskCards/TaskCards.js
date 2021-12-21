@@ -50,7 +50,11 @@ export const HouseholdTaskCards = ({
     switch (type) {
       case 'view':
         console.warn(cardId);
-        history.push(`/dashboard/cards/${cardId}`);
+        history.push(`/dashboard/${householdId}/cards/${cardId}`);
+        break;
+      case 'value':
+        console.warn(cardId);
+        history.push(`/dashboard/${householdId}/cards/value/${cardId}`);
         break;
       default:
         console.warn('Nothing selected');
@@ -84,7 +88,7 @@ export const HouseholdTaskCards = ({
           </HouseholdBottomLeft>
           <HouseholdBottomRight className="HouseholdBottomRight">
             <ValueButton>
-                <ValueButtonImg src={value}/>
+                <ValueButtonImg src={value} onClick={() => handleClick('value')}/>
             </ValueButton>
           </HouseholdBottomRight>
         </HouseholdBottom>

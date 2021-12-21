@@ -39,7 +39,6 @@ export const HouseholdCards = ({
 }) => {
   const history = useHistory();
   const [householdMembers, setHouseholdMembers] = useState([]);
-  console.warn(householdMembers);
 
   const handleClick = (type) => {
     switch (type) {
@@ -51,7 +50,7 @@ export const HouseholdCards = ({
         }
         break;
       default:
-        console.warn('Nothing selected');
+        console.warn(householdMembers);
     }
   };
 

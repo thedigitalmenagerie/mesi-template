@@ -35,11 +35,23 @@ import daily from '../../../Assets/dailyGrindPink.png';
 import value from '../../../Assets/value.png';
 
 const IndividualTaskCard = () => {
-  const history = useHistory();
-
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [singleTaskCard, setSingleTaskCard] = useState({});
-  const { cardId } = useParams();
+  const { householdId, cardId } = useParams();
+  const history = useHistory();
+
+  const handleClick = (type) => {
+    switch (type) {
+      case 'view':
+        history.push(`/dashboard/${householdId}`);
+        break;
+      case 'value':
+        history.push(`/dashboard/${householdId}/cards/value/${cardId}`);
+        break;
+      default:
+        console.warn('Nothing selected');
+    }
+  };
 
   useEffect(() => {
     getSingleHouseholdTaskCard(cardId).then(setSingleTaskCard);
@@ -52,16 +64,6 @@ const IndividualTaskCard = () => {
   function closeModal() {
     setIsOpen(false);
   }
-
-  const handleClick = (type) => {
-    switch (type) {
-      case 'delete':
-        history.push('/dashboard');
-        break;
-      default:
-    }
-  };
-
   return (
     <SingleTaskCardOuter key={cardId} id='SingleTaskCardOuter'>
       <SideTaskCard className='SideTaskCard' key={cardId} id='SideTaskCard'>
@@ -75,7 +77,7 @@ const IndividualTaskCard = () => {
       </SideTaskCardTop>
       <SideTaskCardMiddle className="SideTaskCardMiddle">
           <Button className="SideTaskCardCardButton">
-            <SideTaskCardImg className='SideTaskCardCardImg' src={singleTaskCard.cardImage} onClick={() => handleClick('view')} />
+            <SideTaskCardImg className='SideTaskCardCardImg' src={singleTaskCard.cardImage} onClick={() => handleClick('view')}/>
           </Button>
         </SideTaskCardMiddle>
       <SideTaskCardBottom className="SideTaskCardBottom">
@@ -90,7 +92,7 @@ const IndividualTaskCard = () => {
           </SideTaskCardBottomLeft>
           <SideTaskCardBottomRight className="SideTaskCardBottomRight">
             <ValueButton>
-                <ValueButtonImg src={value}/>
+                <ValueButtonImg src={value} onClick={() => handleClick('value')}/>
             </ValueButton>
           </SideTaskCardBottomRight>
         </SideTaskCardBottom>
@@ -128,7 +130,7 @@ const IndividualTaskCard = () => {
       </MainTaskCardRight>
     </MainTaskCard>
       <Button className='modalClose' onClick={openModal}></Button>
-      <Button onClick={handleClick}></Button>
+      <Button></Button>
       <Modal isOpen={modalIsOpen} className='Modal'>
         <Button className='modalClose' onClick={closeModal}></Button>
         {/* <ProductForm

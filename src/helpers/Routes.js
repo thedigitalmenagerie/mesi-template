@@ -5,6 +5,8 @@ import LandingPage from '../Views/LandingPage/LandingPage';
 import { Dash } from '../Views/Dash/Dash';
 import { HouseholdDash } from '../Views/HouseholdDash/HouseholdDash';
 import IndividualTaskCard from '../Components/Cards/IndividualTaskCards/IndividualTaskCards';
+import { CommunityAgreement } from '../Views/CommunityAgreementView/CommunityAgreement';
+import { ValueDeclarationView } from '../Views/ValueDeclarationView/ValueDeclarationView';
 
 const PrivateRoute = ({ component: Component, user, ...rest }) => {
   // eslint-disable-next-line no-confusing-arrow
@@ -94,9 +96,57 @@ function Routes({
         />
           <PrivateRoute
           exact
-          path='/dashboard/cards/:cardId'
+          path='/dashboard/:householdId/cards/:cardId'
           component={() => (
             <IndividualTaskCard
+              user={user}
+              setUser={setUser}
+              steps={steps}
+              setSteps={setSteps}
+              users={users}
+              setUsers={setUsers}
+              households={households}
+              setHouseholds={setHouseholds}
+            />
+          )}
+          user={user}
+          setUser={setUser}
+          steps={steps}
+          setSteps={setSteps}
+          users={users}
+          setUsers={setUsers}
+          households={households}
+          setHouseholds={setHouseholds}
+        />
+          <PrivateRoute
+          exact
+          path='/dashboard/communityagreement/:householdId'
+          component={() => (
+            <CommunityAgreement
+              user={user}
+              setUser={setUser}
+              steps={steps}
+              setSteps={setSteps}
+              users={users}
+              setUsers={setUsers}
+              households={households}
+              setHouseholds={setHouseholds}
+            />
+          )}
+          user={user}
+          setUser={setUser}
+          steps={steps}
+          setSteps={setSteps}
+          users={users}
+          setUsers={setUsers}
+          households={households}
+          setHouseholds={setHouseholds}
+        />
+          <PrivateRoute
+          exact
+          path='/dashboard/:householdId/cards/value/:cardId'
+          component={() => (
+            <ValueDeclarationView
               user={user}
               setUser={setUser}
               steps={steps}

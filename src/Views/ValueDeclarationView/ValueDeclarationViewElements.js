@@ -1,14 +1,14 @@
 /* eslint-disable quotes */
 import styled from 'styled-components';
 
-export const CommunityAgreementContainer = styled.div`
+export const ValueDeclarationContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 `;
 
-export const CommunityAgreementWrapper = styled.div`
+export const ValueDeclarationWrapper = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #EAE7D6;
@@ -29,11 +29,11 @@ export const Subtitle = styled.div`
   font-weight: bold;
 `;
 
-export const CommunityAgreementRules = styled.div`
+export const ValueDeclarationRules = styled.div`
   padding-top: 40px;
 `;
 
-export const CommunityAgreementTitle = styled.div``;
+export const ValueDeclarationTitle = styled.div``;
 
 export const RuleText = styled.div`
  font-weight: bold;
@@ -46,7 +46,7 @@ export const RuleTitle = styled.div`
   font-weight: bold;
 `;
 
-export const CommunityAgreementButton = styled.button`
+export const ValueDeclarationButton = styled.button`
   background-color: #5D7B6F;
   color: #EAE7D6;
   width: 100px;
