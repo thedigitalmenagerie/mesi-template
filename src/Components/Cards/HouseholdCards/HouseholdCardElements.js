@@ -59,17 +59,19 @@ export const HouseholdBottomRight = styled.div`
 export const HouseholdTypeContainer = styled.div``;
 
 export const Modal = styled.div`
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  align-items: center;
-  top: 0;
-  left: 0;
-  transitionL 0.3s ease-in-out;
-  opacity:  ${({ isOpen }) => (isOpen ? '100%' : '0')};
-  top: ${({ isOpen }) => (isOpen ? '0' : '100%')};
+position: fixed;
+z-index: 999;
+width: 100%;
+height: 100%;
+background: #5D7B6F;
+display: flex;
+flex-direction: column;
+justify-content: center;
+top: 0;
+left: 0;
+transitionL 0.3s ease-in-out;
+opacity:  ${({ isOpen }) => (isOpen ? '100%' : '0')};
+top: ${({ isOpen }) => (isOpen ? '0' : '100%')};
 `;
 
 export const Button = styled.button`
@@ -85,6 +87,11 @@ export const Button = styled.button`
 
 export const Img = styled.img`
   width: 35px;
+`;
+
+export const DeleteImg = styled.img`
+  width: 35px;
+  padding: 2px;
 `;
 
 export const HouseholdCardImg = styled.img`

@@ -10,8 +10,6 @@ import {
   Input,
   Label,
   ButtonImg,
-  Option,
-  Select,
   FormTitle,
   Row,
   Row2,
@@ -24,23 +22,24 @@ import {
   HouseholdMemberForm
 } from './HouseholdFormElements';
 import {
-  addHouseholdMember,
+  addHouseholdMember, getHouseholdWithDetails,
 } from '../../../Helpers/Data/householdMembersData';
 import '../../../styles/HouseholdForms.scss';
-import { addHousehold } from '../../../Helpers/Data/householdData';
+import { addHousehold, updateHousehold } from '../../../Helpers/Data/householdData';
 import pets from '../../../Assets/petsGreen.png';
 import kids from '../../../Assets/kidsTan.png';
 import romance from '../../../Assets/romanceBlue.png';
 
 export default function HouseholdForms({
-  id,
+  householdId,
   householdName,
   hasPets,
   hasKids,
   hasRomance,
   stepId,
-  steps,
   users,
+  user,
+  setHouseholds
 }) {
   const [showMembers, setShowMembers] = React.useState(false);
 
@@ -53,8 +52,8 @@ export default function HouseholdForms({
     hasPets: hasPets || false,
     hasKids: hasKids || false,
     hasRomance: hasRomance || false,
-    stepId: stepId || null,
-    id: id || null,
+    stepId: stepId || '8CEDC0CD-3555-4FF5-A9D6-E6C37C5171E4',
+    householdId: householdId || null,
   });
 
   const handleInputChange = (e) => {
@@ -93,22 +92,26 @@ export default function HouseholdForms({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const householdObj = {
-      householdName: household.householdName,
-      hasPets: household.hasPets,
-      hasKids: household.hasKids,
-      hasRomance: household.hasRomance,
-      stepId: household.stepId,
-    };
-    addHousehold(householdObj).then((response) => setHousehold(response));
-    setHousehold({
-      householdName: '',
-      hasPets: false,
-      hasKids: false,
-      hasRomance: false,
-      stepId: null,
-      id: null,
-    });
+    if (householdId) {
+      updateHousehold(householdId, household).then(() => getHouseholdWithDetails(user.id).then((response) => setHouseholds(response)));
+    } else {
+      const householdObj = {
+        householdName: household.householdName,
+        hasPets: household.hasPets,
+        hasKids: household.hasKids,
+        hasRomance: household.hasRomance,
+        stepId: household.stepId,
+      };
+      addHousehold(householdObj).then((response) => setHousehold(response));
+      setHousehold({
+        householdName: '',
+        hasPets: false,
+        hasKids: false,
+        hasRomance: false,
+        stepId: '8CEDC0CD-3555-4FF5-A9D6-E6C37C5171E4',
+        id: null,
+      });
+    }
     setShowMembers(true);
   };
 
@@ -192,26 +195,6 @@ export default function HouseholdForms({
               <Label check> This household contains romance.</Label>
             </FormGroup>
           </Row4>
-          <Row>
-            <Select
-              className='item'
-              type='select'
-              name='stepId'
-              placeholder='Step'
-              id='exampleSelect'
-              onChange={handleInputChange}
-            >
-              {steps?.map((step) => (
-                <Option
-                  key={step.id}
-                  value={step.id}
-                  selected={step.id === stepId}
-                >
-                  Step {step.stepName}
-                </Option>
-              ))}
-            </Select>
-          </Row>
           <Button className='addCategory' type='submit'>
             Create Household
           </Button>
@@ -223,7 +206,7 @@ export default function HouseholdForms({
 
 HouseholdForms.propTypes = {
   setHouseholds: PropTypes.func,
-  id: PropTypes.string,
+  householdId: PropTypes.string,
   householdName: PropTypes.string,
   hasPets: PropTypes.bool,
   hasKids: PropTypes.bool,

@@ -25,7 +25,6 @@ export default function App() {
             setUser(false);
           }
         });
-        console.warn(user.id);
         getSteps().then((response) => setSteps(response));
         getUsers().then((response) => setUsers(response));
       } else {
@@ -35,10 +34,10 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    if (user) {
+    if (user.id) {
       getHouseholdWithDetails(user.id).then((response) => setHouseholds(response));
     } else {
-      console.warn('What');
+      console.warn('No user households');
     }
   }, [user]);
 

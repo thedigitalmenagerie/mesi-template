@@ -19,6 +19,8 @@ import {
 } from './HouseholdElements';
 import HouseholdTaskForms from '../../Components/Forms/CardForms/HouseholdTaskForms';
 import { HouseholdTaskCards } from '../../Components/Cards/TaskCards/TaskCards';
+import { getHouseholdMembers } from '../../Helpers/Data/householdMembersData';
+import { updateHousehold } from '../../Helpers/Data/householdData';
 import NavBar from '../../Components/NavBar/NavBar';
 import add from '../../Assets/addHouseholdButton.png';
 import exitModal from '../../Assets/exitModal.png';
@@ -31,19 +33,50 @@ export const HouseholdDash = ({
   users
 }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
-  const [householdTaskCards, setHouseholdTaskCards] = useState([{}]);
-  const { householdId } = useParams();
+  const [householdTaskCards, setHouseholdTaskCards] = useState([]);
+  const [householdMembers, setHouseholdMembers] = useState([]);
+  const [agreeingMembers, setAgreeingMembers] = useState([]);
+  const {
+    householdId,
+    householdName,
+    hasPets,
+    hasRomance,
+    hasKids
+  } = useParams();
+
+  const phaseTwo = (e) => {
+    e.preventDefault();
+    householdMembers.forEach((singleMember) => {
+      if (singleMember.communityAgreement === true) {
+        agreeingMembers.push(singleMember);
+        setAgreeingMembers();
+        if (agreeingMembers.length === householdMembers.length) {
+          const household = {
+            householdId,
+            householdName,
+            hasPets,
+            hasKids,
+            hasRomance,
+            stepId: '3C22C28B-1074-4BED-B3E5-D763BB3A6BC4',
+          };
+          updateHousehold(householdId, household);
+        } else {
+          console.warn('Not all users have agreed');
+        }
+      } else {
+        console.warn('These users have not agreed');
+      }
+    });
+  };
 
   useEffect(() => {
     getHouseholdTaskCards(householdId).then((response) => setHouseholdTaskCards(response));
+    getHouseholdMembers(householdId).then((response) => setHouseholdMembers(response));
   }, []);
 
-  console.warn(householdTaskCards);
-  console.warn(householdId);
-
-  function openModal() {
-    setIsOpen(true);
-  }
+  // function openModal() {
+  //   setIsOpen(true);
+  // }
 
   function closeModal() {
     setIsOpen(false);
@@ -56,7 +89,7 @@ export const HouseholdDash = ({
         <HouseholdTaskCardTopRow className='HouseholdTaskCardTopRow'>
           TASK CARDS
           <AddButtonContainer className='AddButtonContainer'>
-            <AddHouseholdTaskCardButton className='addHousehold' onClick={openModal}>
+            <AddHouseholdTaskCardButton className='addHousehold' onClick={phaseTwo}>
               <AddHouseholdTaskCardButtonImg
                 className='AddHouseholdButtonImg'
                 src={add}
@@ -65,21 +98,6 @@ export const HouseholdDash = ({
           </AddButtonContainer>
         </HouseholdTaskCardTopRow>
         <HouseholdTaskCardBottomRow className="HouseholdTaskCardBottomRow">
-          <Modal isOpen={modalIsOpen} className='Modal'>
-            <ButtonContainer>
-              <Button className='modalClose' onClick={closeModal}>
-                <ButtonImg src={exitModal} />
-              </Button>
-            </ButtonContainer>
-            <HouseholdTaskForms
-              households={households}
-              householdTaskCards={householdTaskCards}
-              setHouseholdTaskCards={setHouseholdTaskCards}
-              steps={steps}
-              users={users}
-              user={user}
-            />
-          </Modal>
           {householdTaskCards?.map((householdTaskCardInfo) => (
             <HouseholdTaskCards
               key={householdTaskCardInfo.cardId}
@@ -105,6 +123,21 @@ export const HouseholdDash = ({
             />
           ))}
         </HouseholdTaskCardBottomRow>
+        <Modal isOpen={modalIsOpen} className='Modal'>
+            <ButtonContainer>
+              <Button className='modalClose' onClick={closeModal}>
+                <ButtonImg src={exitModal} />
+              </Button>
+            </ButtonContainer>
+            <HouseholdTaskForms
+              households={households}
+              householdTaskCards={householdTaskCards}
+              setHouseholdTaskCards={setHouseholdTaskCards}
+              steps={steps}
+              users={users}
+              user={user}
+            />
+          </Modal>
       </HouseholdTaskCardWrapper>
     </HouseholdTaskCardContainer>
   );

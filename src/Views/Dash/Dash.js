@@ -71,7 +71,7 @@ export const Dash = ({
           </Modal>
           {households?.map((householdInfo) => (
             <HouseholdCards
-              key={householdInfo.id}
+              key={householdInfo.householdId}
               householdId={householdInfo.householdId}
               householdName={householdInfo.householdName}
               hasPets={householdInfo.hasPets}

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import HouseholdForms from '../../Forms/HouseholdForms/HouseholdForm';
-import { getHouseholdMembers } from '../../../Helpers/Data/householdMembersData';
+import { getHouseholdMembers, getHouseholdWithDetails } from '../../../Helpers/Data/householdMembersData';
 import {
   HouseholdCard,
   HouseholdTop,
@@ -14,16 +14,20 @@ import {
   HouseholdBottomLeft,
   HouseholdBottomRight,
   HouseholdCardImg,
-  HouseholdCardDelete,
   HouseholdTypeContainer,
   Button,
   Modal,
-  Img
+  Img,
+  DeleteImg
 } from './HouseholdCardElements';
 import home from '../../../Assets/homeLogo.png';
 import pets from '../../../Assets/petsGreen.png';
 import kids from '../../../Assets/kidsgreen.png';
 import romance from '../../../Assets/romanceBlue.png';
+import deleted from '../../../Assets/delete.png';
+import edit from '../../../Assets/editblue.png';
+import exitModal from '../../../Assets/exitModal.png';
+import { deleteHousehold } from '../../../Helpers/Data/householdData';
 
 export const HouseholdCards = ({
   user,
@@ -40,17 +44,40 @@ export const HouseholdCards = ({
   const history = useHistory();
   const [householdMembers, setHouseholdMembers] = useState([]);
 
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
   const handleClick = (type) => {
     switch (type) {
       case 'view':
         if (stepName === 'One') {
           history.push(`/dashboard/communityagreement/${householdId}`);
-        } else {
+        } else if (stepName === 'Two') {
           history.push(`/dashboard/${householdId}`);
+        } else if (stepName === 'Three') {
+          history.push('/dashboard');
+        } else if (stepName === 'Four') {
+          history.push('/dashboard');
+        } else if (stepName === 'Five') {
+          history.push('/dashboard');
+        } else if (stepName === 'Six') {
+          history.push('/dashboard');
+        } else {
+          history.push('/dashboard');
         }
         break;
+      case 'delete':
+        deleteHousehold(householdId).then(() => getHouseholdWithDetails(user.id).then((response) => setHouseholds(response)));
+        break;
       default:
-        console.warn(householdMembers);
+        console.warn('Nothing selected');
     }
   };
 
@@ -62,15 +89,15 @@ export const HouseholdCards = ({
     <HouseholdCard className='HouseholdCard' key={householdId} id='HouseholdCard'>
       <HouseholdTop className='HouseholdTop'>
         <HouseholdTopLeft className='HouseholdTopLeft'>
-          { hasPets === 'true'
+          { (hasPets !== true)
             ? <div></div>
             : <HouseholdTypeContainer className="HouseholdTypeContainer"><Img src={pets}/></HouseholdTypeContainer>
           }
-          { hasKids === 'true'
+          { (hasKids !== true)
             ? <div></div>
             : <HouseholdTypeContainer><Img src={kids}/></HouseholdTypeContainer>
           }
-          { hasRomance === 'true'
+          { (hasRomance !== true)
             ? <div></div>
             : <HouseholdTypeContainer><Img src={romance}/></HouseholdTypeContainer>
           }
@@ -89,13 +116,20 @@ export const HouseholdCards = ({
            Phase {stepName}
           </HouseholdBottomLeft>
           <HouseholdBottomRight className="HouseholdBottomRight">
+          <Button className="HouseholdCardButton">
+            <DeleteImg className='HouseholdCardImg' src={edit} onClick={openModal} />
+          </Button>
+          <Button className="HouseholdCardButton">
+            <DeleteImg className='HouseholdCardImg' src={deleted} onClick={() => handleClick('delete')} />
+          </Button>
           </HouseholdBottomRight>
         </HouseholdBottom>
         <Modal
           className='Modal'
+          isOpen={modalIsOpen}
         >
-          <Button className='modalClose'>
-            <HouseholdCardDelete/>
+          <Button className='modalClose' onClick={closeModal}>
+            <DeleteImg src={exitModal}/>
           </Button>
           <HouseholdForms
             householdId={householdId}
@@ -108,6 +142,8 @@ export const HouseholdCards = ({
             setHouseholds={setHouseholds}
             steps={steps}
             users={users}
+            householdMembers={householdMembers}
+            setHouseholdMembers={setHouseholdMembers}
           />
         </Modal>
     </HouseholdCard>
@@ -124,6 +160,8 @@ HouseholdCards.propTypes = {
   stepId: PropTypes.string,
   stepName: PropTypes.string,
   setHouseholds: PropTypes.func,
+  householdMembers: PropTypes.any,
+  setHouseholdMembers: PropTypes.func,
   steps: PropTypes.any,
   users: PropTypes.any,
 };

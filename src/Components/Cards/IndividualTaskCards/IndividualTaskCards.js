@@ -33,6 +33,7 @@ import {
 import { getSingleHouseholdTaskCard } from '../../../Helpers/Data/cardsData';
 import daily from '../../../Assets/dailyGrindPink.png';
 import value from '../../../Assets/value.png';
+import HouseholdTaskForms from '../../Forms/CardForms/HouseholdTaskForms';
 
 const IndividualTaskCard = () => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -130,23 +131,22 @@ const IndividualTaskCard = () => {
       </MainTaskCardRight>
     </MainTaskCard>
       <Button className='modalClose' onClick={openModal}></Button>
-      <Button></Button>
       <Modal isOpen={modalIsOpen} className='Modal'>
         <Button className='modalClose' onClick={closeModal}></Button>
-        {/* <ProductForm
-            productFormTitle='Edit Product'
-            productTypeId={product.productTypeId}
-            productTypes={productTypes}
-            setProducts={setProducts}
-            product={product}
-            id={id}
-            productDescription={product.productDescription}
-            productImageUrl={product.productImageUrl}
-            productName={product.productName}
-            price={product.price}
-            inventoryCount={product.inventoryCount}
-            user={user}
-          /> */}
+        <HouseholdTaskForms
+              cardId={cardId}
+              householdId={householdId}
+              cardName={singleTaskCard.cardName}
+              cardImage={singleTaskCard.cardImage}
+              cardDefinition={singleTaskCard.cardDefinition}
+              conception={singleTaskCard.conception}
+              planning={singleTaskCard.planning}
+              execution={singleTaskCard.execution}
+              msoc={singleTaskCard.msoc}
+              dailyGrind={singleTaskCard.dailyGrind}
+              needTypeName={singleTaskCard.needTypeName}
+              categoryTypeName={singleTaskCard.categoryTypeName}
+          />
       </Modal>
     </SingleTaskCardOuter>
   );
@@ -154,6 +154,8 @@ const IndividualTaskCard = () => {
 
 IndividualTaskCard.propTypes = {
   user: PropTypes.any,
+  users: PropTypes.any,
+  steps: PropTypes.any,
 };
 
 export default IndividualTaskCard;

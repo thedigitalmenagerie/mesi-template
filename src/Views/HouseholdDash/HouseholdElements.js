@@ -8,6 +8,8 @@ export const HouseholdTaskCardContainer = styled.div`
 export const Modal = styled.div`
 position: fixed;
 z-index: 999;
+width: 100%;
+height: 100%;
 background: #5D7B6F;
 display: flex;
 flex-direction: column;

@@ -24,8 +24,6 @@ export const FormTitle = styled.div`
 export const Row = styled.div`
   display: flex;
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
   align-items: center;
   justify-content: center;
 `;

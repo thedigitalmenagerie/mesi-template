@@ -90,6 +90,7 @@ export const Button = styled.button`
   border-radius: 10px;
   background-color: #5D7B6F;
   color: #EAE7D6;
+  margin-top: 50px;
 `;
 
 export const ButtonImg = styled.img`

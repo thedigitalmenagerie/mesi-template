@@ -17,7 +17,7 @@ import {
   CommunityAgreementButton,
 } from './CommunityAgreementElements';
 import NavBar from '../../Components/NavBar/NavBar';
-import { getSingleHouseholdMember, updateHouseholdMember } from '../../Helpers/Data/householdMembersData';
+import { getHouseholdMembers, updateHouseholdMember } from '../../Helpers/Data/householdMembersData';
 
 export const CommunityAgreement = ({
   user,
@@ -30,30 +30,29 @@ export const CommunityAgreement = ({
   };
 
   const [userAgreement, setUserAgreement] = useState([]);
-  const [userAgreementToUpdate, setUserAgreementToUpdate] = useState([]);
-  console.warn(userAgreement);
-  console.warn(userAgreementToUpdate);
+  const householdMember = userAgreement.filter((member) => member.userId === user.id);
 
   useEffect(() => {
-    getSingleHouseholdMember(householdId).then((response) => setUserAgreement(response));
-    const userToUpdate = {
-      householdId,
-      userId: user.id,
-      communityAgreement: true,
-      newVow: false,
-      reDeal: false,
-    };
-    userAgreementToUpdate.push(userToUpdate);
-    console.warn(userToUpdate);
+    getHouseholdMembers(householdId).then((response) => setUserAgreement(response));
   }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (userAgreement.userId === user.id) {
-      updateHouseholdMember(userAgreementToUpdate.id, userAgreementToUpdate).then((response) => setUserAgreementToUpdate(response));
-    } else {
-      console.warn(userAgreement);
-    }
+    householdMember.forEach((singleMember) => {
+      if (singleMember.userId === user.id && householdId === singleMember.householdId) {
+        const member = {
+          id: singleMember.id,
+          householdId,
+          userId: user.id,
+          communityAgreement: true,
+          newVow: false,
+          redeal: false,
+        };
+        updateHouseholdMember(singleMember.id, member);
+      } else {
+        console.warn('You effed up');
+      }
+    });
   };
 
   return (
