@@ -4,6 +4,12 @@ import { MESIConfig } from '../apiKeys';
 
 const dbUrl = MESIConfig.baseUrl;
 
+const getHousehold = (householdId) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/api/dash/${householdId}`)
+    .then((response) => resolve(response.data))
+    .catch((error) => reject(error));
+});
+
 const addHousehold = (household) => new Promise((resolve, reject) => {
   axios.post(`${dbUrl}/api/dash`, household)
     .then((response) => resolve(response.data))
@@ -23,6 +29,7 @@ const updateHousehold = (id, household) => new Promise((resolve, reject) => {
 });
 
 export {
+  getHousehold,
   addHousehold,
   deleteHousehold,
   updateHousehold

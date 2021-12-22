@@ -19,8 +19,6 @@ import {
 } from './HouseholdElements';
 import HouseholdTaskForms from '../../Components/Forms/CardForms/HouseholdTaskForms';
 import { HouseholdTaskCards } from '../../Components/Cards/TaskCards/TaskCards';
-import { getHouseholdMembers } from '../../Helpers/Data/householdMembersData';
-import { updateHousehold } from '../../Helpers/Data/householdData';
 import NavBar from '../../Components/NavBar/NavBar';
 import add from '../../Assets/addHouseholdButton.png';
 import exitModal from '../../Assets/exitModal.png';
@@ -34,49 +32,15 @@ export const HouseholdDash = ({
 }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [householdTaskCards, setHouseholdTaskCards] = useState([]);
-  const [householdMembers, setHouseholdMembers] = useState([]);
-  const [agreeingMembers, setAgreeingMembers] = useState([]);
-  const {
-    householdId,
-    householdName,
-    hasPets,
-    hasRomance,
-    hasKids
-  } = useParams();
-
-  const phaseTwo = (e) => {
-    e.preventDefault();
-    householdMembers.forEach((singleMember) => {
-      if (singleMember.communityAgreement === true) {
-        agreeingMembers.push(singleMember);
-        setAgreeingMembers();
-        if (agreeingMembers.length === householdMembers.length) {
-          const household = {
-            householdId,
-            householdName,
-            hasPets,
-            hasKids,
-            hasRomance,
-            stepId: '3C22C28B-1074-4BED-B3E5-D763BB3A6BC4',
-          };
-          updateHousehold(householdId, household);
-        } else {
-          console.warn('Not all users have agreed');
-        }
-      } else {
-        console.warn('These users have not agreed');
-      }
-    });
-  };
+  const { householdId } = useParams();
 
   useEffect(() => {
     getHouseholdTaskCards(householdId).then((response) => setHouseholdTaskCards(response));
-    getHouseholdMembers(householdId).then((response) => setHouseholdMembers(response));
   }, []);
 
-  // function openModal() {
-  //   setIsOpen(true);
-  // }
+  function openModal() {
+    setIsOpen(true);
+  }
 
   function closeModal() {
     setIsOpen(false);
@@ -89,7 +53,7 @@ export const HouseholdDash = ({
         <HouseholdTaskCardTopRow className='HouseholdTaskCardTopRow'>
           TASK CARDS
           <AddButtonContainer className='AddButtonContainer'>
-            <AddHouseholdTaskCardButton className='addHousehold' onClick={phaseTwo}>
+            <AddHouseholdTaskCardButton className='addHousehold' onClick={openModal}>
               <AddHouseholdTaskCardButtonImg
                 className='AddHouseholdButtonImg'
                 src={add}
