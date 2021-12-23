@@ -16,7 +16,21 @@ const getSingleHouseholdTaskCard = (cardId) => new Promise((resolve, reject) => 
     .catch((error) => reject(error));
 });
 
+const addTaskCard = (card) => new Promise((resolve, reject) => {
+  axios.post(`${dbUrl}/api/dash/cards`, card)
+    .then((response) => resolve(response.data))
+    .catch((error) => reject(error));
+});
+
+const updateTaskCard = (id, card) => new Promise((resolve, reject) => {
+  axios.put(`${dbUrl}/api/dash/cards/${id}`, card)
+    .then((response) => resolve(response.data))
+    .catch((error) => reject(error));
+});
+
 export {
   getHouseholdTaskCards,
-  getSingleHouseholdTaskCard
+  getSingleHouseholdTaskCard,
+  addTaskCard,
+  updateTaskCard
 };

@@ -40,6 +40,7 @@ const IndividualTaskCard = () => {
   const [singleTaskCard, setSingleTaskCard] = useState({});
   const { householdId, cardId } = useParams();
   const history = useHistory();
+  console.warn(singleTaskCard);
 
   const handleClick = (type) => {
     switch (type) {

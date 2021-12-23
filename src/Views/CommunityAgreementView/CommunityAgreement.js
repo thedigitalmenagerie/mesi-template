@@ -64,12 +64,12 @@ export const CommunityAgreement = ({ user }) => {
         }
         // else if the agreeingMembers array is not equal to the userAgreement array
         // and the current user communityAgreement does not equal true,
+      } else if (singleMember.userId === user.id && householdId === singleMember.householdId && singleMember.communityAgreement === true) {
+        history.push(`/dashboard/${householdId}/awaitingOtherUsers`);
+        // else if the agreeingMembers array is not equal to the userAgreement array
+        // and the current user communityAgreement does not equal true,
         // update the individual member communityAgreement to true
-      } else if (
-        singleMember.userId === user.id
-        && householdId === singleMember.householdId
-        && singleMember.communityAgreement !== true
-      ) {
+      } else if (singleMember.userId === user.id && householdId === singleMember.householdId && singleMember.communityAgreement !== true) {
         const member = {
           id: singleMember.id,
           householdId,
@@ -80,16 +80,10 @@ export const CommunityAgreement = ({ user }) => {
         };
         updateHouseholdMember(singleMember.id, member);
         history.push(`/dashboard/${householdId}/awaitingOtherUsers`);
-      } else if (
-        singleMember.userId === user.id
-        && householdId === singleMember.householdId
-        && singleMember.communityAgreement === true
-      ) {
+      } else {
         history.push(`/dashboard/${householdId}/awaitingOtherUsers`);
       }
-      history.push(`/dashboard/${householdId}`);
     });
-    history.push(`/dashboard/${householdId}`);
   };
 
   return (

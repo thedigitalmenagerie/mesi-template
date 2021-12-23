@@ -1,8 +1,9 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable no-plusplus */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import { useParams } from 'react-router-dom';
 import { FormGroup } from 'reactstrap';
 import {
   Button,
@@ -13,11 +14,16 @@ import {
   FormTitle,
   Row,
   Row2,
+  Option,
+  Select
 } from './HouseholdTaskFormElements';
+import { getNeedTypes } from '../../../Helpers/Data/needTypeData';
+import { getCategoryTypes } from '../../../Helpers/Data/categoryTypeData';
+import { getHouseholdTaskCards, updateTaskCard, addTaskCard } from '../../../Helpers/Data/cardsData';
 
 export default function HouseholdTaskForms({
   cardId,
-  householdId,
+  //   householdId,
   cardName,
   cardImage,
   cardDefinition,
@@ -26,12 +32,14 @@ export default function HouseholdTaskForms({
   execution,
   msoc,
   dailyGrind,
-  needTypeName,
-  categoryTypeName,
+  needTypeId,
+  categoryTypeId,
+  assignedUserId
 }) {
+  const { householdId } = useParams();
   const [singleTaskCard, setSingleTaskCard] = useState({
-    categoryTypeName: categoryTypeName || '',
-    needTypeName: needTypeName || '',
+    categoryTypeId: categoryTypeId || null,
+    needTypeId: needTypeId || null,
     dailyGrind: dailyGrind || false,
     msoc: msoc || '',
     execution: execution || '',
@@ -40,9 +48,18 @@ export default function HouseholdTaskForms({
     cardDefinition: cardDefinition || '',
     cardImage: cardImage || '',
     cardName: cardName || '',
-    householdId: householdId || null,
+    householdId,
     cardId: cardId || null,
+    assignedUserId: assignedUserId || null,
   });
+
+  const [needTypes, setNeedTypes] = useState([]);
+  const [categoryTypes, setCategoryTypes] = useState([]);
+
+  useEffect(() => {
+    getNeedTypes().then(setNeedTypes);
+    getCategoryTypes().then(setCategoryTypes);
+  }, []);
 
   const handleInputChange = (e) => {
     setSingleTaskCard((prevState) => ({
@@ -61,35 +78,41 @@ export default function HouseholdTaskForms({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // const taskCardObj = {
-    //   categoryTypeName: categoryTypeName,
-    //   needTypeName: needTypeName,
-    //   dailyGrind: dailyGrind,
-    //   msoc: msoc,
-    //   execution: execution,
-    //   planning: planning,
-    //   conception: conception,
-    //   cardDefinition: cardDefinition,
-    //   cardImage: cardImage,
-    //   cardName: cardName,
-    //   householdId: householdId,
-    //   cardId: cardId,
-    // };
-    // console.warn(taskCardObj);
-    setSingleTaskCard({
-      categoryTypeName: '',
-      needTypeName: '',
-      dailyGrind: false,
-      msoc: '',
-      execution: '',
-      planning: '',
-      conception: '',
-      cardDefinition: '',
-      cardImage: '',
-      cardName: '',
-      householdId: '',
-      cardId: '',
-    });
+    if (singleTaskCard.cardId) {
+      updateTaskCard(singleTaskCard.cardId, singleTaskCard).then(() => getHouseholdTaskCards().then((response) => setSingleTaskCard(response)));
+    } else {
+      const taskCardObj = {
+        categoryTypeId: singleTaskCard.categoryTypeId,
+        needTypeId: singleTaskCard.needTypeId,
+        dailyGrind: singleTaskCard.dailyGrind,
+        msoc: singleTaskCard.msoc,
+        execution: singleTaskCard.execution,
+        planning: singleTaskCard.planning,
+        conception: singleTaskCard.conception,
+        cardDefinition: singleTaskCard.cardDefinition,
+        cardImage: singleTaskCard.cardImage,
+        cardName: singleTaskCard.cardName,
+        householdId,
+        assignedUserId: null,
+      };
+      console.warn(taskCardObj);
+      addTaskCard(taskCardObj).then(() => getHouseholdTaskCards().then((response) => setSingleTaskCard(response)));
+      setSingleTaskCard({
+        categoryTypeId: '',
+        needTypeId: '',
+        dailyGrind: false,
+        msoc: '',
+        execution: '',
+        planning: '',
+        conception: '',
+        cardDefinition: '',
+        cardImage: '',
+        cardName: '',
+        householdId,
+        cardId: null,
+        assignedUserId: null,
+      });
+    }
   };
 
   return (
@@ -170,6 +193,48 @@ export default function HouseholdTaskForms({
           onChange={handleInputChange}
         ></Input>
       </Row>
+      <Row>
+      <Label>Need Type:</Label>
+      <Select
+        className="item"
+        type="select"
+        name="needTypeId"
+        placeholder="Need Type"
+        id="exampleSelect"
+        onChange={handleInputChange}
+      >
+        {needTypes?.map((needType) => (
+          <Option
+            key={needType.id}
+            value={needType.id}
+            selected={needType.id === singleTaskCard.needTypeId}
+          >
+            {needType.needTypeName}
+          </Option>
+        ))}
+      </Select>
+      </Row>
+      <Row>
+      <Label>Category Type:</Label>
+      <Select
+        className="item"
+        type="select"
+        name="categoryTypeId"
+        placeholder="Category Type"
+        id="exampleSelect"
+        onChange={handleInputChange}
+      >
+        {categoryTypes?.map((categoryType) => (
+          <Option
+            key={categoryType.id}
+            value={categoryType.id}
+            selected={categoryType.id === singleTaskCard.categoryTypeId}
+          >
+            {categoryType.categoryTypeName}
+          </Option>
+        ))}
+      </Select>
+      </Row>
       <Row2>
         <FormGroup check id='form-check'>
           <ButtonImg></ButtonImg>
@@ -201,6 +266,7 @@ HouseholdTaskForms.propTypes = {
   execution: PropTypes.string,
   msoc: PropTypes.string,
   dailyGrind: PropTypes.bool,
-  needTypeName: PropTypes.string,
-  categoryTypeName: PropTypes.string,
+  needTypeId: PropTypes.string,
+  categoryTypeId: PropTypes.string,
+  assignedUserId: PropTypes.string,
 };

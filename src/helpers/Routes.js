@@ -7,6 +7,7 @@ import { HouseholdDash } from '../Views/HouseholdDash/HouseholdDash';
 import IndividualTaskCard from '../Components/Cards/IndividualTaskCards/IndividualTaskCards';
 import { CommunityAgreement } from '../Views/CommunityAgreementView/CommunityAgreement';
 import { ValueDeclarationView } from '../Views/ValueDeclarationView/ValueDeclarationView';
+import { WaitingView } from '../Views/WaitingView/WaitingView';
 
 const PrivateRoute = ({ component: Component, user, ...rest }) => {
   // eslint-disable-next-line no-confusing-arrow
@@ -75,6 +76,30 @@ function Routes({
           path='/dashboard/:householdId'
           component={() => (
             <HouseholdDash
+              user={user}
+              setUser={setUser}
+              steps={steps}
+              setSteps={setSteps}
+              users={users}
+              setUsers={setUsers}
+              households={households}
+              setHouseholds={setHouseholds}
+            />
+          )}
+          user={user}
+          setUser={setUser}
+          steps={steps}
+          setSteps={setSteps}
+          users={users}
+          setUsers={setUsers}
+          households={households}
+          setHouseholds={setHouseholds}
+        />
+          <PrivateRoute
+          exact
+          path='/dashboard/:householdId/awaitingOtherUsers'
+          component={() => (
+            <WaitingView
               user={user}
               setUser={setUser}
               steps={steps}
