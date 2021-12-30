@@ -25,6 +25,7 @@ import value from '../../../Assets/value.png';
 import daily from '../../../Assets/dailyGrindPink.png';
 
 export const HouseholdTaskCards = ({
+  householdMembers,
   cardId,
   householdId,
   needTypeId,
@@ -49,11 +50,9 @@ export const HouseholdTaskCards = ({
   const handleClick = (type) => {
     switch (type) {
       case 'view':
-        console.warn(cardId);
         history.push(`/dashboard/${householdId}/cards/${cardId}`);
         break;
       case 'value':
-        console.warn(cardId);
         history.push(`/dashboard/${householdId}/cards/value/${cardId}`);
         break;
       default:
@@ -99,6 +98,7 @@ export const HouseholdTaskCards = ({
             <HouseholdCardDelete/>
           </Button>
           <HouseholdForms
+              householdMembers={householdMembers}
               cardId={cardId}
               householdId={householdId}
               needTypeId={needTypeId}
@@ -122,6 +122,7 @@ export const HouseholdTaskCards = ({
 };
 
 HouseholdTaskCards.propTypes = {
+  householdMembers: PropTypes.string,
   cardId: PropTypes.string,
   householdId: PropTypes.string,
   needTypeId: PropTypes.string,

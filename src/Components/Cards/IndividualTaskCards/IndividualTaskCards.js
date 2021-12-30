@@ -30,9 +30,11 @@ import {
   MainTaskCardRightMiddleBottomLeft,
   DailyGrindDiv,
 } from './IndividualTaskCardElements';
-import { getSingleHouseholdTaskCard } from '../../../Helpers/Data/cardsData';
+import { getSingleHouseholdTaskCard, deleteTaskCard } from '../../../Helpers/Data/cardsData';
 import daily from '../../../Assets/dailyGrindPink.png';
 import value from '../../../Assets/value.png';
+import editBlue from '../../../Assets/editblue.png';
+import deleted from '../../../Assets/delete.png';
 import HouseholdTaskForms from '../../Forms/CardForms/HouseholdTaskForms';
 
 const IndividualTaskCard = () => {
@@ -40,7 +42,6 @@ const IndividualTaskCard = () => {
   const [singleTaskCard, setSingleTaskCard] = useState({});
   const { householdId, cardId } = useParams();
   const history = useHistory();
-  console.warn(singleTaskCard);
 
   const handleClick = (type) => {
     switch (type) {
@@ -49,6 +50,10 @@ const IndividualTaskCard = () => {
         break;
       case 'value':
         history.push(`/dashboard/${householdId}/cards/value/${cardId}`);
+        break;
+      case 'delete':
+        deleteTaskCard(cardId).then(() => getSingleHouseholdTaskCard(cardId).then((response) => setSingleTaskCard(response)));
+        history.push(`/dashboard/${householdId}`);
         break;
       default:
         console.warn('Nothing selected');
@@ -129,25 +134,29 @@ const IndividualTaskCard = () => {
           <Title className="Title">MIMIMUM STANDARD OF CARE</Title>
           {singleTaskCard.msoc}
         </MainTaskCardRightBottom>
+        <Button><ValueButtonImg onClick={openModal} src={editBlue}/></Button>
+        <Button><ValueButtonImg onClick={() => handleClick('delete')} src={deleted}/></Button>
       </MainTaskCardRight>
     </MainTaskCard>
-      <Button className='modalClose' onClick={openModal}></Button>
       <Modal isOpen={modalIsOpen} className='Modal'>
         <Button className='modalClose' onClick={closeModal}></Button>
         <HouseholdTaskForms
-              cardId={cardId}
-              householdId={householdId}
-              cardName={singleTaskCard.cardName}
-              cardImage={singleTaskCard.cardImage}
-              cardDefinition={singleTaskCard.cardDefinition}
-              conception={singleTaskCard.conception}
-              planning={singleTaskCard.planning}
-              execution={singleTaskCard.execution}
-              msoc={singleTaskCard.msoc}
-              dailyGrind={singleTaskCard.dailyGrind}
-              needTypeName={singleTaskCard.needTypeName}
-              categoryTypeName={singleTaskCard.categoryTypeName}
-          />
+          cardId={singleTaskCard.cardId}
+          householdId={singleTaskCard.householdId}
+          cardName={singleTaskCard.cardName}
+          cardImage={singleTaskCard.cardImage}
+          cardDefinition={singleTaskCard.cardDefinition}
+          conception={singleTaskCard.conception}
+          planning={singleTaskCard.planning}
+          execution={singleTaskCard.execution}
+          msoc={singleTaskCard.msoc}
+          dailyGrind={singleTaskCard.dailyGrind}
+          assignedUserId={singleTaskCard.assignedUserId}
+          needTypeName={singleTaskCard.needTypeName}
+          categoryTypeId={singleTaskCard.categoryTypeId}
+          needTypeId={singleTaskCard.needTypeId}
+          categoryTypeName={singleTaskCard.categoryTypeName}
+        />
       </Modal>
     </SingleTaskCardOuter>
   );

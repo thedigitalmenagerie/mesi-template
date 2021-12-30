@@ -10,7 +10,7 @@ import {
   Form,
   Input,
   Label,
-  ButtonImg,
+  //   ButtonImg,
   FormTitle,
   Row,
   Row2,
@@ -23,7 +23,6 @@ import { getHouseholdTaskCards, updateTaskCard, addTaskCard } from '../../../Hel
 
 export default function HouseholdTaskForms({
   cardId,
-  //   householdId,
   cardName,
   cardImage,
   cardDefinition,
@@ -34,10 +33,12 @@ export default function HouseholdTaskForms({
   dailyGrind,
   needTypeId,
   categoryTypeId,
-  assignedUserId
+  assignedUserId,
+  setHouseholdTaskCards
 }) {
   const { householdId } = useParams();
-  const [singleTaskCard, setSingleTaskCard] = useState({
+  console.warn(householdId);
+  const [singleTaskCardToEdit, setSingleTaskCardToEdit] = useState({
     categoryTypeId: categoryTypeId || null,
     needTypeId: needTypeId || null,
     dailyGrind: dailyGrind || false,
@@ -62,14 +63,14 @@ export default function HouseholdTaskForms({
   }, []);
 
   const handleInputChange = (e) => {
-    setSingleTaskCard((prevState) => ({
+    setSingleTaskCardToEdit((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
     }));
   };
 
   const handleCheckboxChange = (e) => {
-    setSingleTaskCard((prevState) => ({
+    setSingleTaskCardToEdit((prevState) => ({
       ...prevState,
       [e.target.name]:
         e.target.name === 'dailyGrind' ? e.target.checked : e.target.value,
@@ -78,26 +79,26 @@ export default function HouseholdTaskForms({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (singleTaskCard.cardId) {
-      updateTaskCard(singleTaskCard.cardId, singleTaskCard).then(() => getHouseholdTaskCards().then((response) => setSingleTaskCard(response)));
+    if (singleTaskCardToEdit.cardId) {
+      updateTaskCard(singleTaskCardToEdit.cardId, singleTaskCardToEdit).then(() => getHouseholdTaskCards().then((response) => setHouseholdTaskCards(response)));
     } else {
       const taskCardObj = {
-        categoryTypeId: singleTaskCard.categoryTypeId,
-        needTypeId: singleTaskCard.needTypeId,
-        dailyGrind: singleTaskCard.dailyGrind,
-        msoc: singleTaskCard.msoc,
-        execution: singleTaskCard.execution,
-        planning: singleTaskCard.planning,
-        conception: singleTaskCard.conception,
-        cardDefinition: singleTaskCard.cardDefinition,
-        cardImage: singleTaskCard.cardImage,
-        cardName: singleTaskCard.cardName,
+        categoryTypeId: singleTaskCardToEdit.categoryTypeId,
+        needTypeId: singleTaskCardToEdit.needTypeId,
+        dailyGrind: singleTaskCardToEdit.dailyGrind,
+        msoc: singleTaskCardToEdit.msoc,
+        execution: singleTaskCardToEdit.execution,
+        planning: singleTaskCardToEdit.planning,
+        conception: singleTaskCardToEdit.conception,
+        cardDefinition: singleTaskCardToEdit.cardDefinition,
+        cardImage: singleTaskCardToEdit.cardImage,
+        cardName: singleTaskCardToEdit.cardName,
         householdId,
         assignedUserId: null,
       };
       console.warn(taskCardObj);
-      addTaskCard(taskCardObj).then(() => getHouseholdTaskCards().then((response) => setSingleTaskCard(response)));
-      setSingleTaskCard({
+      addTaskCard(taskCardObj).then(() => getHouseholdTaskCards().then((response) => setHouseholdTaskCards(response)));
+      setSingleTaskCardToEdit({
         categoryTypeId: '',
         needTypeId: '',
         dailyGrind: false,
@@ -109,7 +110,6 @@ export default function HouseholdTaskForms({
         cardImage: '',
         cardName: '',
         householdId,
-        cardId: null,
         assignedUserId: null,
       });
     }
@@ -129,7 +129,7 @@ export default function HouseholdTaskForms({
           name='cardName'
           type='text'
           placeholder='Card Name'
-          value={singleTaskCard.cardName}
+          value={singleTaskCardToEdit.cardName}
           onChange={handleInputChange}
         ></Input>
       </Row>
@@ -139,7 +139,7 @@ export default function HouseholdTaskForms({
           name='cardDefinition'
           type='text'
           placeholder='Card Definition'
-          value={singleTaskCard.cardDefinition}
+          value={singleTaskCardToEdit.cardDefinition}
           onChange={handleInputChange}
         ></Input>
       </Row>
@@ -149,7 +149,7 @@ export default function HouseholdTaskForms({
           name='cardImage'
           type='text'
           placeholder='Card Image'
-          value={singleTaskCard.cardImage}
+          value={singleTaskCardToEdit.cardImage}
           onChange={handleInputChange}
         ></Input>
       </Row>
@@ -159,7 +159,7 @@ export default function HouseholdTaskForms({
           name='conception'
           type='text'
           placeholder='Conception'
-          value={singleTaskCard.conception}
+          value={singleTaskCardToEdit.conception}
           onChange={handleInputChange}
         ></Input>
       </Row>
@@ -169,32 +169,32 @@ export default function HouseholdTaskForms({
           name='planning'
           type='text'
           placeholder='Planning'
-          value={singleTaskCard.planning}
+          value={singleTaskCardToEdit.planning}
           onChange={handleInputChange}
         ></Input>
       </Row>
-      <Row>
         <Row>
           <Input
             className='taskCard'
             name='execution'
             type='text'
             placeholder='Execution'
-            value={singleTaskCard.execution}
+            value={singleTaskCardToEdit.execution}
             onChange={handleInputChange}
           ></Input>
         </Row>
+        <Row>
         <Input
           className='taskCard'
           name='msoc'
           type='text'
           placeholder='msoc'
-          value={singleTaskCard.msoc}
+          value={singleTaskCardToEdit.msoc}
           onChange={handleInputChange}
         ></Input>
       </Row>
-      <Row>
       <Label>Need Type:</Label>
+      <Row>
       <Select
         className="item"
         type="select"
@@ -207,15 +207,15 @@ export default function HouseholdTaskForms({
           <Option
             key={needType.id}
             value={needType.id}
-            selected={needType.id === singleTaskCard.needTypeId}
+            selected={needType.id === singleTaskCardToEdit.needTypeId}
           >
             {needType.needTypeName}
           </Option>
         ))}
       </Select>
       </Row>
-      <Row>
       <Label>Category Type:</Label>
+      <Row>
       <Select
         className="item"
         type="select"
@@ -228,7 +228,7 @@ export default function HouseholdTaskForms({
           <Option
             key={categoryType.id}
             value={categoryType.id}
-            selected={categoryType.id === singleTaskCard.categoryTypeId}
+            selected={categoryType.id === singleTaskCardToEdit.categoryTypeId}
           >
             {categoryType.categoryTypeName}
           </Option>
@@ -237,16 +237,16 @@ export default function HouseholdTaskForms({
       </Row>
       <Row2>
         <FormGroup check id='form-check'>
-          <ButtonImg></ButtonImg>
+          {/* <ButtonImg></ButtonImg> */}
           <Input
             type='checkbox'
             name='dailyGrind'
             onChange={handleCheckboxChange}
-            checked={singleTaskCard.dailyGrind}
-            value={singleTaskCard.daily}
+            checked={singleTaskCardToEdit.dailyGrind}
+            value={singleTaskCardToEdit.daily}
           />
-          <Label check> This is a daily Grind Card.</Label>
         </FormGroup>
+        <Label check>Daily Grind</Label>
       </Row2>
       <Button className='addCategory' type='submit'>
         Create Household
@@ -269,4 +269,5 @@ HouseholdTaskForms.propTypes = {
   needTypeId: PropTypes.string,
   categoryTypeId: PropTypes.string,
   assignedUserId: PropTypes.string,
+  setHouseholdTaskCards: PropTypes.func,
 };

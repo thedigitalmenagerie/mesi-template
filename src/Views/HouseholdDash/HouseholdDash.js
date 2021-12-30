@@ -22,11 +22,12 @@ import { HouseholdTaskCards } from '../../Components/Cards/TaskCards/TaskCards';
 import NavBar from '../../Components/NavBar/NavBar';
 import add from '../../Assets/addHouseholdButton.png';
 import exitModal from '../../Assets/exitModal.png';
-import { getHouseholdTaskCards } from '../../Helpers/Data/cardsData';
+import { getUndeclaredCards } from '../../Helpers/Data/cardsData';
 
 export const HouseholdDash = ({
   user,
   households,
+  householdMembers,
   steps,
   users
 }) => {
@@ -35,7 +36,7 @@ export const HouseholdDash = ({
   const { householdId } = useParams();
 
   useEffect(() => {
-    getHouseholdTaskCards(householdId).then((response) => setHouseholdTaskCards(response));
+    getUndeclaredCards(user.id, householdId).then((resp) => setHouseholdTaskCards(resp));
   }, []);
 
   function openModal() {
@@ -80,6 +81,7 @@ export const HouseholdDash = ({
               needTypeName={householdTaskCardInfo.needTypeName}
               categoryTypeName={householdTaskCardInfo.categoryTypeName}
               households={households}
+              householdMembers={householdMembers}
               setHouseholdTaskCards={setHouseholdTaskCards}
               user={user}
               steps={steps}
@@ -94,8 +96,8 @@ export const HouseholdDash = ({
               </Button>
             </ButtonContainer>
             <HouseholdTaskForms
+              householdMembers={householdMembers}
               households={households}
-              householdTaskCards={householdTaskCards}
               setHouseholdTaskCards={setHouseholdTaskCards}
               steps={steps}
               users={users}
@@ -108,6 +110,7 @@ export const HouseholdDash = ({
 };
 
 HouseholdDash.propTypes = {
+  householdMembers: PropTypes.any,
   households: PropTypes.any,
   user: PropTypes.any,
   steps: PropTypes.any,

@@ -88,6 +88,7 @@ export default function HouseholdForms({
 
   const handleClick = () => {
     members.forEach((member) => addHouseholdMember(member).then((response) => setMembers(response)));
+    getHouseholdWithDetails(user.id).then((response) => setHouseholds(response));
   };
 
   const handleSubmit = (e) => {

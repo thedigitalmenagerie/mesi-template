@@ -26,11 +26,14 @@ export const Row = styled.div`
   width: 100%;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
 `;
 
 export const Row2 = styled.div`
-  background-color: #D7F9F8;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 export const Row3 = styled.div`
   background-color: #B0D4B8;

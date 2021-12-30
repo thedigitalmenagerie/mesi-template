@@ -22,8 +22,20 @@ const addTaskCard = (card) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
+const deleteTaskCard = (cardId) => new Promise((resolve, reject) => {
+  axios.delete(`${dbUrl}/api/dash/cards/${cardId}`)
+    .then((response) => resolve(response))
+    .catch((error) => reject(error));
+});
+
 const updateTaskCard = (id, card) => new Promise((resolve, reject) => {
   axios.put(`${dbUrl}/api/dash/cards/${id}`, card)
+    .then((response) => resolve(response.data))
+    .catch((error) => reject(error));
+});
+
+const getUndeclaredCards = (userId, houseHoldId) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/api/dash/cards/declarations/${userId}/${houseHoldId}`)
     .then((response) => resolve(response.data))
     .catch((error) => reject(error));
 });
@@ -32,5 +44,7 @@ export {
   getHouseholdTaskCards,
   getSingleHouseholdTaskCard,
   addTaskCard,
-  updateTaskCard
+  updateTaskCard,
+  deleteTaskCard,
+  getUndeclaredCards
 };

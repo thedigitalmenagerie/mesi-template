@@ -84,8 +84,10 @@ export const Modal = styled.div`
   z-index: 999;
   width: 100%;
   height: 100%;
-  display: grid;
-  align-items: center;
+  background: #5D7B6F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   top: 0;
   left: 0;
   transitionL 0.3s ease-in-out;
@@ -209,6 +211,7 @@ export const MainTaskCardRightBottom = styled.div`
   flex-direction: column;
   margin-top: 30px;
   text-align: center;
+  margin-bottom: 30px;
 `;
 
 export const DailyGrindDiv = styled.div`
