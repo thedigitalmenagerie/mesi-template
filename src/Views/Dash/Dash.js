@@ -51,41 +51,44 @@ export const Dash = ({
             </AddHouseholdButton>
           </AddButtonContainer>
           </HouseholdTopRow>
-          <HouseholdBottomRow>
-          <Modal
-            isOpen={modalIsOpen}
-            className="Modal"
-          >
-            <ButtonContainer>
-              <Button className="modalClose" onClick={closeModal}>
-                <ButtonImg src={exitModal}/>
-              </Button>
-            </ButtonContainer>
-            <HouseholdForms
-              setHouseholds={setHouseholds}
-              households={households}
-              steps={steps}
-              users={users}
-              user={user}
-            />
-          </Modal>
-          {households?.map((householdInfo) => (
-            <HouseholdCards
-              key={householdInfo.householdId}
-              householdId={householdInfo.householdId}
-              householdName={householdInfo.householdName}
-              hasPets={householdInfo.hasPets}
-              hasKids={householdInfo.hasKids}
-              hasRomance={householdInfo.hasRomance}
-              stepName={householdInfo.stepName}
-              setHouseholds={setHouseholds}
-              households={households}
-              user={user}
-              steps={steps}
-              users={users}
-            />
-          ))}
-          </HouseholdBottomRow>
+          { households.length === 0
+            ? <div>Create a shared space!</div>
+            : <HouseholdBottomRow>
+              {households?.map((householdInfo) => (
+                <HouseholdCards
+                  key={householdInfo.householdId}
+                  householdId={householdInfo.householdId}
+                  householdName={householdInfo.householdName}
+                  hasPets={householdInfo.hasPets}
+                  hasKids={householdInfo.hasKids}
+                  hasRomance={householdInfo.hasRomance}
+                  stepName={householdInfo.stepName}
+                  setHouseholds={setHouseholds}
+                  households={households}
+                  user={user}
+                  steps={steps}
+                  users={users}
+                />
+              ))}
+              </HouseholdBottomRow>
+            }
+              <Modal
+                isOpen={modalIsOpen}
+                className="Modal"
+              >
+                <ButtonContainer>
+                  <Button className="modalClose" onClick={closeModal}>
+                    <ButtonImg src={exitModal}/>
+                  </Button>
+                </ButtonContainer>
+                <HouseholdForms
+                  setHouseholds={setHouseholds}
+                  households={households}
+                  steps={steps}
+                  users={users}
+                  user={user}
+                />
+              </Modal>
         </HouseholdWrapper>
       </HouseholdContainer>
   );

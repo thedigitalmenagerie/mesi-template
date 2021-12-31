@@ -16,6 +16,10 @@ import {
   HouseholdTaskCardTopRow,
   ButtonContainer,
   HouseholdTaskCardBottomRow,
+  CommunityAgreementWrapper,
+  Title,
+  Subtitle,
+  CommunityAgreementTitle
 } from './HouseholdElements';
 import HouseholdTaskForms from '../../Components/Forms/CardForms/HouseholdTaskForms';
 import { HouseholdTaskCards } from '../../Components/Cards/TaskCards/TaskCards';
@@ -62,7 +66,19 @@ export const HouseholdDash = ({
             </AddHouseholdTaskCardButton>
           </AddButtonContainer>
         </HouseholdTaskCardTopRow>
-        <HouseholdTaskCardBottomRow className="HouseholdTaskCardBottomRow">
+        { householdTaskCards.length === 0
+          ? <CommunityAgreementWrapper
+              className='CommunityAgreementWrapper'
+              id='CommunityAgreements'
+            >
+              <CommunityAgreementTitle className='CommunityAgreementTitle'>
+                <Title className='Title'>You are currently waiting on other members of your household.</Title>
+                <Subtitle className='subTitle'>
+                  Return to your household when all users have completed this step to continue.
+                </Subtitle>
+              </CommunityAgreementTitle>
+            </CommunityAgreementWrapper>
+          : <HouseholdTaskCardBottomRow className="HouseholdTaskCardBottomRow">
           {householdTaskCards?.map((householdTaskCardInfo) => (
             <HouseholdTaskCards
               key={householdTaskCardInfo.cardId}
@@ -89,6 +105,7 @@ export const HouseholdDash = ({
             />
           ))}
         </HouseholdTaskCardBottomRow>
+        }
         <Modal isOpen={modalIsOpen} className='Modal'>
             <ButtonContainer>
               <Button className='modalClose' onClick={closeModal}>

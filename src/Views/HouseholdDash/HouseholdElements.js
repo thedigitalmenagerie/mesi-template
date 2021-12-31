@@ -84,3 +84,27 @@ border: none;
 cursor:pointer;
 overflow: hidden;
 `;
+
+export const CommunityAgreementWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  color: #5D7B6F;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 #212529;
+  padding: 75px;
+  margin-top: 25px;
+  background-color: #EAE7D6;
+`;
+
+export const Title = styled.div`
+  text-align: center;
+  font-weight: bold;
+`;
+
+export const Subtitle = styled.div`
+  text-align: center;
+  font-weight: bold;
+`;
+
+export const CommunityAgreementTitle = styled.div``;
