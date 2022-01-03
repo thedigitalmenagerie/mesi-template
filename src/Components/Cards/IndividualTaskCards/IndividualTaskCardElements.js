@@ -17,14 +17,14 @@ export const SideTaskCard = styled.div`
   margin: 20px;
   box-shadow: 0 8px 16px 0 #212529;
   position: fixed;
-//   z-index: 999;
-//   display: grid;
-//   align-items: center;
+  //   z-index: 999;
+  //   display: grid;
+  //   align-items: center;
   top: 0;
   left: 0;
-//   transitionL 0.3s ease-in-out;
-//   opacity:  ${({ isOpen }) => (isOpen ? '0' : '100%')};
-//   top: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  //   transitionL 0.3s ease-in-out;
+  //   opacity:  ${({ isOpen }) => (isOpen ? '0' : '100%')};
+  //   top: ${({ isOpen }) => (isOpen ? '100%' : '0')};
 `;
 
 export const SideTaskCardTop = styled.div`
@@ -38,12 +38,12 @@ export const SideTaskCardTopLeft = styled.div`
   display: flex;
   flex-direction: column;
   writing-mode: vertical-rl;
-  color: #B0D4B8;
+  color: #b0d4b8;
   font-weight: bold;
 `;
 
 export const SideTaskCardTopRight = styled.div`
-  color: #5D7B6F;
+  color: #5d7b6f;
   font-size: xx-small;
 `;
 
@@ -100,10 +100,10 @@ export const Button = styled.button`
   flex-direction: row;
   justify-content: center;
   background-color: Transparent;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   border: none;
-  cursor:pointer;
-  overflow: hidden; 
+  cursor: pointer;
+  overflow: hidden;
 `;
 
 export const Img = styled.img`
@@ -121,14 +121,14 @@ export const ValueButton = styled.button`
   flex-direction: row;
   justify-content: center;
   background-color: Transparent;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   border: none;
-  cursor:pointer;
-  overflow: hidden; 
+  cursor: pointer;
+  overflow: hidden;
 `;
 
 export const ValueButtonImg = styled.img`
-  width: 25px; 
+  width: 25px;
 `;
 
 export const ValueButtonImg2 = styled.img`
@@ -139,7 +139,7 @@ export const ValueButtonImg2 = styled.img`
 export const MainTaskCard = styled.div`
   display: flex;
   flex-direction: row;
-  background-color: #B0D4B8;
+  background-color: #b0d4b8;
   margin-top: 50px;
   margin-left: 20px;
   margin-right: 20px;
@@ -160,7 +160,7 @@ export const MainTaskCardRight = styled.div`
   margin-left: 100px;
   font-size: small;
   font-weight: bold;
-  color: #5D7B6F;
+  color: #5d7b6f;
 `;
 
 export const MainTaskCardRightTop = styled.div`
@@ -168,7 +168,7 @@ export const MainTaskCardRightTop = styled.div`
   flex-direction: column;
   font-size: small;
   font-weight: bold;
-  color: #5D7B6F;
+  color: #5d7b6f;
   margin-top: 30px;
 `;
 
@@ -177,15 +177,14 @@ export const MainTaskCardRightMiddle = styled.div`
   flex-direction: row;
   font-size: small;
   font-weight: bold;
-  color: #5D7B6F;
+  color: #5d7b6f;
   justify-content: space-around;
   margin-top: 30px;
 `;
 
 export const MainTaskCardRightMiddleTop = styled.div``;
 
-export const MainTaskCardRightMiddleBottom = styled.div`
-`;
+export const MainTaskCardRightMiddleBottom = styled.div``;
 
 export const MainTaskCardRightMiddleBottomLeft = styled.div`
   width: 30%;
@@ -200,10 +199,10 @@ export const MainTaskCardRightMiddleBottomRight = styled.div`
 `;
 
 export const Title = styled.div`
- font-weight: bold;
- font-size: larger;
- color: #D7F9F8;
- text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  color: #d7f9f8;
+  text-align: center;
 `;
 
 export const MainTaskCardRightBottom = styled.div`
@@ -217,6 +216,6 @@ export const MainTaskCardRightBottom = styled.div`
 export const DailyGrindDiv = styled.div`
   font-size: small;
   font-weight: bold;
-  color: #5D7B6F;
+  color: #5d7b6f;
   padding-bottom: 30px;
 `;

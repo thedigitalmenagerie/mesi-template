@@ -90,7 +90,7 @@ const IndividualTaskCard = () => {
       <SideTaskCardBottom className="SideTaskCardBottom">
           <SideTaskCardBottomLeft className="SideTaskCardBottomLeft">
             <SideTaskCardBottomLeftInner className="SideTaskCardBottomLeftInner">
-              { (singleTaskCard.dailyGrind === 'true')
+              { (singleTaskCard.dailyGrind === true)
                 ? <div></div>
                 : <ValueButtonImg2 src={daily}/>
               }

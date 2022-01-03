@@ -3,7 +3,10 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import HouseholdForms from '../../Forms/HouseholdForms/HouseholdForm';
-import { getHouseholdMembers, getHouseholdWithDetails } from '../../../Helpers/Data/householdMembersData';
+import {
+  getHouseholdMembers,
+  getHouseholdWithDetails,
+} from '../../../Helpers/Data/householdMembersData';
 import {
   HouseholdCard,
   HouseholdTop,
@@ -18,7 +21,7 @@ import {
   Button,
   Modal,
   Img,
-  DeleteImg
+  DeleteImg,
 } from './HouseholdCardElements';
 import home from '../../../Assets/homeLogo.png';
 import pets from '../../../Assets/petsGreen.png';
@@ -62,7 +65,7 @@ export const HouseholdCards = ({
         } else if (stepName === 'Two') {
           history.push(`/dashboard/${householdId}`);
         } else if (stepName === 'Three') {
-          history.push('/dashboard');
+          history.push(`/dashboard/${householdId}/${stepName}/valuechartview`);
         } else if (stepName === 'Four') {
           history.push('/dashboard');
         } else if (stepName === 'Five') {
@@ -86,66 +89,88 @@ export const HouseholdCards = ({
   }, []);
 
   return (
-    <HouseholdCard className='HouseholdCard' key={householdId} id='HouseholdCard'>
+    <HouseholdCard
+      className='HouseholdCard'
+      key={householdId}
+      id='HouseholdCard'
+    >
       <HouseholdTop className='HouseholdTop'>
         <HouseholdTopLeft className='HouseholdTopLeft'>
-          { (hasPets !== true)
-            ? <div></div>
-            : <HouseholdTypeContainer className="HouseholdTypeContainer"><Img src={pets}/></HouseholdTypeContainer>
-          }
-          { (hasKids !== true)
-            ? <div></div>
-            : <HouseholdTypeContainer><Img src={kids}/></HouseholdTypeContainer>
-          }
-          { (hasRomance !== true)
-            ? <div></div>
-            : <HouseholdTypeContainer><Img src={romance}/></HouseholdTypeContainer>
-          }
+          {hasPets !== true ? (
+            <div></div>
+          ) : (
+            <HouseholdTypeContainer className='HouseholdTypeContainer'>
+              <Img className='Img' src={pets} />
+            </HouseholdTypeContainer>
+          )}
+          {hasKids !== true ? (
+            <div></div>
+          ) : (
+            <HouseholdTypeContainer className='HouseholdTypeContainer'>
+              <Img className='Img' src={kids} />
+            </HouseholdTypeContainer>
+          )}
+          {hasRomance !== true ? (
+            <div></div>
+          ) : (
+            <HouseholdTypeContainer className='HouseholdTypeContainer'>
+              <Img className='Img' src={romance} />
+            </HouseholdTypeContainer>
+          )}
         </HouseholdTopLeft>
-        <HouseholdTopRight className="HouseholdTopRight">
+        <HouseholdTopRight className='HouseholdTopRight'>
           {householdName}
         </HouseholdTopRight>
       </HouseholdTop>
-      <HouseholdMiddle className="HouseholdMiddle">
-          <Button className="HouseholdCardButton">
-            <HouseholdCardImg className='HouseholdCardImg' src={home} onClick={() => handleClick('view')} />
-          </Button>
-        </HouseholdMiddle>
-      <HouseholdBottom className="HouseholdBottom">
-          <HouseholdBottomLeft className="HouseholdBottomLeft">
-           Phase {stepName}
-          </HouseholdBottomLeft>
-          <HouseholdBottomRight className="HouseholdBottomRight">
-          <Button className="HouseholdCardButton">
-            <DeleteImg className='HouseholdCardImg' src={edit} onClick={openModal} />
-          </Button>
-          <Button className="HouseholdCardButton">
-            <DeleteImg className='HouseholdCardImg' src={deleted} onClick={() => handleClick('delete')} />
-          </Button>
-          </HouseholdBottomRight>
-        </HouseholdBottom>
-        <Modal
-          className='Modal'
-          isOpen={modalIsOpen}
-        >
-          <Button className='modalClose' onClick={closeModal}>
-            <DeleteImg src={exitModal}/>
-          </Button>
-          <HouseholdForms
-            householdId={householdId}
-            user={user}
-            householdName={householdName}
-            hasPets={hasPets}
-            hasKids={hasKids}
-            hasRomance={hasRomance}
-            stepName={stepName}
-            setHouseholds={setHouseholds}
-            steps={steps}
-            users={users}
-            householdMembers={householdMembers}
-            setHouseholdMembers={setHouseholdMembers}
+      <HouseholdMiddle className='HouseholdMiddle'>
+        <Button className='HouseholdCardButton'>
+          <HouseholdCardImg
+            className='HouseholdCardImg'
+            src={home}
+            onClick={() => handleClick('view')}
           />
-        </Modal>
+        </Button>
+      </HouseholdMiddle>
+      <HouseholdBottom className='HouseholdBottom'>
+        <HouseholdBottomLeft className='HouseholdBottomLeft'>
+          Phase {stepName}
+        </HouseholdBottomLeft>
+        <HouseholdBottomRight className='HouseholdBottomRight'>
+          <Button className='HouseholdCardButton'>
+            <DeleteImg
+              className='HouseholdCardImg'
+              src={edit}
+              onClick={openModal}
+            />
+          </Button>
+          <Button className='HouseholdCardButton'>
+            <DeleteImg
+              className='HouseholdCardImg'
+              src={deleted}
+              onClick={() => handleClick('delete')}
+            />
+          </Button>
+        </HouseholdBottomRight>
+      </HouseholdBottom>
+      <Modal className='Modal' isOpen={modalIsOpen}>
+        <Button className='modalClose' onClick={closeModal}>
+          <DeleteImg src={exitModal} />
+        </Button>
+        <HouseholdForms
+          householdId={householdId}
+          user={user}
+          householdName={householdName}
+          hasPets={hasPets}
+          hasKids={hasKids}
+          hasRomance={hasRomance}
+          stepName={stepName}
+          setHouseholds={setHouseholds}
+          steps={steps}
+          users={users}
+          householdMembers={householdMembers}
+          setHouseholdMembers={setHouseholdMembers}
+        />
+      </Modal>
     </HouseholdCard>
   );
 };

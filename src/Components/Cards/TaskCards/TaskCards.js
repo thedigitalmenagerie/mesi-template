@@ -78,7 +78,7 @@ export const HouseholdTaskCards = ({
       <HouseholdBottom className="HouseholdBottom">
           <HouseholdBottomLeft className="HouseholdBottomLeft">
             <HouseholdBottomLeftInner className="HouseholdBottomLeftInner">
-              { (dailyGrind === 'true')
+              { (dailyGrind === true)
                 ? <div></div>
                 : <ValueButtonImg2 src={daily}/>
               }

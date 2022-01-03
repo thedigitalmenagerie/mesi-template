@@ -1,5 +1,5 @@
 /* eslint-disable quotes */
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HouseholdCard = styled.div`
   display: flex;
@@ -10,8 +10,8 @@ export const HouseholdCard = styled.div`
   background-color: #eae7d6;
   color: #5d7b6f;
   padding: 10px;
-  opacity:  ${({ isOpen }) => (isOpen ? '0' : '100%')};
-  top: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  opacity: ${({ isOpen }) => (isOpen ? "0" : "100%")};
+  top: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   box-shadow: 0 8px 16px 0 #212529;
 `;
 
@@ -70,8 +70,8 @@ justify-content: center;
 top: 0;
 left: 0;
 transitionL 0.3s ease-in-out;
-opacity:  ${({ isOpen }) => (isOpen ? '100%' : '0')};
-top: ${({ isOpen }) => (isOpen ? '0' : '100%')};
+opacity:  ${({ isOpen }) => (isOpen ? "100%" : "0")};
+top: ${({ isOpen }) => (isOpen ? "0" : "100%")};
 `;
 
 export const Button = styled.button`
@@ -79,10 +79,10 @@ export const Button = styled.button`
   flex-direction: row;
   justify-content: center;
   background-color: Transparent;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   border: none;
-  cursor:pointer;
-  overflow: hidden; 
+  cursor: pointer;
+  overflow: hidden;
 `;
 
 export const Img = styled.img`

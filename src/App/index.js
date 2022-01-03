@@ -17,7 +17,9 @@ export default function App() {
   useEffect(() => {
     firebase.auth().onAuthStateChanged((userObj) => {
       if (userObj) {
-        userObj.getIdToken().then((token) => sessionStorage.setItem('token', token));
+        userObj
+          .getIdToken()
+          .then((token) => sessionStorage.setItem('token', token));
         getUserByEmail(userObj.email).then((responseObj) => {
           if (responseObj !== '') {
             setUser(responseObj);
