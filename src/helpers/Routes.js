@@ -11,6 +11,7 @@ import { WaitingView } from '../Views/WaitingView/WaitingView';
 import { UnassignedChartView } from '../Views/UnassignedChartView/UnassignedChartView';
 import { NewVow } from '../Views/NewVow/NewVow';
 import { HowTo } from '../Views/HowTo/HowTo';
+import { AssignView } from '../Views/AssignView/AssignView';
 
 const PrivateRoute = ({ component: Component, user, ...rest }) => {
   // eslint-disable-next-line no-confusing-arrow
@@ -79,6 +80,30 @@ function Routes({
           path='/dashboard/:householdId'
           component={() => (
             <HouseholdDash
+              user={user}
+              setUser={setUser}
+              steps={steps}
+              setSteps={setSteps}
+              users={users}
+              setUsers={setUsers}
+              households={households}
+              setHouseholds={setHouseholds}
+            />
+          )}
+          user={user}
+          setUser={setUser}
+          steps={steps}
+          setSteps={setSteps}
+          users={users}
+          setUsers={setUsers}
+          households={households}
+          setHouseholds={setHouseholds}
+        />
+        <PrivateRoute
+          exact
+          path='/dashboard/:householdId/assignView'
+          component={() => (
+            <AssignView
               user={user}
               setUser={setUser}
               steps={steps}

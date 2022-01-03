@@ -29,7 +29,7 @@ function NavBar({ user }) {
             </LogoButton>
           </Link>
         </NavLeft>
-        <Link to='/dashboard/howTo'>
+        <Link to='/howTo'>
             <LogoButton>
               <Img src={faq}/>
             </LogoButton>

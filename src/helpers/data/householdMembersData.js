@@ -22,6 +22,12 @@ const getHouseholdMembers = (householdId) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
+const getHouseholdMembersWithUserInfo = (householdId) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/api/householdMembers/byHouseholdWithUserInfo/${householdId}`)
+    .then((response) => resolve(response.data))
+    .catch((error) => reject(error));
+});
+
 const getSingleHouseholdMember = (householdId) => new Promise((resolve, reject) => {
   axios.get(`${dbUrl}/api/householdMembers/byHousehold/${householdId}`)
     .then((response) => resolve(response.data))
@@ -39,5 +45,6 @@ export {
   addHouseholdMember,
   getHouseholdMembers,
   getSingleHouseholdMember,
-  updateHouseholdMember
+  updateHouseholdMember,
+  getHouseholdMembersWithUserInfo
 };

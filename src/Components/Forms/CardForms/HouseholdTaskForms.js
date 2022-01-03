@@ -51,7 +51,7 @@ export default function HouseholdTaskForms({
     cardName: cardName || '',
     householdId,
     cardId: cardId || null,
-    assignedUserId: assignedUserId || null,
+    assignedUserId: assignedUserId || '',
   });
 
   const [needTypes, setNeedTypes] = useState([]);
@@ -94,7 +94,7 @@ export default function HouseholdTaskForms({
         cardImage: singleTaskCardToEdit.cardImage,
         cardName: singleTaskCardToEdit.cardName,
         householdId,
-        assignedUserId: null,
+        assignedUserId: singleTaskCardToEdit.assignedUserId,
       };
       console.warn(taskCardObj);
       addTaskCard(taskCardObj).then(() => getHouseholdTaskCards().then((response) => setHouseholdTaskCards(response)));

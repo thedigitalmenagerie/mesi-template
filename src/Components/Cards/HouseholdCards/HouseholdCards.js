@@ -67,7 +67,7 @@ export const HouseholdCards = ({
         } else if (stepName === 'Three') {
           history.push(`/dashboard/${householdId}/${stepName}/valuechartview`);
         } else if (stepName === 'Four') {
-          history.push('/dashboard');
+          history.push(`/dashboard/${householdId}/assignView`);
         } else if (stepName === 'Five') {
           history.push('/dashboard');
         } else if (stepName === 'Six') {
