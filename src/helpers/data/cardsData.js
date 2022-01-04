@@ -22,10 +22,16 @@ const getSingleHouseholdTaskCard = (cardId) => new Promise((resolve, reject) => 
     .catch((error) => reject(error));
 });
 
-const addTaskCard = (card, householdId) => new Promise((resolve, reject) => {
+const getUndeclaredCards = (userId, houseHoldId) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/api/dash/cards/declarations/${userId}/${houseHoldId}`)
+    .then((response) => resolve(response.data))
+    .catch((error) => reject(error));
+});
+
+const addTaskCard = (userId, card, householdId) => new Promise((resolve, reject) => {
   axios.post(`${dbUrl}/api/dash/cards`, card)
     .then(() => {
-      getHouseholdTaskCards(householdId).then((response) => resolve(response));
+      getUndeclaredCards(userId, householdId).then((response) => resolve(response));
     })
     .catch((error) => reject(error));
 });
@@ -36,17 +42,11 @@ const deleteTaskCard = (cardId) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-const updateTaskCard = (id, card, householdId) => new Promise((resolve, reject) => {
+const updateTaskCard = (userId, id, card, householdId) => new Promise((resolve, reject) => {
   axios.put(`${dbUrl}/api/dash/cards/${id}`, card)
     .then(() => {
-      getHouseholdTaskCards(householdId).then((response) => resolve(response));
+      getUndeclaredCards(userId, householdId).then((response) => resolve(response));
     })
-    .catch((error) => reject(error));
-});
-
-const getUndeclaredCards = (userId, houseHoldId) => new Promise((resolve, reject) => {
-  axios.get(`${dbUrl}/api/dash/cards/declarations/${userId}/${houseHoldId}`)
-    .then((response) => resolve(response.data))
     .catch((error) => reject(error));
 });
 

@@ -23,7 +23,7 @@ import { HouseholdTaskCards } from '../../Components/Cards/TaskCards/TaskCards';
 import NavBar from '../../Components/NavBar/NavBar';
 import add from '../../Assets/addHouseholdButton.png';
 import exitModal from '../../Assets/exitModal.png';
-import { getHouseholdTaskCards } from '../../Helpers/Data/cardsData';
+import { getUndeclaredCards } from '../../Helpers/Data/cardsData';
 
 export const HouseholdDash = ({
   user,
@@ -38,7 +38,7 @@ export const HouseholdDash = ({
   console.warn(householdTaskCards);
 
   useEffect(() => {
-    getHouseholdTaskCards(householdId).then((resp) => setHouseholdTaskCards(resp));
+    getUndeclaredCards(user.id, householdId).then((resp) => setHouseholdTaskCards(resp));
   }, []);
 
   function openModal() {
