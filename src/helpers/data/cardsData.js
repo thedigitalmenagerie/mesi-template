@@ -10,15 +10,23 @@ const getHouseholdTaskCards = (householdId) => new Promise((resolve, reject) => 
     .catch((error) => reject(error));
 });
 
+const getHouseholdTaskCardsByAssignedUser = (householdId, assignedUserId) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/api/dash/households/${householdId}/${assignedUserId}`)
+    .then((response) => resolve(response.data))
+    .catch((error) => reject(error));
+});
+
 const getSingleHouseholdTaskCard = (cardId) => new Promise((resolve, reject) => {
   axios.get(`${dbUrl}/api/dash/cardswithdetail/${cardId}`)
     .then((response) => resolve(response.data))
     .catch((error) => reject(error));
 });
 
-const addTaskCard = (card) => new Promise((resolve, reject) => {
+const addTaskCard = (card, householdId) => new Promise((resolve, reject) => {
   axios.post(`${dbUrl}/api/dash/cards`, card)
-    .then((response) => resolve(response.data))
+    .then(() => {
+      getHouseholdTaskCards(householdId).then((response) => resolve(response));
+    })
     .catch((error) => reject(error));
 });
 
@@ -28,9 +36,11 @@ const deleteTaskCard = (cardId) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-const updateTaskCard = (id, card) => new Promise((resolve, reject) => {
+const updateTaskCard = (id, card, householdId) => new Promise((resolve, reject) => {
   axios.put(`${dbUrl}/api/dash/cards/${id}`, card)
-    .then((response) => resolve(response.data))
+    .then(() => {
+      getHouseholdTaskCards(householdId).then((response) => resolve(response));
+    })
     .catch((error) => reject(error));
 });
 
@@ -46,5 +56,6 @@ export {
   addTaskCard,
   updateTaskCard,
   deleteTaskCard,
-  getUndeclaredCards
+  getUndeclaredCards,
+  getHouseholdTaskCardsByAssignedUser
 };

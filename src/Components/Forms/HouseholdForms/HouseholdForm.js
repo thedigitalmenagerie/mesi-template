@@ -103,7 +103,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/gL3WoSBpQg-ju93Zgg7bebNM5Bb8U3UCbsykFgvg5PiuUctcJJ-NWrktjGK1pDakQCFbMUk7pJS6eCqU54LeyGQlz8Vrl2kjCBfCzk0FZ6VQZYna90HJ62J-Tsfk_48oBVGVwyv8UAQDgp5jyfuXbWJyZr4MDJ3xenMVpCS_oPrb62BRY6nlZgpIdfvf3QXeWExYvXaLBPJ6dIqpihjugnh9A-j6NvCJa6p6UHsVKnwnSwu7l3RDpmKkyk1qHDTZuNVZM7xQQNGHj8vo-hyLT_J561bHrOsNvKXXMfMScWQL1cJsWZVwtFTkdTUopKrYrT1PLVGG1J5WfmuZOkDVWPjDWvDsc4Pdrxx03l_F3-iFMOcFJXL_JZzrCXeGLTsST5YWJOpPtEI1kp6w2z4prfal61IFaZjslH9M78ymKtFxSDZszCzP5I63B7i8B7a_WJqcGQ_lpPqqRYwhcSuDUKlaA4-GZOuS5b08OtagkpEokALXjqyVHBCNR5CQwXVSeyswPRlfNOqAU8w5gHDysrldkdSjpzKHt_QVU2stcHUUo44D_E-AHvoSQ1JGCI86RLlFGX0lyPdGnTQuEgpbuYKCrx387vcgNZ3ft0nF9FHinlrOs8fa6s0iQ5Iy9hoJNwvo3EtFsf0Yl8En9Osg-3fKBZNiXR9K__VS_THtSB0wzEeXsHrzqt6Xbl3oqkMsz8w4WFNvwEEhLtFqxl6lsJyh=s500-no?authuser=0',
         cardName: 'Cleaning',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -117,7 +116,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/l7CezZwVr93WcyzNhiAr5nTuyAqxX5risEoKOx-aMTVMezDovcWliCvVDNSdzy15f0pb_JpA9OqcQcwW-45O50jlbAXO0g5v0I3YHZUf8deBeGb539qsRn4xfQPqzD4BtTvjr3qvE0Kf8Vbyd89De_DMDsiiw0adNYAKvXGSSSBEhR1Qd8GLOGj9Iqw0LGsXeKBg04MyBU19x1-HbLLXOMNK1xE9RuP-NCNOAUM6fnqg2-VfuoIdE_nF5hPODSR1y4W59mI-0FcKgGeGKbUVt3CfOL4ek_b3fCNkNEPoVYw_eiqZXS69mhutLMNQkwAo9Mq8Eym3-wl2dWPRvg_wp6yX__TZrlbAyys7WAwW9zLGN88FoS0cc2IIu30JwoC9zzjFUzVJWHtkyUyYq3A1AMkFWDVPhVDFdkrJCoJu-9XkelUZTp_zox8Ixv-vE_m4Sf0BCMZffkpvjiv_U0O1UgWMRjEYftARMlVS48zx48pUVKvzmkytP9FvHu84Rz2Eoh7Vl2WF19GRlJI2MHcX0jF19dRKwWMxTcvr6tquq3X5Vqn1Jyw6IwF5RBkyU8RMVPJJUb_HyDMZT_UEm9bwY-4beG3KTu8L9ZHwYAgLKO7NvWL6GItrBlaLqBQxZWoJqmaCPQfPyDcLvlXlX5PbmhVf0CK4rzfcpvIkZ7-O1ox5G5gJ5_uHolecEDEbPeHmGDya__rtcmqpv6wk1QoN6RF-=s500-no?authuser=0',
         cardName: 'Dishes',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -131,7 +129,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/VFV1hfUvaGdDse-SFuDnhPr3_ePPylIqRUOjBuuZR52WmM2QoJjiJXR28NlUUn_3Gf2282X5WBe2lSgNKwj1Sff9KdcHyzX9juB7rK0NFgVT79Jr0SW9HbwLmrMA-7ctvyuMyP5ZL8i1EfoH5F2Gh9gq6EVQtZXY3wqt-OjHaxA9I0JLDJoNh89gN-9JTwCYGrJAG7M6f7EeeIbhilPi7NF8fvVoeSRQK5NzUjCfuh2dTsz9BCFs1i-htm6pG5uB9rwZEb3TaKgUFtTnSIZvDTqqpWpQnefEPAiUDVTQGZ5bedClKpWhv8g10F4GAbn6ItqoKnc7NlenvT2365MkBCtwBfkukhWAl5AbxI0GkdunfuG0SeRr8RqErPm-KrfixK_GrifR_3jRCsu7Wkf8z37KIMMSdJuwIoA_kySw7A4J9Gbav2MGHRjWMU4YtCbt9a-3P0svveAkM6DdBf2kik55JGGPOMW24Sseme5PCoP-8skTqYSrD-Srz-NuYIevLlmYzOjBPu2Xr-fPE504_jupEn1-lSlEq38PLRIEsoDFOUJZRRILIV9GoOWymMsuHGyqyC-ArI06yX6u-O0C19WK-nm9QtLsulvnCBZEbQct7OUm6k3gsmmeGMwMGbhl_DRMG_xgYGApbt8ssPqLu65rao3CV6t-wOBwVbVnMZ4NQWeZh10WsHBnHXkxhHe5ZDUcMpYIZCS00-XKidorg9Hi=s500-no?authuser=0',
         cardName: 'Dry Cleaning',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -145,7 +142,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/B8daTvxrazdFcFaQPUulbd36CnWT3qSuAuWyS48BiQA8H630nKuiREZsBf3liyD2UPbuWXvW6kUaeiT1VXqluohFJbW48btb8lIIyT97xCVgE3fuUuhfCjWG8lzVwJWHrMKX-VSq0xFbYgWBZ3oFL0eZ0jPKyiITRCCb1gsFWbrjtGsF_Fz6H5bO6Ki2dddyasLI4Dw39v7iOFEuJ6q2krBoyQT0hGRQNLRr0K6enELqnKgea3VxnJOa0-ZvP8vaHKGLhWmIzSMJcdlIHqj3bUaOs45dmItrVEss14wT4DsNMfp3VL0RfxiVgn3_r__EgB3ebm4A416V9eHrjDiujOFgWn7gXWVVdCyTG3fHhIYt8RXfA8w5AxsUGBToiFP1RWmiMzJCG64pWhEaUfD79pK5KBC51PCj8ngZXqXdT_yEV3YgkpF4pXUIREWLGNGS6cZ6xRX9Y-7TBb4BlRNPFGPMa88EFTTiN0S0T279fK4Uh-Iiz5kWtnuy9JerofN5Ur2_80IILm8uteNze5CmaaqicVDiB9abmN85dHZmIHbyzv-_JtxlXTWRivgktv-lM2HmbHHQ4b6W7RDRTYgbiO_i8tocuenZeVGvdjid651ekJU-L9alBG1A3mNWCssK6QrCDUj5HuNqGoX-ArlQPSX1LLLLF8_yB07XWZvo00LB-kr_zO6nuZ7JkyzDokbmIeNa0aTL9efARbP3elUgY9nD=s500-no?authuser=0',
         cardName: 'Garbage',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -159,7 +155,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/kYxoB0FSgYX5YNhIfoqSoC8b5uHKHgAmrAV99GwwtV4FE9SYgd3ptgUIUpAW2eKHgy4Wrr7er9g0yZ9UDXyXhuVzEsTM207VUcSXYCeFDBYedqxq4s1gx2OYGYFQoZ3QXmBKuHm6i525Y8jihcH2xciMYIOL5ZNoSjGi9XkY3e208afG0FcWN1QEcQ4c8pPKxfizYyyny9lplhLg_K8PfR5oFpXKbs4pwCCGuC_s_5aoUtTHJF8-oRwyqUesogxfCM8ypkdttE4bgkztbvRPqRynZN1_OaqupG9fc_EL2hSrEG5am6QxDVRiDpl0HH9asFjvGRFcUZjilzSYiBMPdMK1GLhtL7-rnj8GO6l7xhPjiG23sWxehHbLjukexMuahqGyL7YxsUCnccXRoN79LxKOjS74WWGxYJBgKSMHwjBR27r3XVywbP8t-Kw2EjmRC2pgJ7W7JIoaoUuOItT6dbmROOga8fb02uMu4RT5heWtYBuI58leG8evaAIdt4uWkbsunQYmwuq0oTJ-Qsewnn11DYu5HuOWmGL1sfiKuf1gGnzqaCtqLwrX-TEoebR7a2rcdFM28f6PoW7YUfpUTFL4a0SIZHchz86mFA3bk6Y0UKvr2s2zz3XS33ipQ_scZcCIuL55k7up6fEhL2bcLUNXAQ_sI-lwVpC1AoZviUBe3KuS3twYoYfFxqiu0uVDBhbrOM8KWGcYE8xJMwB9HmrE=s500-no?authuser=0',
         cardName: 'Groceries',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -173,7 +168,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/t2IYuH3LkbmBqPD43fJcobtqm7LgzH6qL7zpvvtIJ9HKzf3_MrpzNhtjfhwVBeZtkYUGSQ9yeh9SU605Pxf-HKsgUW7I4USNbh57p9gzYFQOCdZ-G622RF6uWrQ_VzFOad2teGw1W7EmRthI-Qi8-88tCbUxyfk8-YARXu8qtpOkhn3bbGo7I1C7V7h0Oz9IK7nB2iGzJNQ62UfQPhIWwAevhIf8bF4KoeYnCRAQAw7QWvA1_PESdefdGxASTCXWA2TmX2ighRrFfSM-Yg0ChhrbfbMB-PWq0i27QOj6yHwrGs52EQ_Spe4WKesG-8G3gQXqBGtDQGSOFhY5qcK3bUfxcmXHtufthZBIWX06uOpTn4O1UAf2bld3Xugtslg8hG5ILT8IGiYhMhYEMErwpKw72qjCwD8R0T6E-PsNWxh3uLFPp5Npun0Brufb0I3YMpxHOSE1V1rzKHyluLnTO5v_Tc3cC-KTI8N819ozA0BgWimDs4L60Tz8z1vbgrTpsGiOkJ6UodcJI35eKrf4M2RFwl8bhjDtF2EE34e4jB-SANH_lenogAHar4_zsB8T9dR4HflEHZ1lO5QjbP8IXxXBv0IryexLL2tsiQj6wDPJ4A6yhIvZaZB8fzxlgcRQgc14h2kcS5zN7Lsufiz7OnkubPW1EGu1jm-kEGtd9jvxQHaIcVp1_pF_4AIWiJ-ayQB9SVpDofFm8OYH86vFhiVv=s500-no?authuser=0',
         cardName: 'Home Furnishings',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -187,7 +181,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/-6rTFG5jATCjLZ1ySFfetLtXDpBUjIVD0r1sWTaUMDDh7OxxZuhlsA4wM1uWMgVSa1BvgtjQkXQMIJjEqPkbEZkVlPPWM4WoPnnoqNuX1iLZhfI_P2QUkvVyABg4cdEB5R1Mu9i90Vxey4z4pWjRnnkxLWn8ECdN6fwFhmCgDyPCzLW9RN2iCrktkZuz-ad1jdcvLEu0bjXl5gGp344zdVmEEpDe-RwZYmJYJDwG2RpZGYdW6X4O19lOKJb1x78A6GFrt7tU4fN37knuOMkdkv9QvMNC6v0fmwM3C3Xp5gS18bfRKUy1vauZjK_hka4neBCMjcb8PXXJ_0D7-sEa0R7Xquivj1LLtMsESyPdmL4TQiWvhFotHR3f9naIHiOeq80lvDccj1Fbtxgx6Lea96zEP6r5FqfvLpVWA36zld6qtoWMzZCZIhcTB4ZQ7XxtPgVSXDNGD0VMZyIsRUUTXKj2mMxKEF-SHGDbMZo7GdH-7yDB1TvVw5w9jdGh7dOKQlLkzesbn4JaoeDV41F7wNefT10gLP4lZnWryABinD0nDZrGY_psLs-lNb1WRyQs0widgBqCJcJNuW3yCZ_6f78nWZYPpMfI-BevQbY3w8cxfy2CWbpSOWZeOZReri4PZ5FLU5EnHQPRS9JM-JbNcKCftvH0F0g23amb56dJ7_-UmmQ41okcFcr0_n7ZA_w_ddBe8oTH8nDWNtrIxf3tSeqL=s500-no?authuser=0',
         cardName: 'Home Goods & Supplies',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -201,7 +194,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/4n-h_2cMpeqZHUqep3pmKiwCyEAYW3rkYzQyEoCFAyfQQBJ0CVMyQdF3eR6ph0L3Io3EaBJF6zrCVH6hHp_wlmYUbrNXj8P0n-S58wTrmQeMC8rRJjSqf1wUhxGTeNbHLE48GwcRDwndpUSaNgApIg1RaHIkj4X-lZPrgTpD5WBbEoflwzI1Kr622YHrVs9LHGsNehNlXph1u3Wz4CJyHACtQcpCjX9zee24R-HDZ7dytYv3DcRTUahbQ0RdRWPFELCiSNftX-e7BNs-XsWGP4SCty0aNe5dTi3MxGRfe21lFb3hy0PnX5rskICmxqf-zmNcWwvbN_apXHq5Nn-x_2AoOhF9cFkxN9cjee2XVESK2ZX_mAzG26PjU28vpdtR3z7swXbqfzVOHeRPEnayHK79TPXKeWYvPw7VWkNMipOfbTxhZk7hp1Oy_KGz17A_QpWFtQ9GfvF5t_Imnxwoa0INAxQ_6QtEJELLceo4O0PhPqKlQZYg19pA5nZATnGekrAxCPOEExTPJtXQ9cKEmMBW18Y7LbjHM7KHl3RAzTeznNdBIG3KYb0Gi1032OeEljeOQ8B2RZt-ebskZUQPGEsK_UwjrIoLqvBVwAC3fomeevpSte3dPSTNJ7stLLSy4JDC_ZICa5x3R_7mo5jlYyFXWfbZ1wxJ7Hlsr0PdjdJuIEd-toe8VfMELX-ikOSw7Wg5aOLeLrLGZp52WcgwPTrk=s500-no?authuser=0',
         cardName: 'Home Maintenance',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -215,7 +207,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/rtczz7LRgQVD889InH1p-W-OzOhyoVAyQ0oBWIToVvvVPbhRHcULaMSoWF3BDD2DWkr1wFXVWjnKiTtdj_qGhUspJG96WRMa1vFmsyq-Q31b-P4EfkWrTepkdNTsnFOOuhAKY81xFN9SjuvXmkbNDJvWMeC9tUcbN3XkUvlhrOiRZXrZVxsencVug_FqG6dgpTcmvsAryW8-LaoBpDZZzjRPpp7Xx2X1u31oKSlxHdvPMEISj4mdYtSEWV4MZjugp7eaUvPeXB9IuQ9PzyJuWmMLFrMAoJcUKIytwGwY0WNSHm0Ti1jSxvpmP6wXBh5rnP3Ajc9j_2fTwiIHCTLU5wnhqPhx43fLlQskZaeuvOfUpMd9A0Jsk-PgScwiedWSh6qUh685RB8twBrOKVe2okjn8uoW5VjLPfs4KtDjxK9gj4NG-Km1H-XSmZJcNdayLrT8XLIpxhiYrXUI6h1iGxvDiC4SaDA9QYqDm1cebu94IXcHPQXc4awiQvOHZFtSolkYH7xol-cxFCLpORrPiWxrhdkP2oqmhSy_sqKV9_jlTGCEp6GtMM4RQexTo6xlU_1OoaSXwugUpApM6u_2qR-OEFDiGrAsARaqPIt2cEaU1mV1wc15a47Q7YjU_bjUF45kc4hdBJDmqdI9CcIodYloyP5Lbf3PtBCKG5E-hkZ8NDTj2_x9GZQ-jjhqEG28IoqNyccFQijuQVPIyTB0rxuI=s500-no?authuser=0',
         cardName: 'Home Purchase/ Rental, Mortgage, & Insurance',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -229,7 +220,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/_B8iWScA0tMoEKnk5ZvOxv-cbPWmSoTcqU1lKXNAES_bqSEPiEaZ54u9o7O-zk1B22Lj-dAvrkpB2BK3P7B2DcXHTU8JQko7Y8a2VEV-jRElIzl_vdCfDCiyywF2SAjkqWHeLzURol4pWAUCcDkTWhmqLlny_otVnHkZqc3Vf8IjqwsMjdQ1CL8oIayHNTRNympqEAHdS-yrNfz7OtET9tLFX_60sW7qVIoudxeK3OPrZqlZpqpNxdjctwdb6UqzMdx6CbwTqcqd918QxLoALrp-j-ApQNutqodbRbtjhy-Q6i6M7_z3IQ7xAlMx_MK3XUaBajvYpf2ECa7k1O7wknh-MJ63PqXpVVNQfZxPKA4MQiz1vi3z3cYFmvbewCtcdX7WMhdyMEscvBb4-LQuwNckfhdPoNRWk9PfOogRdbNP693-v2oMiLoGUnnLHqCqu8wEpSh_zKapuKRQFLXJsAuKdH_u-TYYIVowwgxr1Mwmuknf_07piDZlmWZ_ERVGqwZqKIvP-JrikpIMFPlNqc4KN_uCAc9ge011gOBdcxdlA7txvavHfkJL-3NIgEc9wrre2wGmrJG4CI606FleCgPR3OnRusQGCok5OPO30G26gCIaqhQfL0Vw0fvA3hEglxF7ULO_9xUrWIQFpCjpe37dzG-KaTJmuauzs91T-8aMCWxXWoLkkQAOnlP5CeowdPaRgjFBG5I6gM8TXBxIMZvm=s500-no?authuser=0',
         cardName: 'Hosting',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -243,7 +233,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/vnYTattOamEeJ9WxGtq1t7IIvIYep_ogIO4ghJWM3TAi4Nkz0hKcIxtKIhpk-rcuTkca7ZeIVY9eWiqs6enRX788NyRMV1sWkF3c_kmkiMUPO9Swy4zV4Yiyf0CS1sOdEi_ppBJ2rxshk95PkL5Ue325eyZHGpouFWxsuUpPupkgvGNNeer8E-GZgOoeQJdFrYAsR-kjOmHyTw95ARlysIciu8687j2Q7LxSdAKfa2kIF6GOJGmEjiwefczoZqjxNBaRASskM-VP-Y0UjrAosCvxMf5PQOUVBZj2pUxs34Kgdwyv3i6opjxZmctmBk3BE9dT_Zs311WV3EJUH47axVtpHiB4yXWXNQO28Y3Nd73lfTJQY54a3gjWJHJC6b_YUPgc07xCOgasIy1D-Hkbuh7OgflSaZIncy7Cs6u9ab0yL2upfckjiD5uX7fYxcFV-Ps7LmgkScLCCukSlG-Cnq2JJ-gcnUNfABbje1I8VY3NMEPSeTzAGxtJ4aHN1kY3-ga2MkzWU4BekndEjNBsS3nxgSxLcsIWzQNq7eFjCHisV8BwlbMt7EyJ9sMpJUYdIKBP8Le31p4jbUA0xBxS4bFFXdhCcuzwWXmHQU0tCSLqjrmYJirK4rUOOAV9XaQqy0QKooDLZH-lErh_620Yfh2_8bRowT7IPlgQN1K6y9a_JErAW3PiTf5DqtGrBHninpYLoYRhBXd5Ly-4cNq-WXiX=s500-no?authuser=0',
         cardName: 'Laundry',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -257,7 +246,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/XrYQA5K1UfmBThin2gdRubG2b6Vt_85plJ_hulHGCkNpqqvg0gJTtiU9bmrwlG98wQd4UaWcLUYNa2CAUXfw1xvZCKDLO5DF2dISqDFIwVt0BM8CLrbOLQ3xGwN3iA0POd7OAT7DdYXHKZOJATTLilh5atNwA0V13SrQo3IiZeh92gLk8LE0xndm6k6JWwKkfUa6z24G24MogeX2Uov6qgdjx7h5VtwlT16IZyoz2AXZITNXGde9_TjTqFa1kAjBB_qyax7RB-5nAzt_au6lrHFLGnPXn3_O8sD-jfjq56WRCeuiMDQwJCtWjFyGNOltOEOPZoP8IxmbkAy_72y8XZjSEhR0bfzwVaxYeAv7oAUIPz5nRcT-ugnn-GaXtOJlqRZ9gBFbaIG9tIesX6lhlk-V8cJz0vFXyfzBjtT7cdXBZeNXe6mV7_WwM5bqNOZYNa2F23D_Zw4L8AUivQBJIB-cYnna0K72Ulvu29nQtXybeKai-xDFv2Iisg3KTNkvQh9e7u9eWRO68bf2f8FsUdYNeQGfwgP2wkXdubHDQXjFJ5D7IvBD-7HnmUADOYbFXq2SkPAc2AX87BGrtBl6I45FlMhjF33k21HWFNsdyXIWVYOrxtm_CPLo_wK2noSMoj9CvIy15ppp13xNbbjVLRGz9ikHc-xF2XCXJQ7KhRaUcmp24e_9PQy3qJ2Nt_-yJrJbWCM1fiUNyARb8do_wdLs=s500-no?authuser=0',
         cardName: 'Lawn & Plants',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -271,7 +259,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/8eJtXWs9uwYdh_S6tm0WhCJM51pPJFMehoqV0BUAJWjBaBj6jNAPlphluZgB2Hg1Kj61IjwA0R0LXeaDjMETOVZVLAHAqoUZS35bDYy_GnSnqAg81fhwu5SRs82fSO4ehKA2pKeOsGMXeu0pBmxsT5wKSjyDUNjcB9f7gfUMMMMM4OZbACUnbxCYhN4MM5YOQAz4szTIYeJnwUW27uEAlRSdB_LqNVILlM3GP7-uG79j8AVWAQEN9NrmB_mwx8vjSNxy58jvL_nzspcP1d188PzZXwy_eYKddABEb36quzJOIycfuv_rXuEgguU4NU0hEwQ2cS5lasI6emN-624GYdHEkM3kNpiAPzchlbnQjmxKNAxfCeRzvRsl2CmecguC-C8xGTNrACNL5ycadjgBHeXgRFH7rCSZgg-pQUvNhRFPIXddSJYquGgh4xGF5djdHupLLWw_q_aokCev0tnUFjBwR7H1eeJYxWvzgh6uw9hr9Mf_ubm-sTQM_RkSPE-JeFa2pFu_tsrVbRHRJKRGRWBv5zj7s9HAYvHaExkT9MxlF_hroqAjK3QvP-Zmv_RaI3CL338Uv7F6bwneIPJsMLvyVwa4cGMPrYGpmJrMZTvWq6cI_RSJfdzHtSJftnPuPG2MQ3nKlSqTqx56Z0LwcZ_TQ81dfXr7bGz-r9wl4uxgXapzpcctxdLlwhk9PshtBqge0DFz4bCr1Jam7e-_C5Gz=s500-no?authuser=0',
         cardName: 'Meals (Weekday Breakfasts)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -285,7 +272,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/4S-DWcFJRGAFm0wu3VuQU4HpSAxjC6tuME994kEJojFKB-Sn2w9zrNTHYbQVcHELWN35VtnxIrhaAJGiF-2ns20Ex3rPU1X53lXox17Zn7Gn9-5x-YbTxo_hT7lCN8fjx7fP5OHrEmgStjUX7Yp5Wcj-MZqN05tQeIfuempR_-zvvfKE7ARHYPUNvSWzp7ZdHBncPqLMnFZ0Vt9Ctq4REsiebulKKHCSJKVqHV9PXH-iboRlZdE7f_cMl6gQ-JPYnC7DMVmiU_KmI8riK7iixtF8Yyz1slFV4_F7_JTS1S6WPthKMzCw6iHu7qctqHgbAOJ4mhlrt5nIjls05BmNVrZx4BH2hZh619p00SSGJQ8MhJzRH9e8ubrUg6tY2mmI5GHo5pPsV1lM8pL2FTx5Djoij9f8UGGm_-2DtKpZVT4EU83Yzy80Am3zXBVuPi1JtBKhXA1tZ2-BTDCM4Gflq57ksw_1m7BUiAd_ajoTZyxo4pPE7PJjBdEcTgPLoLaP8ftzltvcooJoiX93L2pcKBpSeUkjeu_GV2hJEpg2i3nWjwd_2nkliNEs_aK9ZoAMCYwet-QlldggzSIow3l9KeGuGLcfl3fuvznAGGBtHr1HhxuzlB9S4eQyqSu1W3wDg30IhKqHM20m6AfXDsf6W-hAH9p6lZAKGiNPWEMD53-9bZKQMwmoxeQWmsxK5_436hVIPZTerVnrJtP4lqG-vlRU=s500-no?authuser=0',
         cardName: 'Meals (Weekday Lunches)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -299,7 +285,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/50D1FIP_VaNW28wrttpf8GWf8gcUY8rtDret87DXJd41ftl6tzt8jM5Q_3N0vNli5cMu36sAgwQmDbtr1UwAsHv4erDJeFv8SA9UsgWtz4jhgTVMMyYamYv7Zzn0iacKibbcFyrGkeC_BhMm4nuidnDmy8JCnK1qlHZ6qEaefH-Tpb3wEN8XK7_JV4CofFmQV0nVoQem_mzFZpNVzXYQaiIJH2XKaJdflXsxPw7O-_yaINknZrpRffUKinlaXRv9Qnlg8aO819uMioVVp8zhpaNMNIooez-fnmFB5ElEkMoazy6WQ62Bf6g2S9hbI1ltSYxtNRw_u3wQMd5xuUocVCQE8USwE46DvZU8FWlwdR8_P5wSg9tPa_y9r9NHMYoyzrFFD1dSRWIZTfI8E4v2ychagHWhjnWOt-eTJkl3DYKtInpGl0Xj4z21WQzLMrYRR7guQIvcqwKPBTO_Fj5_2cSC8cqRha7p3twTOn_imYMWYRlGP4xnAXY-4QDnFm1CBCXVR4qWz1aP4JuKVdQC89hU4wNy9Ic2DjIIIHj3bvE-oKfx3TX4BD52Vfg-pD5iFuBO1Efcmf2uBfh4aHy96I-6cUUszZKbd-XS7Ct2Eqb5OZX9Sr1XhtCk8qcwaPPcXDUpsqjxhi_nF246IUtoItlGn83XCK-s-6aw916yZszJnFBiQ7G1VmzjSp7c2mMLK_8L7WLx1XjNv7ZK3np7La21=s500-no?authuser=0',
         cardName: 'Meals (Weekday Dinners)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -313,7 +298,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/2SIMdb3QAIo3kzjhbS6qbBgCppnXIGxp88_1cqvmqQe9AMOq5lIPoGwTGBGbTu79fpC7fsMoja8thjBYlx1ccxxATneQkwIO2q58rtmTlpedhskHhicfUypjpn0H6XxZBu68t785aQNAmD00WquVSPyeH6TAhwiOt4rNUfZXkkgaXbdYwsAtZ0GhiClzeRPV5eWaToRLPpsceYn-qdhZZHcbuiTM5D-Jr6FIJP0fz1X3MWsjbdwyo-bpPKtZeIZ8D-SdyyfcbfKbakjtQe2AY3t1QNN4SZlsxfu6RepaUJeXLcltxNQfZokTa_Wz0PX0PjhRaFaqIi1-yCqVr9hgbpyIxSCPiX3Xw9I4B4t9GZi_FE5nfvIdjMO0w2CsH3PjMwWImQPEJTFHHz0wQk5rS7da_V_fAq5kLVN8ZH44ZTvzpguY7zw0mGXC1CY9kR4A-UppE5-Ne2lzmWpDL01PSmXVd7G6UFSMagG5knAk_lSeyk1Uv9b-wKukmI2uEab0i1h-a8tRHMsVtJE4a7-pODWcsSmxx0r1AxaaL-0763clvCBg_z1qZonAa8Qriv3K05rAsJs-EQDSG6CUUbSRcXKKba1qTQNcUNwt7tZga-_gjMUAzH4cKMOUEGGrGhxBq4eg4s9D5qgYxrU18jZXZpSVrev7xgpkk4mmBSa5cNPGNnflFhIvNrAkIPSGGb3F4-UUEEjcdptX5OKLyMHdYeDf=s500-no?authuser=0',
         cardName: 'Meals (Weekends)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -327,7 +311,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/D3LAa1iZcJTLIBWDT29yAclk38Yjui99q-KT4Fg0KjB_BL6ZlOQX49CfirwnM8reSWNtFNFw6jtd4qzy4FPS2i6SqIAuLzlr_HsSLO6f_sceRkK9Ni04I6N2vUPPxYOTJknq_NlgZWozOgUo9btOVTNFSdc_yM9itXDJAU9K2Hh_FtCGvCOXzOeZ33CmbfNRQr3xpb48tmmq_sFlqNybVzmiPM7uGBWr7gffC1N7n_c_yvaP_nrrUKrX0ckVIMAUZ1QxeQXaCt97iwR2HJL34krJ6FkuyAnMwdNF01uVAe3QbvRAKLh3rSfOfk4gKGIMnW_31uC-xKfkadTSdSSVdLmZONgLOJ61fPKeX58vE-ehK3-dpepnF-N5QfEeOjfHdf-wDo4PosU8x4t8N_ANlQ790ocbsdK2NGrvb-yJ7I2bPytUXUyc8kQQCBvKqitDLg2IStsrgkpxsnCa_jTwTVE94EVV5p7ar6wxtNKCO4TzCj4EtJT3n0rRlQ03CmRXq9npJ9mDqdBm-EGiH0Vv28rzRgfKP-tRNe5DSMZwqhEm6Rq67B96dUSq5_1r0n1zE5zdGoEISTPeV4iuoC_KU0Ykmtn2nRe4FDsbwK9Z31O9wbRvuRZvLzMQBecytRf2TBVfsvCVDuFux6hR5cOHgFBhy6CW2X8RgMTGwZH4PhzqdK_0ZRoimjfsOIcSJi6Qixp0-9np-aibP55YiFxvWFSU=s500-no?authuser=0',
         cardName: 'Memories & Photos',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -341,7 +324,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/D3LAa1iZcJTLIBWDT29yAclk38Yjui99q-KT4Fg0KjB_BL6ZlOQX49CfirwnM8reSWNtFNFw6jtd4qzy4FPS2i6SqIAuLzlr_HsSLO6f_sceRkK9Ni04I6N2vUPPxYOTJknq_NlgZWozOgUo9btOVTNFSdc_yM9itXDJAU9K2Hh_FtCGvCOXzOeZ33CmbfNRQr3xpb48tmmq_sFlqNybVzmiPM7uGBWr7gffC1N7n_c_yvaP_nrrUKrX0ckVIMAUZ1QxeQXaCt97iwR2HJL34krJ6FkuyAnMwdNF01uVAe3QbvRAKLh3rSfOfk4gKGIMnW_31uC-xKfkadTSdSSVdLmZONgLOJ61fPKeX58vE-ehK3-dpepnF-N5QfEeOjfHdf-wDo4PosU8x4t8N_ANlQ790ocbsdK2NGrvb-yJ7I2bPytUXUyc8kQQCBvKqitDLg2IStsrgkpxsnCa_jTwTVE94EVV5p7ar6wxtNKCO4TzCj4EtJT3n0rRlQ03CmRXq9npJ9mDqdBm-EGiH0Vv28rzRgfKP-tRNe5DSMZwqhEm6Rq67B96dUSq5_1r0n1zE5zdGoEISTPeV4iuoC_KU0Ykmtn2nRe4FDsbwK9Z31O9wbRvuRZvLzMQBecytRf2TBVfsvCVDuFux6hR5cOHgFBhy6CW2X8RgMTGwZH4PhzqdK_0ZRoimjfsOIcSJi6Qixp0-9np-aibP55YiFxvWFSU=s500-no?authuser=0',
         cardName: 'Money Manager',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -355,7 +337,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/wsdTXGoFOcdxmc8MoVULs9thna5iWYvBHCvgxxorZGSny3HhN2kxc-VFTKiyF6hHul_SCTozY6TvTTCiO7tPJa8r6a6g_4Z5FbN3MVCq-5WLg0yq3x0EJpRle2GCp6d4ghPjBJmKmiAL_jWRkdZLEFCMCVKsa-gEUMOESUrts-EQIkKMSERkNvyO_kRRVko5lHbqEejXnwBtC4xIDEt9bDFyPRHU7E3JFYl7Minx64O9QrIC-FGruRLkWz9vEXcR52Qklqy-5hdEviOMmyIDUpQy3LEJUrK2Ul7mZUdKbiu-1pVY8oONTiBkMfm-bmQtXbSVOv51r4T-zkR7fvyZeJr6K7KMUzvMZ77fhFX12UmNOZB1KIXDDvcS3fRQlWNtuGdtQDZMWeNO2YzReHZ7tveEqD13MzR3W9KIkemd1R9Jy8HNutCmZxJY0b1p07rFLVX18YZRh-BaIDC4M4hdBQ1xXo_9l6nkW1bnD_S5N_Vj059XtXmUcxnU9Y5M7qU-lpbl9sXpiJpFMPFJI9t5sNpSlzRASuHO1DHCK0fhS219jSRSsw_OrTBkmJeQIXm8epsKoF8lBIPTnu6PsFgxicHMTuzFlVE1dclJOZ6ZGz3vWurMptXeZk7v1YYByH1jTp6S5UGOgIVtGOJSD4S7IVyzQfB9RD9gthBIMHZKTaLVoaawqGNiSTdwtUFHvgzp0fcngxyhUMFcnNPrFXWf1Zpu=s500-no?authuser=0',
         cardName: 'Storage, Garage, & Seasonal Items',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -369,7 +350,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/wAvFxI_ziI2cUOuiSJIWXYFylg1Fsjz1GXBQ-aukdrrrovaxQMXATcvP1uJR-aVleAYVNT9Cpzkt_hRnPseo4Z860uJf8xZH1pJzVPGj8AzHZSUFXSYePL52MMAVUPekkGazpqJ7aYIzvY6EvAK0RVf0tb8emZouv6jRu3EZUZqQw9jbF3qUP7SAwZKHKgrcfc9WedPyll20F_QsGc6nkhdZZY-dZ78fMIrMJxGWK4309VlI-1BOXSJmU8TMGG9KMLgjNTzLRs-qrHcvaZl0gKOz6ejPaZ8bLwwOJBxQDasWCyluYYsmLVWu7LoiNRuvo8HVNawAj-Jj5hrXfOnlonPnT2-ZwCM25RvbG8aJ6DqizVDBjvFdZAPuK2O7lkQ8lc80WeABebigfK44vQwkcdFEyWobnIa673kml6rWGgYkLICYh9jI7TTBDgJCzGcgM8xTtN06P-qnfsSHjOnIsI4gdPorziHj-9rQZosWPDTAPOu99e4gxz5wWdP23_F2_hC-sQXHZ90oMXCV_7NPCV9h1y947bj8Wx5i1qL_O-Q6a3dO57mda6R_q8rM6KLrKGuX7oGxs9IG5KWQzKzvRwWn-2l8z1gfY9MSB3jrtocAYu3HSDbZExSL6WBz9Y4CJ3RnwK0beugpx882EVj2a5e0p6mpCnak6viWHNT2dhyVT37I1Qe8yyy7gl18sGOycFFk-mg8qF-txU6syVBMjJq3=s500-no?authuser=0',
         cardName: 'Tidying, Organizing, & Donations',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -383,7 +363,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/RnmWm4d_OuPs5_4NnxfnCCtFpj5pg4RxxtuPXvujV0yL1BK2r5MhdCU3GTpL8yeLtjtQCh6mf_0ZWN2Yqnb69ghX9Lm0FYab-QhzXmBPU1uO9v5MJE4TaXog03HoByh1BB3haEqlvvswI5jZh33-o36D7C9P10z61e1yZlL24g08rv6QQPrV-Ou07zWHwDsfIgOrM2vaNLHGEe1NNrQiAkgWAqPufqHABHZJkFRQaWLJGzdv2cztgYKayIJV36t8HlkiKAsLSVrKOXldVxSIDocU1OQ63oJ4nN9TsBw2_ch-LpupKIN9bmT1qLHEEbZ52Gk7zl3gFCnylVajPjAmO44wTF0VpmQDUppZIQ_nhAW1-HKnbheECUopEhqbHbHx8L9Uuy3pfotPXUwlEuPeWUIrU0UNcw44KPYoOllaieSzHDS-7H5XTgUNN0wel4TvOLTQB93sfxmAZ2DanaDoddIkAKUpqqN3cthJdXkKIXAz9rG6bIfYnt5aIU-F-MuuVu7IRuI_dEzAdcADm5i4INklFfKhQK9SE_h3exUls8vIpQzsxOiQmhdx_ERJdAWHNY1Hu924nfXtr7eP_nbnrO1HKlxGX7IJQKVduO5fP1fxaJxj-zb8cQU68qnqxAkYYNgpfy7ENVqnUkGCMzzb0rdaUJV_n3R2vMqCmW0jV5hrJUs68pQL6kl4zgbgGMJOXvU8ijHLMVBat_BtoaAt3_j2=s500-no?authuser=0',
         cardName: 'Mail',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'FD5F1AC4-3BB3-42F5-B24A-1722AF34D99A',
@@ -397,7 +376,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/AjDEos5hBMGHeIb0mnZ26_ulz7hcsJAOTFBLT8xgfR2tTKddc9LejdrF1iy4nM1S1p7zM5HmNcSVYzTqF-tRIBpY6t19s-gKf8dijXQyGp92Xx0YIh_cAyaAxdU3yldY5j6zjmPGOOSH8AQ5Y48elnDiKEHIP52Ph_qV3-7pMK5ufGTBcejDb6HTxqWV5qVkdI30YAZEDmGHO9YXj2QpIII1tfYhoQdkAAbJnv_wo9dqqjznjqpjLt1o41at_n-oWl_v8EYmhDlM9AyIui3i3IpzroVpmD9gcRA_PDx7y96ON7XEqgi94DYvzduAa72lB7gJLr0ujVdAbMUUIdVFEr7U55hOhgnUh-RsgH3d1NcLcnOYkKjdu7oovl6nDwm-e_tgMlx7Qo5vVYxALGZ3v3vje9TZ3xijnuDiJbmlsI4-pssBVILKYt6wibiFtMhwOUmX2kT4fJgm94R6Ii-WKfxC_9FT7TGWdSpEaBzUW48W79KQP4YpQ88d1gE9ia-XeSNIBvutwIXjddWBTOt9OdlgLvyyRe68iJAM8NUDRHC9rtcnfRz1S7gQMApy-IE2fONtwTT--l6GR6VQf8V0WZ5-MC-ggCd0XlRzBJIeHbbxZOqPhAIWQx9U3UhhzuMVK1v-Up_AvUOV8Dtk7LFtYgYjbNQqnqPYy2__IRS1aBId5kIJG34qIm7rZY-tANjYKOmjQQ7ACjAsRlfP39XAMedG=s500-no?authuser=0',
         cardName: 'Auto',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -411,7 +389,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/cldE74Cx0rtkFYGkeG2dATeo5jGukFrL3vJsXxrUuHiGxZ7SLSUrTCQ6SIQwRbn-VKcUzwOTS1DwHItCxGY2JKZbO7AiFLJndYOpD1VV2d2dFZ4AA091FO7L08XzldaTp2OdbVs3hhMZnQm67G6Nqv1fsl5jgK-DZ3IurKfwLvI3IlsoqlEf-a3IM-cMPIl7o3O3eouGbeCChyIdYRwltbLJM6bS6ecuwTaHxOnAw5ZYwxqFzajE3uMFn7d9dspmIF-8Aqn2UvroLQkSq9pCfAC8rxGjf414mTdTNe1fBiccA-Di9cXuHK0CBZaOywOKyU8U-nPXKcOI7hc-HORX4E3bMPurZwNZJnH86-pPJSnLfadbg7NqMng6Cn28YLtKTCKMeBM5WjzhJO5J7qB6ENQ1Tw2FAYMYcB7Hb7Lyvv3Ah1ZJhEyOCEkG9UE5BwJ1fIEqvsTpfIWDFeRDpAxuDa5bjVpoUDoPOr7t7FC1sEeVJ-YUSr_mKI5me--xADT-5hdQrwR0rgPkbrVOKnCgU7ci8pRZoLv7PDQ48wKSsUN2XZwyDOHxbtl4Y3J8MkeExWp8z4FKj31P0sN_vQyHh34vUDvc_RYHluKgbKAo1h-igYqxzCQ3TGLK9_BKGThhN572f5HSbX0N0MDiL-X8CDIPJmFVLZ0WCbXVVI-jxJWjdkHxAhSHMdbabm6fbxJlNBwBLqyU6KXtGnfGueYFGkrs=s500-no?authuser=0',
         cardName: 'Calendar Keeper',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -425,7 +402,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/zv5DZHujXugY2jOh389BRyEEH_Dpr7vTC7sth1sWHkOR0tQbmi3HtKmrsOP5gli93whCxMA28HbJJe12NaN_ZL79Q2BuJ1ZamucD2YtsxxoCB8pi-ezRf54-ql3_sPwdB_itX5i3lAV7GbGkjnAiQMD2YDaIcRq0jeiNPWTJnhq32rLWsj2rbgBfURdHmFd0U8l31h2S2CKwLngL5Nbcrt5GUHCnYcL0pEZamAo40TsOrQN11xywgKgtzhBwlVxC-pi7pA8pZRTcqoTAjuRvUyIn20hApnnYHaCck2luiHLyeCRWh-NhSnJO2Oi9rNZ-qbFgD1sE07bPik7G5c8zk5QqjyiPumPJ5f0lIKSrSFM5yYIQSYLChEH87KtgCF7R7kGdFr0tlnOGrHfeuwhydysV273f07e_p9AH60OhULJJ36ZUUA1oa8I4Vx2_Zrgsj6HRCQ9pfaHcxOpa4jea4JK1h9zKqnuVjGN_vYKcxbf3dTpYxygOK8GRB8j6z2ivFBLyMy6EKWpn_DiABeJFcTzkqtn2od_6g6HtAyTpFicP4v5cLh7m_GnF4pQ1_22yuBSVKjPiukR3esYFTO3f7oeWIFMC7jYLolELGqb_NiGdOzp7tUdD2lR_89xY5aepT-e-8PvZCTxZUhY8G3GzNZ6UmTPGFj3eKlg2okdOmoPdZNOaDDWRiR5D3G9dBvX79luSqsMQQoqwySsEHhEgkJE0=s500-no?authuser=0',
         cardName: 'Cash & Bills',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -439,7 +415,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/WRZq6F3OJksUnCGEse9S1ecehSCNBfI5A1Pq0Woz-zFCxjbP0tGqh6nhEGclfP4ER0USkCFCrhrfY4w__Cp2nvEtdJmvxmRxmwv-dRswGHuDTH_E9ojUfvXKvcblELbcO4s55wADOLqRZzXfasQlRvD5CYmN1qLLu7LgibKWm1GM1RAm4j6g7Cj7a25OxVXUtz3TXYnXD4Q4YxHC6mKI2v8B0h895wB1CYg4Xq9RB4EpaNe6Otbka7kD6WIgzKGgCzXG3-8Mp9Rapsq8KXpbfjfxBaYITtxmwJqULou9Jm5i_VUjB9Qm_QpnECjfzAQl-d_TPk9NL7YbywT_UohNK-GjhLsbYcVBCifY6hbgGoxYVlGg9u91om6arxluNxCtMW0orXtcKfGeftuo5rFS-0r-rhsh52-3nynQEwdkNDmrk9ziKjcmrDau3329QYyn-vVHFf6YftO_hXV-7kGRbVUngG2pJ9tB41kQF0DjcB3ryKniZzrsf3VdgPYzFxZCkzcMWdsZVd-B6KuNej2n_IkrJGGRYm50StuGsv6QMq7GiSSuTRjp4-C_jzILA6JNqkGUNQW_mBlNLi7_LGA_csgeewyllBhU323FSewD2uXSy35KsgDFe9At20au8vUpaBYMKq3dXT5QcTn7Y9_Ncs81WBn2SdRmu2i7_37tHapKP8SYtvlAaEsestzWZcKvtaD3mYXDMli1Wxd1PMEsE8bO=s500-no?authuser=0',
         cardName: 'Charity, Community Service, & Good Deeds',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -453,7 +428,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/wU_5ujkRC-O0J0K03hRTi-n2beElqN9crMz-Vot6mB_LchV9BYl-YB8W9n83eNwf83aLafNQT5wAIqQTM2l9trr9ZgMgjut0ZIBvMh33UIrW4u_bPu0lJSwTckb9zYRKqNKxLBYK3uhsTzCEFqAzBoM8qeXjHL3TZAmVT5HEVBSACDacEeMoSMPp5i8sKBKDOTuksUnWjMjofsaVlvgXaWHvmEFMkXfRMqAcMeBP4uIUqemOBT3aecD7SKhBihjrwQRQWyEkqPzaI2ejNZzuq0hGL4hm6Dq80wrc9CKMjQKrOiezKpEZDc4nAFFQWrZBg7n8-kb-s48UcNEtkkIhDguCTjUl9PLz2JvOvJWmbqD61eU_utZM_S4Mf1XqWzj5G36rXHIT6XceoJziCJvz1rA7wTffsZeViJULNRezOPxnWCtzJGtnGWycw0pIkn-ycbidYAIMlILEKRAHKzD1wmgbeQKi_NGLtlgZsZwC95bxunqM_evFM1HkIb3r04xQSnWp-rzheMAtT-4JCB9-S6iDW2PlQkU8ldw3yP-AAIvVbBD08MeE0OdJWjsmfl9X4Uzq63NtooWWXw4e3jR9M6cNg-xAbBitY-4_3U-U8K50Mpsg0fq788jd5Izc1ZuHBfzE8_EW5Xi0USEj679EM1uKYuv3ti9-3Aj1U7x8h_IsPNgNCVfTPXndxQq2N8DdoQdUinoG9qukm4nZpY5DIw_v=s500-no?authuser=0',
         cardName: 'Civic Engagement & Cultural Enrichment',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -467,7 +441,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/_8LfeVCthfx8TUPqYRFvvp4Wr5r7BAPiTohxyWwp3tdwDozLBsOqoQthf3cS2MAhyCzFpCW6Ukl5um-8sQ_bxzLMVZ1NHUL_bT2VZbFgd0ZiLlBRpXu-E3Sl-50NelMTKEkLDU12HyZ8QnzOnaXAqYS6glviWnH-EJpRqH4rWLk2WmT7NFlfx5nJrlXH0PwkNXMieWAGDHv_2N3LnRyXziu7zDhjoPLJY4-lzrOYLUq9uTOlYx6LwuYswYRyMw30uotQwcX9lgRxbGjsiVoOFdQ6XJrw1ghZ7at6KOjwb4kDk4IBLnsbjYRmT7eRosOA1jGGp3FWGlyj9hONYR3dppUqSMb4ZNKcC-ybDHufyNtztnUPYkA0N05ybr1GoaNDvQIEZMGvCStIL-FxIrllRJ1mfwtEkDUe8W9Xec7wEIlbICYtCWQ9PaD4vDd9X-hbCgsNTLCto0zzCC2m1m7BbFyD1bMuZUXlHHnTtQK1XFXjFpcQ59jEaS7BSf5LOE9aB-A3M0BMQfMU4PChmYk5_ZU5EnpLtDkibCFU75tpCkxjhF97bXnqcPrlWhXWV4hsLw5DbAY6zupdeh0UX800wIo9B0GbzvnhbabAWjshVJX-ILMyRCVphVDgYob05zdoMUpJcwuWYA7pdmnXcaRKQJdwSHOkJufRq0_Ldgqycvg-_AW9BhzuAgsiVCjfDHNpv9QGq-TKEzhqbe5-L38e2GBj=s500-no?authuser=0',
         cardName: 'Electronics & IT',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -481,7 +454,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/yH0SL7N3tV0HI-1wyOnbCnA6IyOfZHQJoOrttfr4Pre6QFHMjn_DruYTX7wrK2H52zcW8mwmJmjTSdfr1MLJdhetfUp2qOgffKbo8svzTgel6KryxRSmtbK0oEfqmTsSw-45-jdtBI3Vxnii3nUBNC1bhxp5QCx1vBA0rffvj87SG4blYlZC6m4D-T67i9IxV_rRLdubOeCDhPKn8v13aVfFotgzQkIn5q_d86VIOcJSxxKn64DhtpvYUntJwEZ4lLi-mr1i4zTGcIpycQczo_nL6sU4v5o1vscEUWSMlBWMLHo0Dxpauj0DJ29yeAyT_MzVsOBqlzElsExVucphSF9oBzCnLaFDmitAySpvLHTbSxzm1FLQJSzb248ma2qGAucoB4L4GoGvWSgHlCaqS7D1ge3qR5OVf3W6kwoelDtiQES5CgaN73STaqwSCXEHdgQU__dWZrB-3cF_gOoa2ctYzMxwnCb151Yi4Wj-zW-KLJWLo-tUDNUQgP-_z23pFRp2-c3X37IKCMp2i9xTnRL-r1O9I5P31Y_29DdDNqxrHM2bLUOIoA5vLOmzU9WZYE18LWurd5D8TQ0jO8Gj5TBYdqZU7tIZkVGS1OinLZF0efNuePMA9UwRG0Lz29ZbME_MrSK_ODd2DPAizDgrZ1mDqWpz6h77w1oUUL6oxjN3X-ycMQqcCM8H2gJ-RdnLpoqXW0qAp2g8PW0LMwq3QKXs=s500-no?authuser=0',
         cardName: 'First Aid, Safety, & Emergency',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -495,7 +467,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/tsnYOSj4RMuPNFUmvhCpHAqsZX-FUUYN328oPzdYr_Vg0ATOG3VnGVWKByXgGtFoaKxflQNNtc_TfIwk2mhB88tGljLvWYizMTZK1HpwXTSvii4wtQ_-38hh0DcgTwd6Jt9T7wSVLwtXaHspBs-L5nnQ0427gpQcWdAhkiFg_QlKvyfLmZwIL1KMcI2kXZSXb7sfOys7M46YU0CUJSjR8aMqOM6aNjmORvIVy9pRWoIYBuaooJL4L2kuSPyJtvjGKbuy4WNvCFXigET64U9vcq4iMEECN84T7oZ5S2LpMhvbbYI3W8CxKpkWOu52VFcHB181auO58Q_utkEbzdmI31ERjNgsLxo3pXUhAF169diPbc_A6wg-IrswAwGmoFIRWX14iUJTc0DcLpjOXdNUiydX7jZKqfU49xwwbcm32_0SW0o6BVJ8txClRvEvQcGhRRHeLMIevJwrsYbXJDw1-FnnO03H1IZxc_ojo3gGxwdxO1oGBHRdtotMi3Gkuj6flfcfOvymMZo_CtbhCUpjpKlCG_AfQ4bT0EBbFoN00aMUbzogYwlch0RbPtUTIL3h1ME05bmCyPTNGKOe_yZqUrVAUf55-hZbiYVolCL3Qouf5nqKvZbkJDmRqo3uR6g9zzGzN5pO6VlqThQnHpVV2ZFMANKBzIqPr9vk8ec8Z9xUoxiHVxDJ9HFMm9gjS86j_1QAz0lTy_4FrYwBw7aIF5_w=s500-no?authuser=0',
         cardName: 'Packing & Unpacking (Travel)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -509,7 +480,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/yo-0UMs_JhF3XWojoNf8umguFyFebkhM04csQ6Slm0XyalGPeEFvfBqI4c2zjiRWeb7l5P1UKYxzp15b_BqBpknjXxOCjjogNyDes3Iylj8AnFaIt-CBM80wSiLFq9U3tA3Eqw3oz7hGA2DAV670M5oMGemkA3drzmXu1vES5Fw6dGcIVZzJ4LvCQV1cdpTc25lKjgRymCv7tWzGPyZPrEhWYEi-u0216Qk4yGIoXUwkAdLS-VnLXxdUWLj6iq8in7z1b58rgt5Wq6xu-Lu0WB0RTOx3LFZaUOiEPMaeECQ0dhNxr6g2CFetFMcUhbsMMQqHgXsNJ1sBT-BJTO9NXfHceGMOEAjXDb2-DLwSRHiVmySELldkosg7Q9B_hQwTjGsEX4wpt1bg28-OU4zmQBDgclvKjF2H53yPRJYUOO_phSZhLMebKOkBfnjLl0-jd19aJbCInDFk2qsegdJWBj6Oej-c67CpeaIHhYlppHZ8cbkmwF1FG3R2NE6o6hvJpSRQ17HD-iFZIkZRyV86u3FEPCEqlFoD8XuBxQbxJ-yNrcsJALOqptsTdslbmL-9vI8KywXpIsk0Jl15GTLEXZNY2BdO-TV4URXcS1W9YoU4dmWMpbJYy4h5wvXPiLhjBysYACFZlF1hSUIfA5eJLwLWvP9aoQTOIKwxj9Tnf4Hlx7zDcbYvIAGGV8oXpPaSsbNr-iv2QuXB26wLn7UIXNhO=s500-no?authuser=0',
         cardName: 'Points, Miles, & Coupons',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -523,7 +493,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/MJhY8vJ2vGog971On7lrIBOnudkHFSWCgE1i5OYPlVyRfMMb5px6onC2cf5QlK_VNhaarkbJRKFwugoj3gkwt1Z5iyqbOEkeMoG_ae9sahrTF95BcxYBB2cUpMADNgB-20h9Wwvg4PNStc2PRDXc7qawMwKFdDd6r3jTvPURDw0SKQscrWSf93HIXeh_EhiY709ohkxdd5_8raFj0Q7CWuZNs4Gt58Ix3IY1JHyYfQcyluy5sXSEqjF56rjtgHwKiG1RhnuhADtpoWB_90XQWEi-oDW-L4xx93AVR-snlkHtT6mM0Ey_Hjsbzy_F1wYjBSGnVbPgnXDTkaVzL5uSPycNxXsgVqvES5sjqkjPCMxM346fULhL1ENuc9SyzBaL8p7hU5_X_3QYmo3RuT1Xh68yeIQQXOZg1_maNtE7upmJdU6_jhcdWSSa9R0bg70gF-cv8XfyRLnYdzWX_cUpXyPEZAD1FntGJQY-NmO3wzFXSS0asByqPxaMOBQ-voIaNFx4lKpvkPG7BSkf22IDc3kL8-4_4JeT4W2O3iHHAKEvnsDyyK1mePLfzJ-p_mdzUNbG5lwSidJRRXWJNQQDKl2ziqwSJwkoQ7CFYofpRuEKePN5Dc9nWImly3ogXQbanNrvLaLa1FFdg9T77_Hm-ms6qLPWd78Za2lzGgQSjfbfh4qbWxs2gFreCaaVSQCYXsonb2v-baKhk4WXGHyyYV36=s500-no?authuser=0',
         cardName: 'Returns & Store Credits',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -537,7 +506,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/JyZ6Mtv-GLhg2N0oZbLcbHES_5DtUN8Ld5mTeGl6Ruf8PnPSgwXoVBtd9zzH0P76qh7ImOh8pVK-f1yA6D4uQzWzePKDyNQXyanWHJEckprxqzKNYBvbqKtIJr6ySYqcrSuMtRbC0q8KT87RLD8cM-DFK-qfh6JpZztJCaDHapocVhou4qbZmNy2JaTJkVcYTgUFGmnqcLp1zXHcUlpLA49VOJTRyRGUXwRNDDxN9TJALsK49BdSv2KiZXPZYbV49laSGhBAod61QzKTaR8RdZl1gcThNvwoDI1oWmkNtkSkeD7AWStYlDhVlxShID61ggpzvUzUh5IOXvNgR6pxvTI52_lhDse9mgYAdfM49Gdf8r2ZMwXF14mI_8tl8pPBNwn6a8i0t9La0qXl4BAvs8qh-_fzCJ6es4tbhDxB8VRHaJVENR-lu1GnTTy5rIONpmsgnKcRy6_YeBNGshqGpokPg9v68cZbLqRPD_z-DeDC-i3jNYO2fmrpKhOanD7CnB3KFEkp77i8hcOIGc0WvqTw0fB45gf-1dmKZMtrhEM2mTXOUyHq7qdEaI1Z8xVUBxs5AUm4GEj8lAy30rFoP5-gRSOuoAO7Gi-m29qkzw2d8RoCNQbfo5P02RmOPCMx0tq5SEr8fDHhL2nzqbvr1cPxd71-UStyz1uadPE2IC4VAJS8xNgmZHmMp8wLfY07MHNne6zjgR37QTUSsjK5f75D=s500-no?authuser=0',
         cardName: 'Travel',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -551,7 +519,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/OXFFuxo3FgJrg2EWJTaduCrQ3f6Zz8bjYogbZlXt45_qvXLTF4G_JD9cEcceghp1wMMT38MVZac_h9q7LiORRoxE-BBrMqODGVQUiDwrWFs66o8ck2LQIagplom-w2MKkKh67Ub7YXA1Z79GGkQOEaorrRM1LDeKuYHdGYfqPOJB8WJCOgbmUi32etmMZzMLT7wApW9HUJ5wZJdFv-SN8qhX10Jnl1lYit8AO3VDOtCXTKzKoUr9jds1hApzHtYPhoeUtMPPo0ksnapILfwq51wnweVRdlCv5IgIWWZuXDRyobhCn1nzwnx_JMbO9kfyXjyDHUD1xcdQSdmJELKiD3gL2peTiDQBhGf8n63sl9kSMGjvGs_nA8j9yjBZQbJ4zaCikTgA4MHUHQTBsUoJHI-VZn9jXzgQ-LCmTcXdPj7avvkDpp-n2-bHDwy7NyfRllF-nmTJ4Fnw15571wt9j1WCRHKz_X6biRMxk1Cfa8eH6_0dpB3wn1EfUqU5QHJU4HBuGUUfioo3x0AY5E_4-AO8OJKXMj8On_8mz-ER6LoGZuO_ht-Fe2SxgrM1WrnoZviOz3QN5UaTDm4QDjA8ETu0rb90Q3RV1sDnt9w8XwWmEahD_bCrLiZ5Gg-M6tFiITnJfv2hNlruZaf128fvmv_mldyRpiO86gFW_E5pKEBbglvshMbnl4c4p4D6O2tst8y2gpxN4bjipWSyAZ5YII4t=s500-no?authuser=0',
         cardName: 'Weekend Plans',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -565,7 +532,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/_74rJvMnavIBlBjWwa-GjjlHVgh8UI5O6EAYERDr1-KsEfIqv-P37jfFnvBEUG-rcRwHMArMPDPYiysZMcZmn8VLH3GzWYMLzQO1Uq6igaTB4yA8V415mG2lU_d2LOi4I5o750YE4Yh7PfejJqKbULHZBOdxGPlMEccuygza3Bpnn1SMuPjKCJOnFNKkBh8g5vyrEXjVAQKqirmZDw3jsBkNWZyPCvEFiyBX22JZtFamMo8dcyY6Cs4zJayhwo_IGe_4e_2sYLKnAO5_9--pCJ2Rpy6-HnuwC8rRDJLZN08gxjQYjhbyM8rNIEbHJR3BAi7H8v1jT5Xd5KlJjq4Hs76c5y8e1GfQzVALIj_LFzweWrMgtmpkRD84T1Bc_JLxUnVIBpLNhOXAc7K9_ghwZirlOw6sC4EZLlW7E_p8_7eC3CFzxkiHwB8Eqqzp7Hp_iOixj-iD4O0IMfEmDixJ-PaRm7O5KlzaAqzK_vYkg8UanQgiOWa_4YlvyquA2dJDcD3kFrHKqo4km0htiGunUuL_X_cswE4xhwdh8acxnaIh89-a6bozGE6CptqNpRSjbnzDieqtnNcKCSYSqEmicUwjqldne9yv2jG1v5zO7ieJfIlUE6ASVsvBvEsR-yNxaZ5YCv1BR3zypgjRYhQnkcsG9oUctS22OLWjR6NGKYm_1F-GKtD4czZiGLqLto1KuQqm2DXNatbTH98s5IJXJ8Pt=s500-no?authuser=0',
         cardName: 'Grooming & Wardrobe',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -579,7 +545,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/mbGKHoEay07Ovy01mYomiqsPzxHiGc27ZDpOmtIa2DVyzWIJFaLahxmk13MAfmhWOM2IkmAIuJJ8Nh5LUSASDMXjxT1NmNXFvf-IoNon5RxYmn2VXm2ryleCUAvod9CWpg7NXmf37rKF-2NCWd1dM-eyFebg9_bMBAiFcgLaekafN0-pkT0_Kr5mtyBxvHcHCcNXvkvgdX0BbyTVYLab1W3XDgNLaAIDmMP7yHOW9ru4YNOf9JXnN21IPo687erqzYJmQXDgIDDoSTLZjqXpHV1J0qr6FMQd2eZpyy_AJXyBZVyVtZEORNrN1zbOKAVPgRVQTVvjb7zdcKp5M3Uv2FUzwcWgB7v6Vg2cb0h6WuyiLvdX3--lr6fqc-qPqH8mlZKKTJcZys00DxXM2iRRhpVGSIu95hsML3dBNYyNA9geiuCfUHlUi11lFVEoSoGYw118wzAhZEUFK_48yx6HRbJ1OFydoV5KnBw9RAoJMGehNhMD3uyaYA0cd2KOgBsqT998kq6hQ2pYPDJ57v299WlukZbEDys7qcajVhCRc6f0f5vUlx2hFpl3P1kZ8M2JgonYuvfUw0RbE-QdNAHPpK0MDqoGMkz4x2-bWWGe3ZXIhr1KVwYkuYheO7y1IVDMsSFSbCaoY9axOXwmOANipy3ipLkIrCMq-OTVWGLHoTNoRGMbegrkreZM1recJv-aErfAP-9Dsyvpk7K2o4CCapO3=s500-no?authuser=0',
         cardName: 'Estate Planning & Life Insurance',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -593,7 +558,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/k7UNXZDZRzD6HSNvYIRMaYLxIijeSK4cd71y90-9VbyM9ZrXnWEc31NRG4uBeg6BW7jNFwi_3EnL_jaIwJXQ2L7-_V0RoVJMlaI4mbuIzxuDyNVUJwoFSrI-IJTE_am2iDC-eL4ao-QMoItL5RH1ewyan5iFwZwqJtm0G6I44lNBWngs5igSzY-b83H0dvyuvqcQZ-3ur0CWEuGINgU2Ztu76NSyQKxh7ebtNEp21q2PTyQGIhCJlsWkslUpaumG0-0d-wg-_0DHRVOZYL7KfyOpf7f3Utk_mnxubkaAHOlpN46JX2LlWyukEMuBG4FUadSCjF6Yulr3zQIJC_wpNIP2hjpCkK7O-S-OxoTXUsY8tJvAltFqdqP_WXlFA_hepI9UjY5KivbpyhKCo1qsrCDKHDMp20lLaoCo9YponZmwToQurtTlbqrI4bG74qZk9SVVm1DSjgLW6ES-Y-AlyLy-YrdkTkCKq7ACZY3egfddHlHceBSG0A8vfqWtssQY1_VmuS0jiuK_ubB2ULbHeS1JmfHfUEwaEMlC5Ii_vNL0VoklkOzuJYWGgVui00DcT04LEOMReuK8UGR1TujOHO6kD-dT_P7IRQvfydSe8wtbllX48Wq063TtgpFQeHB9qhvjDDB3lVE4Olxzz5z0YNmaVXPximAblzpmeAaXsYrsp4ebs5qo5uK_qu7x8yYhODk141U16FpxXA03iQOeR9TY=s500-no?authuser=0',
         cardName: 'Health Insurance',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -607,7 +571,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/8ol7uk_LtkqQK74r5KKHZtqiGu43xOZd34DTzDOMGUTi_rE7GKfpSzrq3uKZsINgABTML3MwN0N3OPJkhjBpSDFPAs8ZJyTKLbXxcQobD3MxvpuyzWkNuZpEaWk8VBYImTEERXN9l-39fDj4ywhrI4fpBthDxv9ZTgHHM-XecK9NGh_P-EbccRTR51m51AdjZ8I-RvudsXwoQxP0IBYU1Eodw1TJYbs8h_a8j5MfjuM7vhMRz7OzcgeSUqEQQJrdfEd_spGxE_LdmV4uSYyTrwdRNrQcj3g1-cDPMwfqDZeOueQIuhKR6VmQLQLm5QQW96rKgMgF_u5qV1_UFkkLxmGQMmB006Pos6JpVlOjA-OuU29xJqQwgdKCXRDlwtxv0acLRpOsRqsvWALtC8bCPwz7T_aTxVFd3P3WFTajUQ3y6S1Ev_jv_kxzZ5zt16E5BLC2yHqglFYqIgS20_GocdfBrhxr5C1tqDSXpA6RU0xo_vGBYToMiDELEPTeJ3FpZsI-QqKF123k9S66BRX2cChcCAaPvG6kR3tvGUrIn4rBMt6WUEVkdX-JtRL7Ml1LTs95uxwB-l1JeCBNOXMJasO0vX_JjK2stQeCPmmC5RVInpt-1sypz3nLoTNEbxu6B8bQ7lKzGrnrq1jzEsahh0nPBz4pz3ncXVXIJdta3oD6tsrNJcrfRo_jhEA0uiqsz-kh6115LkcYUlxSwzjkZbD2=s500-no?authuser=0',
         cardName: 'Self-Care',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -621,7 +584,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/zzqA_AZkfenj03VxjLb53AJZ5LWoC6Vhel904_U7utqrcjKv8sIkHCYDFdw07GvjYNJ7zArYQG4aNi2XPM0XiX0Iv6bYZbYOZ2L6hRC7YIS5DYYOtSaZqCBSQjyHJvSAVtRdlXZEOCOgeCdLDt2GhC8TExU3rlCzAdNce4gBNDs3DCyAoQVyas_lzFL_Mxu-c1TADjN_PWtwgyovG10vW6x2Ygof_QmACaUcLzenLgG-rc_BifFkgeRX9De3UqTiYlJIytr-i4k9Mny7-Eww78FLYE8ghg3zF_1eobVmJcVq-b4gaxCO8LDNtLb_GOSzvRdR3Vw3z4Ht4ZCplwsRPzMfrV3SwVF4tCyHsHbXCp8xFzENLeFvPXikjDnIhdiQYbh4qwVBlghLBJkVJAK9hRJqv3YwpkuKhI8XoZngWHIDDYwnLp3_VjveUD5L1h3I4LLak7PSNbHMelu_WRtBwDp_cb00QDPtmmgfjFmi_xDTTkNZEDLGSp2XZm-0Kw8d8eL63gSfm3mocLuY6h9sY_0dg4nrIUgdZA4-WPNy9-NrEcNsmhKzXMa_SIh1atl4Fgk2UFExVK4I2kvscS-x63Lw_KTIYOg_Cp_ASwz4WKZ2u9SQzRLK0WRBa8BnUn9Dy7gYc6eDKRSi7l7aMlqmUpw3hAhxO5AOnJeDt4TUVXbywycG4LwzEy7lvbeyzeI_ouCz69JpI9ayPV77Kc-ZByGP=s500-no?authuser=0',
         cardName: 'Adult Friendships',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -635,7 +597,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/hLW81v_GsHoa51oibmjKCA9h5IlG3dQghh2vSJ75F4hG3Rbpk-CJa0NhZKmEv7DcVb5D-1flTjOCl1JigtjqLBGFAdFoq8nGZ5ua5BIpaZ11P4o2lL_aJuQFMuztLyctqzG6SME96Z3xkjhOBLFoL1vAgwbmtAwede9SwkI08t721efuUy8raHlenF8j9sr_g1b-MLL3FOT7utI6EkuE3faOt-fAqnpKPY6bagTJKv5lb-dlLSi2Agb0tSMWQuePAfjJisD8CkVmSnlE5qGNcLJWh-IuTyVIbZvP3P4IiNK3NgqUtmuozKAOligh6h3rVl9qAMNqEIqq_PGHkeqHk8oAtyqBKEUmMZgciu_MElChllHF3RirV81B3te3DK-D5OnLAh5o9kW1nc5ft-ZsNzRt1j5fxOlD9BO-UAUDU5USzcB1ts8E_GEPSdfv1iCeZ58aOFkJzjMnoUlruCuEGBXlbDTARcftQV6p88ZQVrh8lqavPqWywV7MLuNA2cRjRkig2urVTmvS74Q8ndzrP1CFfCK-iXKRAVZe4FihGLcejf-XgMmyiDSZHDSYXilaErzCKZPgp1FOPNnWlvMGqkS_f3tfCc7s1hpbh8EgsmQSzKleRzCzN_NO561IwIYEDEFZU5CvRQ8OLg_S1AYxSPJ-n1CLf0iHjvX9ncgCEcrRHlHG_ZG75wwl373kpSgp-Cfi3zoTTAk8oJsZzRB2XqMd=s500-no?authuser=0',
         cardName: 'Gifts (Family)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -649,7 +610,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/u8PJvbH4rYIR0dLdTSJwbggZCIGzXXChr6X0uXHQMcMEEsoOf_q-i5ePWdOuAFt9lpaPeOcbRFrA08-oy66vi8C7QaTImnYv5nBufzQ8LEAMct7HG3wBQhAhx7GfvC2tZqL7FGiwUdo2IeXTthJIANIcXIGJ5PT9169KgAli_LBDhsML9xhCRYiIdgrVmNcGmKhtAsfK0QPXSaq-qepiGfYgMH58G4oaixIag9r65UF5Edd1DpC4PcB3tLf-DsDJaF0z2sm5BnxKJ-GIVwN5tW2ahQVM_QjQmxHPuWKXm3O3pGmq2HyJRk_6-Swb5mhorInp7uFS37-SQPSElXSbmDHOkjKXDD7H0tWYmpcygA7U9h04DjrKkQoEyglAAF9o3csfOEG1VVXuHmyrfzZPSRcgmMMCDMNDfCmBMk8XA0efbsRDhkasSS-c_yNAqvPPJxyPX8Wg1JjzZMhIXe8eUa7NKsGEi-xWb9FAwnvRVSJ9DFtX5-kuJW0_Ty0J2PXBEY-U-sldcphFwQq98bfKR82sFIEoYI8-uO1vCjcRcojxDVqy-o5ExQWGoz0k3lOa-8L5krTZseS-1REZKkfVB5hXU-oBpC5jpP5oAKNw99UanydEkriKxrNgxCdiY46o3iEXBVciz_Ous1cLpi73Pe9omyzU0-ZG-QAjAZIvmtjGKijTX5NbBGRPpH8tx2Yn5BObmOFfRdt6gE1wyJdAO7n8=s500-no?authuser=0',
         cardName: 'Gifts (VIPS)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -663,7 +623,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/J7Q_QyyCkKyzz1z8CNMKzEM9f6El7nLbxqGT40ofktO1gyTA0v_Lgcv3xzqktbjVthv1qkia7LdspFjNOsuMZGJS-2jrJEaSC0_wPYlM--v9YAj0uZBK8nt82p4kqn09ejDBEyhYh3P5t9sd8pnbXROBhe3pw-ckXe3wW32lqI_m8vjknLkBACOnNsnCf8Ml1C1lF4Rh46fFR2i2Wa37iMYyn17TjH6_EDwc9tQbf9rmx5yBJehZlUdo06hCJlqQekVBUQYnvguFq6JgL80-h7_nbmyky-8FYs0YwwmFjFHXQnoZecBXUU1L3nXJZbokOVgRQefCmCpehsXzHN6EpajuOL8441uEbF8da6qNPBpq6Zn7S5R8BaDqCvdEOh3IBiGOyfurY6gbGRBQ3sAfRa7Z_xF_1YACKez-5MxRFDMzMwa4taDXWLeLDd00wca1H17sFOCPHMcMX1wrAqgsK6d1yFPrrqH5TvpzJJW8sCYy8LkGRxJdLSVtCKiiP4sB-mZEMq1EePUe89pdaFqCWwkEdyX7F7e-H04RbFwotUSFzXxo3gh1RZX18uIHk8lbLi7J68qSrRjrzjfkii6zahLVquAaFiLdYwLuqaZnKOe9TRfg9tpB6ciO4IAfaEvrhN2rm2Si9K_UEeFE669VdJdDUTT2ic1CNFyBRoaMRePQDybGMvivdYXmvXxTqc8UVWyyWyUOraTT4F7lkSDkm-iX=s500-no?authuser=0',
         cardName: 'Holiday Cards',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -677,7 +636,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/LaXBjkP_22Me5R2XRvnq0BD18TkOSvHKpH6XxJ3VVdw9BXzaNLHsoJAZzW5nss66InsNZZB2685xbEmEIsjAU6373LBVvavoy2P3wILtfcqcNTtqHYKQtCgBaq4uUUAnyJE-ixseh9_5dYZkn_QnN5TskIXlXTfvNDXwkHysraqqqrzPTGf-Q26WM0zKg19Cn4FrdDnxxfd-jco7yOPXom8TH_1U3NpHgYq52VO1zKesB34YB9E3Q3Dru_eQ_S98h9JiMo1FNxKeUhxYI9RaNkG00Y4PWmqD2skf6pqiBscD0c0-Xakyx0TbIo1_PZy32s5mF8OodqWM12zik4nqDXa-wQ6L3VmiGsnymVNIE__sCRzGdofoSyUbS4h-2tqFZQeUlhpJD1KKAR-dmklqlvZgq9_l1Z7XEmOUx2Kc2OkA_XyWfqrFLXm7C2qSCdQj7EPVgETOKaobUJgpSXTq1qg8hpStCtjJcqtymrc1FuPTCWjS_L4stOHgB6RyBZHudp7y-1zJ03vQ6_yNPLIIXYjg3E0hhMt2Ui90UDJWV8ldYo60GDbnnzCd0oBJI4uYTbi_K10MweofYnxmRiDSu5TtvpUSvg19RGL5sIAtWC07NAG_WFrAXCUYBzFYGPvuTtvygGGfqzY17MWVeGwpm3fTAFr2z4XG_Ht_FhmJcbgXRGoiyviaAyknIX5mbyKWnK5XY6HeBPM3TgO4FlgwOlSr=s500-no?authuser=0',
         cardName: 'Holidays',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -691,7 +649,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/gdLzNm8pj2LIQeTFyqnqXRsvA8HZ6RyFPo9puZ2UWk1vdGftj2synsJj-KeoM4JgSEnb6NTjux0PXOB8New6Ywm3uNLv0HirEKf0A9k1QhGDFgPy8ydswBSIEtqCJs6_rc5JkI80LIuBXiNLF9WkCA7xbDncLES2UcgFFIvFAG7_oJIGR55Wsvj0Y8-qphUAN8nlkpeeR3m9qMXxpJFuQJyAZDayT-dxIek4_nEVRkOE_j3zz7zEFJkbgxehcGEvgu8WAyqAHXyiToOABMILW-ru0UeJA4d-XubEhO7a6wq12QQJTra2XCxD4pwT65VqQaEi25qAjp9Dltl8ufit2mKIHwx4WZApY-uFGBzuwmU15lnv9Mv9U9YFWDjUlzln_4Pn2W3kFSm2ehs8tibvi_JIMSLF67IOYT9FvciIR0kxy1DkXA3PIInub96w3pR_HkvxDIN_mP4st7cgNHobT6o17dVN4ps-2vCOYbNM7KRgBcZ2xDFQrPGYLz-S8Ilx40IxJ0osLuu6SH-RAT2UZOmwcfpooPGrhIth1a3oPMnQS_NLvt7wtEsnn1PQTKTNdRy9bQIQBzNapROOuZwsu0-lQAydIWUt_-JgrIQgfM_iNkf3h9e2m8XW6fNZS-rq4VzgaPnUv3BymYDv6z1ciubPudLeWUQ-IzlROMWhVXuKGLNRpXUtkIZqQ0jfs49mK1orj7-rlVMW-0TpWqJ0mlWG=s500-no?authuser=0',
         cardName: 'Spirituality',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '97F08BBA-8B21-471A-A8D8-B56E72146204',
@@ -705,7 +662,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/ermyeJCPFJYm1Zx1yXuSxl2d493piPJZ7mHOU_l6a7dMym1CbEHqjKUU1T7KWZ_0imNU2pys0kqYPc4j5dGS0pNJY2Ey_YWur8JFtZpvujhQoRZ3Rl4F503Px6csF_WJH9XyZGJXg52hu7hZo8vQrdbGBHQK1VmLjxqZtupITS5UTH7R6hF0j7LbAvMkp48tGIgqZje7E6hRiluz6JeLgq65E9ylHTzYbGfzGoNjFmQ-U416krO6u3rvZnDydKHwkJruwcC4t-PITSNKFk8L7csxvQhoYA8aWm1OVmZhGZJAYkb-NnxbHoeLe_jaDJhyrG7w6shd4ekF8FWPJXe2qfskxXE61cq74n14j7ni-v-Qdpfr3cmWepEp5Q3rKskkrT7VfBEN8yYuMTDhdhbSqMFXwgSYZO9LCbLyodjJOtnWpOxsuypXJVi2apan5y95pea8J7Jal-uWhLqqaz42ZyI7iOulvqAyJI4-hotf1Az080xKJ5Mx6CweoGh3GYmHgWTmk-paIDoIsZWX_cMqBC9KWKyY2cQ_uO6y2ktLiaHylAykFkj7iS0oeOvRI0TeDuYPyXyc7yisBg2GHC_bihFrNHsvi8LBROljDUwDKxdGJidrNMuXPx8NKQ9MFrJVdBRo8cS8Wq161DCHylb8loDzKCr3VlJ7nEzfaiSfuF-jc6jATo_hqkk0EBs8wdaKvJ6_AGBtS6F62ELUxcLmg8S3=s500-no?authuser=0',
         cardName: 'Aging/Ailing Parent',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '97F08BBA-8B21-471A-A8D8-B56E72146204',
@@ -719,7 +675,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/eSnT0QhjXprQsfmgEW6DGVGSdf3nMLShzGJGl_3peGbn2TU08V5Ckl032mtWn6uetGWEz6JnMbq4GZx-F41YcC5KIY_qWVBGhpldmLYj_b6NVDymXe_x0LFGPq8nztWkIHKL3KCGQPSMtiV-KkTrB8vD9nL3C8EVk-y-IbCNz2e19QBZzdm-IGfBcVtkWbcOcJ4h3QMwGxU3HVHi4LBzd6cZjPv8nBIzcIvGMu7rnOunqRhGZcvYXlDO7Vy0vEZhwHfWTE53PtpSuL0NRGLHPAepZqtVn4T9Xf5HfekiYTYCHi1kHVlYFNx03mkg9kw02Cd0AiD7J8ZAkPwZ8Uwec_ssBJo8ixPo_ltoGv34lcpps82cLHrk3Z83GUS6G7R0WhK84owNPhfiy48xchHSuw5KSjUPb2uDd6L7I5dkS3JzgbPHRRBT3IMYQ7Yzyw7yGOAZOxvLdsPIypb7RTQHVtpufqpRmw9qrS8kMzB96pX81rKICKLikwZ28KlxGw1zMMHOMsR-A769yqOw1_UNfsG2SAQMtMc8E_7N5dCrTyM6oiuTx6ljuCotLl8Rd1cpXZzI8btE6fpqr51dcCbSF943hqpmMytTdoELwufGjRIxA5PhcicDLN4vVUT8JyORNW6dfnXZDxOL8Io6nMOT1xilQbZazeCrluFHXf8p8613Q6VIeDLbM8utlL9oYbjTvQuVREVd587lJQRkCwYuAvIk=s500-no?authuser=0',
         cardName: 'Death',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '97F08BBA-8B21-471A-A8D8-B56E72146204',
@@ -733,7 +688,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/QOKwSJKliF3YG2RbNTfNQtG1o3sN9d1bLM3kUM24ElQaYOwfQZz244hDRS1fMXiwLz2AjJ6qhGJsuB8-PcyNLS84Y4iOKL7HcnCeJFZczB3rZaXorVdjX8bP-r21O_YZU7ouq7cWh-4VqEYBXuLfWfOuLhaAI1xQYjwl8S7Nggda2nyu-Bedx9FVdie_oIpcUkDmH0Pkik8-xDK4l9enywsgv_6Fg8aHp9CL7Ugv0_l5V8zUBrT60_EvsWYT01lWlMl1Wi8a3PU0O_uXLDVmkApURfv_uK0UKgTmDRgr4T3sRZ1BkyMb-RFVYUn1mP_GxaM92kw5lrD8A0jmsSjw8miNgGaJ5QQm6pLJes4pWtz5ms9AQxLiVceoLBl4wsrECV0Q5SXt9lg2rLRa0qLNCF5oy-jEcASrBnA-7om7L0pEAXJ7gWtEldO8NVanb_tclxssikCdMm9zOTHyEynoTTJ1w5yPG70Mjny--EM0QZc5Dm1gMeOQPcHVOrhdgvhfskgZdZbQ4mWWsyLVKcsOkEMIH6I2zmw_w1hN3sjf6_FPruJ79PJsVesMsVWJO8QxZq7Fy3TC0uYCvw7oWUBvoHVcNvTw4Ap0nLjrc8JSjZczlRVnieBwDWIAQJFwIwP1P1WES8KiEx1x2jzmh1ZfJlWXC1MjnvvKjdK5lw-9N8JYAtVipNd6TPbs0XwMwyg_kuRvAAizPKBhh5KJzR6wmI-7=s500-no?authuser=0',
         cardName: 'Daily Disruption',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '97F08BBA-8B21-471A-A8D8-B56E72146204',
@@ -747,7 +701,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/5A4V2yh8g7YMMnhkKMoo9HKPrS3RlCOzaaXHvnqsKMm7DofBW28Dd6EjgqBeyiR_gQ3S8YUbU3-xaFMMA9T46ci00FLZzIwD1bld49QZiVAUD_v0GHFm7XQQuoCJGpQO9bTxgzFGwrw8PmXHA1I2dPT-DHPDF3sRuEk50EquLBz9Ac1KyZ4-UNBixN1XtNeCRkvMJ9Dm9yvvhDNNjJJGCUhacQ9k18LRp19DlH5vLoGH2ZLBfcvHM6ypFPFflUulqXz_OaTZYhv4QQ86Vu_xcnHhYZGloGUtGnZhcdrWZXTLat6Kzsm_5f83lVD97fRFc8czfs2CJwb5xcEiIsUS-Rszz9jKM4gvXO5vIG3AojHXCor6_kN0Lt2QHntKN0V8fgeVg1oQFAtLXocDSzn3aBcClBtMDNt-tWf3Ac5lDpyQ9twyuUHAFhCfKvAfAYptJFBX4e1DpphZ8c8h1HtZI7KDdm6-san-f0_z8O6DYi4Nsw9JNb1gkoY64kX_Qkn_joQr6NvMgNlH0QA4CfkG_Zcm1x3MpWvShzNqm6ziwwOBsOrzO61Ux6OS8_PZBV5_VGOZjz9ieRaTX4EHTqaRSEelVO2tkmtpe1mV8hNjGTW0UME1HhYsWPMJWI5-FfwzB8PXWl4g2w04wu1jQyrOZrFtnGHqz32vBeFghwqHTtRY5Lf3lcGmmuh0Qlms6SU554L9r3npQTfsDmRpkP32kV_X=s500-no?authuser=0',
         cardName: 'Home Renovation',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '97F08BBA-8B21-471A-A8D8-B56E72146204',
@@ -761,7 +714,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/SuS9VpnsxfNy3iJgee3U0WUmSXUOG3ZPo7xp4y0VtpKnA-LqimPEoA3yU0U-UVKC7Q2AKTcnZzruaoyUC-55JM8KxtUr-Y3Gxjrwegpn3v_XjBC8TV2hoirJmuOH0IzajOqU8LzW20aY8FouAr8Cg-6IW_ZmLUJeRgeE1p2nXKY0viNQ97gnkdG44BFzsk1bHaZ_V94MWz-2UW2eUQUU495BTdYx38CJ9GFcMXsctPRfdVfVx7Eq_i8cZkIQ4K_P2coh91DJzo1Sh5qPjLwKYu9wfWj4t983MXQh67jfvf0tFQ2EljKCXx4wUxtzP7Rih8EB8IQERGpkOmLs2NZXesjO3klp4RdPz4fepJUPCSyvhbVskFK3cKwPfC4Gaqu7DVOuUxlSYLpukuAaUFeVZXdTTXd0C4YBB62YyrT7kPH0o5yQ7Jv2OcmGB6fAilEP2Uqo_XMwjI5kBAoeoC5p9dUlQxYzT5p-V1G13zKTb6aTske7KM-Acl4hHby21SVoAi2Ev7H8uRYmmqcKdxt5MpAaUA1rsl8aDalMhE2Sjhs7eiyc-ji5VibDdQs7hJ9ZqLGqI-9EbYqgfi5txoXN4oME5Wd3GKsGL-qdfzpM4cQRWcSz_TtOS_9dGo9LVFW0MW8BQ5hKawrsxwRC8T9FPISGP2bf-q0B9hDN2HjUcXQ93hsqMPdzL9ibv1hSvnaSyMWCQ3_4D31SoKRgurE7VdLY=s500-no?authuser=0',
         cardName: 'Serious Illness',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '97F08BBA-8B21-471A-A8D8-B56E72146204',
@@ -775,7 +727,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/pakhg3hNJL-ABnIQCQLdw9xvWCu2CyZ3VVrIdGtdX1J00GG-WNDKx5YSjBqM7kI1JbnLpRMfbZpYxXUiLT96Nz7xVw8DlzWmaWg_GeMONbGq6ssHszI-UGd7uXJoPqR3A9e7q436gIEIP4uMvuNVG8Clfu8uIQCnmT_3ecKFmLiPktRMLtfAtj0s7fs3wck7cPfC-T7oX7uIncntFTjZorTK5jcJpRBPgQOaCjr3gx6rlCuJnQK_RSXPIoE4LTMdx5MLc7pvNWu9iuAx6MqcVhBXeeel4Y-kmo8cWKYsx35ntArg2jW87QAa6U6OCwSDSWXLq2stXl-vYpg0qwnUfspwfFgNb52Xelg0qyuwKpi_Tr39dIl_0cksOnT3oiB2SNudd0YyfaOGZllqJ5ZYHXkclVS-brHU94aMSn-rKlPucYsahEwWuhDSRvp-3R8tCGjHakrrKR3xdYpiNHxGuDFlrMKge03TgSt29x9FXxYCF-xsjx2gYxxv7xOCxCHxaysjBzd_abHNYU3jo1k6PX53Qft9CzdpOwyHtzGx0aEyBYc7-LTcdtWacvJ7KS5fcLRepRJaTwdBCK1hyCZhoLR0m0Tfore5yRIs2NNkJ6F1sAZBuZx2b3v3vNbRnmaUAWk7Nd6lfmgVfb1sd0313r91kTt5c6PZo8gXHubYyefw-2XOlhJdb_FbDunlswHGrs4JK6qBbEJA6viT9f2iSar2=s500-no?authuser=0',
         cardName: 'Job Loss or Money Problems',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '97F08BBA-8B21-471A-A8D8-B56E72146204',
@@ -789,7 +740,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/zXFgacTH7xa7Cxb5JFmPCmsWxPZNpg-liTaC0I5EAtqPj-k8kVSNpMfGDdBo3rXbaNgzbc142Mst2qpMBxUQTj_8PBgYFjCCm6IV5QoqC4sNGvxXDovCoUeqFguyCA7tLXQA6SB3tmHv55r0ewCzxa1FK5AaMTOyF221wzwbeG6BcFJcyhGofIPXDfjv5-m8n4zONW4-moSnj-tiZ0bzUg4UQ5DbLjIXRqXRQHyqsg6ZXxPxQIG6TEptuWkuoXH6FkeTS7x1_E-j5-acFn3H0eplR4z2ul1H5Jat0rj5TtlPzSI25Z3cYhiu9bMtRkPKoiuqLoJWwxxpj3P0MxQR6q7jK4cJI_5WlLNna1Lh6gUSsFMTQAZv3FVkkeSsvr5tMbYoY7G-HhwjfDUcqBBFlINTxfYlpaztfvnGDNILUVcRfirwewOf5MEnsVr__9jAVgiD-bdTtjvTBNZvVkwp6bh0SfnxmeW4ju7MQ4bcm-AJF9sFhRMKxXeA4hyoMRl6liJbVe13MrqfOws_L6Qyvrw_ybMeDAlgs4m6IgHVnS9pHX56fcuFCcEq8wRnmflMeATlqO6ecdR-jidHu4wiwRLj_c4khQo0cjCdKb9TQVfzQ0LN_UnHIyiYUb4AxRho0nSrHMNNyXjJ3JOlWmERaFp_pnVNTgBpE-1EAr9gTUD4hprB9PY9KqCmsZu06BJ1PbfV5CVN4aZhfDsELjBcnnn_=s500-no?authuser=0',
         cardName: 'Moving',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '97F08BBA-8B21-471A-A8D8-B56E72146204',
@@ -803,7 +753,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/OolB-XtSNrO-1tSP8k03gmH8wsqlVM90XA1LgTlrUVCM-x5zeew6CukIqCYa7iNv34wNlpetX1W-EbBbJhiWHxxzuBajk6aWVqz3g5L2EI4VOdZaiADtdZeu73G0MuU-xrPEiphmsJK2wa7IAR1GI5Yxxcgp9vD4Zn7cOmxjioMAdsqp3Py60Ga7U0GGMuYywjxAk8uOBx9t4btZo6WV8Zp0icXW6O02NqhTt5YxNy8wf17HPu3f21knlNgphVXjSvmtWHta0kuAEzMdYw0gIWleH45RXEQ7OqMzXdnC8hNXrNIfFUusH-wiZ-iW1fAFmaDNSZ-51GgyVu8MecRlJPFyxQHG5ZGsWn-22kZL3NH19PdKIL_WMYku01mXtrFEAbeDnQ990SvG-4U3xzwPBTrF3ZoFfPjDOE4faB2bUedruLzi8LQ2V3AKOquGuIc4OEf2dPnQXLc3xWSMjcU2oT5pvqk7wTqCkpsB7hbsvfobALkJnZjlyJBM_P4kAbmBM_Feu3s9JSSDl_XXPPI_6FMzT5rVO_5hSf93YAS7ygLrW79UncLUXf6975xyTDxwSZ-lg_3hadz2GXDNcCYJZcburBSsEJT6Aj4Et8uv7x41icCkzkerkVlvxkmf9PXs6AKZ5t9NPPG_E6vAtdBUxoJUFehn_wg_V76boDEJHgX48VFpUKezEDq774rIUBlYJXnbsxi__CsRr7aeHKetMtWV=s500-no?authuser=0',
         cardName: 'New Job',
         householdId: household.id,
-        assignedUserId: null,
       },
     ];
     const romanceCards = [
@@ -819,7 +768,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/R9Qmp_yigVi3uTICDWi3ecPzxEwVD9Ze05k8DErme6IIUtFs4s4pI8pL2OCzKSqC8nBaMceGFujO-TQYE16oMcSeUJwC-b3c5lg0Qtb-6kh0eK5AOtQyex8AGANGUmuzS3oY_vO7T9121esYqtU-g7vnBS9PkAmb_-M0T76ALaO0j4Qp2nyDhA6aDdPuNjSoigNCdEcF--ZdLcDdKItd6ccV81-ofdb5qWl28AksD1nJwolzqz_WZ-tGukhamOkwR0n6cbfrR7r016pZ0x6DvapsuiGtdvCRNJ8sEV2HMaHrR9f6E45EVZJ4Z9uMEJWvGKQHr2qKwiuUZGukwYcYxLGTJMfF1AqHa9IJJ7oSkYH1ZUbXYzuTaUPvpi0n20NYFxEztYbvLSb82dTeVcziccxYqbNOjN_eQxa3HvasP7MkTTD3BqRtpDkYmwKC20H-m85ahkXfTsPKhzOyxL6TvhQHaKRZflli4KHIIt8jSJlWMvXaixdgdp4qqyNS9gkyil4sbFwKQTxzwp6G6VMkEobWxFdPEf9ezSTOPUBFUTO4wYRCOhBbR2qmvrBK83j3XDzqqjkLDsPhJ6GN0LTJclSCCcY3lcQAkIaYimizy40Ul3UsokVbAkIfbW7A2pO242aLcLibiBP6xFEKTiYveMRk-4hO6iRUl-ykS8wCosohjGYAK12_VpL8BSpnSSmkKIHwKq8cUlCp17I4w3OrWs4T=s500-no?authuser=0',
         cardName: 'Social Plans (Couples)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -833,7 +781,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/dxyiA5B3qjsIeuEBBE2sHhkp78qZNBdDkkHGM7mx2HM8vII9_IesKaDvdTtvYG2JQrZuFU-CObkWQfXVJAWjzJO5ROYonHu2D2Gcxd7TV4f6qSfvukxCaUQmKq6OTedv0gk9iQBYcKEjpmix8I44G9UlfdQM86BJW2_XN74Q48C_kFuBiaG2tTxxJ60XimW3bgZeHw_WqBD7aSufFwMoObxjBj2GKSvn_R0_DEghqir-pZAxg9Q5GhbTNTQ9M3K0rr6i5Pl_tgn8BZWrACB8PXJXOVHPwODbflz7vF9_z0wGKlHpRzQxuPdW4KKuB-9GLyTuYVHHygDskFwuvvAPiHxceEUfeyoYbNm6nt7bapUFHKt8a48STrvJ5HcbsE8__Y58i7aKMjLKsb9Le4_Ot_6qUt_KjlGxG_lO_XVESo1om9DJZEst8ORO4AMHsAWovGT9-juPJoLWLdvxaU5_Gok6hGlyfC9CYIGxhsaR8Aw863Z9UPI2Ve_MOe1PPcW_sKv5VEtPQ9mu-3vyah5L4l5B469QoDwcJ9gY7j8tihqAyau45V9_z2blYBPadFAp8DVJWwlasLZR6tHVTHrMUFqCZDK9YCah-QCYaXKpZ8gj_U8EiNIFSH0tLuVfmDfDHTrjZZGDJYd9lIPr6-vek2v0BsI4dW7YtVxauII7PHKFdVh-rx0ppULHGbUML0zlZTtQLEA2A5EiZ6flarE9KI23=s500-no?authuser=0',
         cardName: 'Birth Control (Couples)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -847,7 +794,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/8XV138Nyq9fDTUDe7C2mzwbPtrKCTeYOlJD18FPCJ7lEFUFWil_YwAIdaH9CdHyA9iF53elU0Er8h0KyPIeYhztWVejeBEp3Y-aS_mhIgSJPzOLtjPnQmhAEaMlPGQo-esYvxKvaoaQB_fsVuUKeOHLXcsqK6GpVzB8JqkcXGn55x3Hc_wvER0MC9_42GBiHCxvOphlk5Cpeo3h_88MzEAQy_zq9GHDAByWrx7h1TTiMhQ_FGYLjOCxB89cbSd2WUkKr8SVaoDKmpCUaJf5FjdvK_vDgwRInw1LbxrsCxFdqSNcUR_Yu0REQrl7KMXSnSPLGO0rWH2kSelPiRw0It1PYwXteQSZS15tixHK_DL9Rqlhzc0mQdPY1sxmKt_XwM8kCycDrnzTT182X5wSCoDJ16T8lsHp7ZtELrHE_4HmMfPIPDkpC01ZPhmuaSGNlC2LJHuJ0A_lX7vfvURT1oAfwarWwnxUIUx9pYTqNOodnh-d6XydtdfefgqrxFLmbaRWoSVRPJ1kiGyRUkuHIhY6XAja4_idjrb1nLarV6YvjKJ-vTLbdXSe50QzyHOuUYnKsr1m21SIhzofeYRXaNWDVrxnT4rHxOwiELyOGrziM_IMNJ3EmpIXpfRje2HUV3O4ZfuTR52CU4ro49F76iKmI63ZbxgZlVuE6zLiq4Gl6yaSFqC8ywqKWf4r527-5OzhDQQxNx6-fyyEeh3LhfoXh=s500-no?authuser=0',
         cardName: 'Parents & In-Laws (Couples)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -861,7 +807,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/tXxjuKNxBAtWBB7LIWUIDQsY4F4nAY2BXYBJgeEs2mNwUJ2WbvlmBat_tuIAJ3BYeqOGnu652vhOq7IQ_Wlz56hE-x1BmnIdOVKRrKJYi1RZW7pbJkHjp7Q9WYucA2xC_CeiXG7vrkC2beLcGuaS5VunwYz1nqjwMErmikLhu115l9pDUXaG0OWX_T-sD4uv25Wp81zgu_vbjdOvE-QY08UsqiI20ymrLOPmwVrobWITzYYpbrOznRrVIizfZlX4AQnfoSY1ayYrVeHrSJgzzXDD4dWp_0qrdz3n_s93RAMH6s0uqYhGyQR0mKsyNGsWXEnUvorVScV6WioBxSSmeEdpr-XM9fs1gisuoUcjHOkhheJtfbGkTtugmuZGEexdstb1tKYbfq6B9oB-uIB51a463PWk2_cJUoNY0g5huZ0nm38dcuD6OWyCypbFzg6MFPstzPT29rgPhXF_5v1ieLBNK5NfLt7jfKNPxS37P0s2rT6xdElncSqkjQVpCj0gk6jInmOE5K-wzWGWNzrF86ghx1_KKMKVtuWqqHxEyV02PTaF3AHNuxAmZt5AKBY8grrdrUGuDAj2NGg1Bm73QduXaDYB7YycU8Wss_xYO4ZvSls-wymUTZvEubFKO7NV5-beP8SMPkxTnA7dZV9i_hEkoH0KT1RRSpCiylmkQ0pECEfrM0JRJlJo0o1dD3ZWfTAeYRnNjoPZBrC6PBY_nGfk=s500-no?authuser=0',
         cardName: 'Extended Family (Couples)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -875,7 +820,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/XrQwXW9MRMvkjaFRJfd7YudM15pbIzSTMGEBuoxi7j_9g7fBVR9Y-mylPNi4FlHXX3Ze_QX0phlwmX77AcgPEmClXJrpFY7XpYI9BEjMTCoYbGRHvds1s4sozyoyOeMKu3IvKwy2M3Plhcdw70jvJ5xdcwXevCh1Gysw-oyo6g35TexJhEZt6gol9p-IUqX_akaRc3XMRvSzqWYmr_TPXN-DWu4iRmejZB76u0iulg9OuaGEQLL9GNrjZlua85TEMZo7k4oUAHBlDNQcj1MLUoj3c_cT2xCuoKXL1IV2bMXNjU-YZOTewXxMOFKsCi-U6KxuC-B-iVmTuktml-UJprkqMzI2aoWQwI56uxisjtKgYrBgpuYqgefENyP43AMwYKeXKevn0t0xPtx251SOiCyMQJKgI3eOq8LtfllBFl87TBtfTkWc-zzP59gfOPxk5t4BQ-phgX5IT3zwQmkNd89jHEFJuq7knsNU8AuaIQytKEV_ihfE2rvzNPjViqq64ZTgQ9WfC2Unxgo7oaoEKfGyE6vnxEJeKLBrqkxA65utDUP1emKd3FZAr-HE0HaGCO1EKxaSx5pE86UVUsqOuCm0cfyc0DW93RTnhLlfL6xNepMxmV93qcpost-9QdZf5izViv-JbLHwnHMDJUV2JmHVRK5npInkh_-LpyJrv7r9emOnhvkCjHaMPv2T5kMfFG-h0dM4HJne9Iai4xpt3UDK=s500-no?authuser=0',
         cardName: 'Marriage & Romance (Couples)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -889,7 +833,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/RxOx57zB6aQ1T2zzMj2HZaPSDhIIUMjrbjCX2A321TN2utbZFm7zAwuc-Vqsd5BMNNw9AIyQ6OdbHOS1VxA58LgLGNc7e_EkmSel8t658fbyACveg7sbDsd36i5FhKOAl7evTAb3C4tvPeqcrEeSw-FtMFQCIt42I-75yHrwym2_V6aXaVbGCh9QbrTz3OuYd3VgNVufa3jfghTGff_WA4qDNLo2byK8waIpN3TPPG_EtNibW8GvpqMoQGJwNtdl8T2KOjZavVGdgZUr6jrlF9hA_H-yONBIVIPCqeIriIfztKv8rEIggjnjdN4zHWiqxEyA4_fAKBlo_tX6P2me7vAT5lVA4BNBUc2tpkaiPCRGWMyp2dOgZGYa-TzZDVWkmmvmSuws_v9WHJOTWZxI_pvksp-cm6mCMG_XMrH3XiHFm18dipR53AbTGkAc3ekdFXP2KyxRwZ3t5paorKYMtTrwtJXxxBc0F4wxKUqIdWZgdNB9od7kVFXrnF8u0HWIJ-IJuaBWAKNmI4DjCw08O8DWL_vFaRbcPeW5fyUYTnECXlsFCoFmTej0Oynk24iwWeqIhtztograR6uRaygcAiRTcIqTyjdcf9Czx0_PcHdJqyJq8GR5vossl1P3A6FW8wssxk2gnRyV_zaFXBj7ss1L73nrY8rDqSwnQ1KZlDfbS0RAa_N_tEjf0NWuo3mB5Aaj8etGCST1jQ-RvkOmb36I=s500-no?authuser=0',
         cardName: 'Partner Coach (Couples)',
         householdId: household.id,
-        assignedUserId: null,
       },
     ];
     const petCards = [
@@ -905,7 +848,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/apPcNLBIsSBjaKhwGCaatimLQMPcWokbI6j-uNrX7rp42_YxYBxQ7Ck6GCEbqrIHGtdBLxjRFwBU83qNKsmxgQ7xzU9KcoMFQETV-l3FN2jFRVSWnzK7Si5F66m0pcXS5L2JqiOdI5LQNcK_T9ngoOVYFBmOnxi3fKIUKNivDeFZ9lW5aApI0_NdtyBnqj6bcB9j7xqgyrbfyXZgNq4QE3K_8WUnFQzO0La1RgihTMqQM8ZVZez0HXO6k3ArvxQYdiNl6zyiYQ_iY0xUNYojHu3c4OaAGv-mgIOnuxzxjlgf2tGkWxdcVA_Gc7SQrDXohx8DqrWw4_5THE8JHa6TRTMGT9nDTgb09ZH8_DjJMjZ0kVp_W3aULPa2WA_VCwDDVJJ4VtVYC_E3aDWhQwpr8SWWRUjNkc-hFkHVjDGudsZTcubx-J7JUOUkxuJjDqrvWUOy9t_8wo4x1YThUaYBSb2Iu2D8SrlJ_bIdifxHuPbNbkVSohfJRpG_wNerds2ksvkso9JdqmqpiguuTCQNyNz4c_P22wyLZXxkegTPDkmNpwcCXbO-kYP7PttAGN8bC7db4VY2cnp08WVIKOJ8CPs5tBtrB5oFKeOd3AwfxQgK7gJ3StLGETujWN6S3LPQxdm-CtrtC_Y10wh-NB81H_KcGhIb9TeKK-wryi9a2vC0ty6i54JqyG1fbpnR6cZF4JYNt4poeg7Dm0KeofC7VLQp=s500-no?authuser=0',
         cardName: 'Pets',
         householdId: household.id,
-        assignedUserId: null,
       },
     ];
     const kidCards = [
@@ -921,7 +863,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/wOv3InSYmOqbbUIMc03UKU1Pfi9wQCfBuh1ud_i-99s_i10Y6tm7YijJ2gkJqUYBip65de0kuDZWxvYfH2nWp-FwoE_MLVe7dxPhvuC531cSuSZNXAglWUNabKgZGrHINk-cncHISmBBsJtViExD_dVSaDmOzRcq2RaoL3_SBvOaOihhMxIA1LJEg2xc6f-X1Xi5lhjQqcrdf7iwQrGmmeeLs58hGi3DR5a_dqNLr7nQ-VwZHRrMXSS3mpkIDfNoRhWGLJ-vE_cVv14NTw6G67zPA8RagEWIrWa3gQOnsao7NHTxuQgEEahSCFKKTVSt5PnRfexAvmcJUml7TvfV80ZmRRk_Xn999LpuGMxr4wT0yF2CaGlq2uMxP02zUaVvNJK_vkDzDiLAth5TM7XiOtxadT5Pzjv1ZjPCmayz8Pj9cdH-yRAsVGbI9XEMasa_zO7_SVvhjrCNbrSuCERLv4IlRCZq5KZZydd05flFkMJi_Ayjly6_sDZ6no3zcIBkzO4BJJzInXEx2-Z8SZyhxO1LyuRUogk-gA3oI2qsMAyUthCnOR1faIrrSyKEJ672ggDPE5gnnvH9e4ucoWiv9thd50HlWF-YIH1k2vBaQvnqgoq3a5N2cv13I5FwNPUaYAX1Tgxr_B12VW6361nwonSk8a61Q2wS70UWoL2_hM3pA1Emtz0bj-5kxm7pQVynDTTqdfvE5rOsb5_clmwtrk0O=s500-no?authuser=0',
         cardName: 'Childcare Helpers',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -935,7 +876,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/eAniZwFFhqYHw2YP0tuX0tuHLlm4sTktUoy4LgN4dEwEfQmpEpeKpofYQ9_Q3V07eKqBEOT22fM-A9fBX-sr7mb-tYFJS-DZTM7M0kXKIBjO3qiOxjn8eErP53YcKJZOgvDCyIUZCnd9hRHAswjuMh4a6hvSZxusiYV_akftymUcGgzjfGrxSiuvFiZDEwUStZWdX7xHGLOx3nTaEUUGpz7tg_cEYIdDy3p9lN8BvizAzwTl09N8cvP6pHpHU2JxWNTE-oU_wsTKAOYSwjrsFz6hi9TmF-KLPI-LaJMNpJSEi21eBFLehJk2lhR-s2hdldpjtriywYhAjv0xMHPhvHobfrkcQjxLpasbjg2Cnf5X8PgocxBC0DOW5s1wzu6Y1sIjfUE4Qi23Hg4825Dp026Vh-mNoidCeS_70jrlqJcLC1h15vwPq2MVVVygGV-hiAxrA_CsaqamfDLZE_7wHMcBRV-oCm0mvzcfDZhJ_WbaPqMOze8RnKV7QqMikwZCohDuTH_SdLdNG32CjOYpDOpQDSQrdxl9PjIMp1XyCXPIlXWdDNyklrsjczJlqE3ir-PJO2ATKvVuLRxuecAK0C7zCT7Y2ZvYuOKoM8e0ow0MP7B0Zh0ge2o23TitQo9T5TanrHN2jrWCTRytppoo_23rGEGJgWeZoPT--eDnFzFOeJIyc-vTInmCRT2XXDGJMde0RsXx4HUR174vj82D9mUj=s500-no?authuser=0',
         cardName: 'Birthday Celebrations (Other Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -949,7 +889,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/8F_phF40QEEToeNE8_xl_0d2YGsVorqWsojhGPv_uG8Ue_JThYLeWldu_ZzXZuzNhUbOpoLE5aHrBVEO0XtcvHh3oLwRD09pTZaKcH3nQ3hHd2w8Db_s3_dRBDuc6yemGRxhVb5RC3XZyq6eyPIaeOztto4LXEX-FjleGMoqWmi23iI5ZRg64aeWB6yQohBc2QrLc7-51x7aZslOI4MdAyZ8OnLFj0cLujy9xi1hu2TFVrhO8kivvqHcSPoSMxoOu_QiEtElDdophK2oj0Z-crsozoST2cO0bsYAciQiGtAWK87Ms7_cvHdmxpgoUH7KTdVgNEj4iLG7e3uGoGnLfVAc8IXbfuWLPEzUCrYAuEStxsdCJ2p4BVvrjAqZJjgmiYpekZmMCOSNk0NxC_FDHm6Y1poxkw64cwU8KHG0EY8Gbk4HbR3H3s6pXCBcn4ODHQeJVquZbPaxq6MAh6CK1ARjXKBeoAB0hphAlwDyihLO6FIAuxSSBn1CdGgUhWtXZ4h9q4ZYLroSekYwiR04rwDCQ7vNVOH5iQshGKHqNaNO-iyW82EULiJccjW_3lZ9AEWCKZNOFL4dWXpr0MfBSlfDYKCTlPiH-Itrmdt6QhIO2qMMiLqux89TAc1ff1Bp7WBEi-8ludsOOirwOcim3F4K9lTGG4zLurx-y0Y3Zsp03AqPiJ7KSK5w3Mm8YGPClNw44_PcyrakbJQgzu28-aGA=s500-no?authuser=0',
         cardName: 'Extracurricular: Non-Sports',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -963,7 +902,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/a9YtCh4wrV8Zx4a_842XAytJEe6RbCG5M_YJavFmDdT1UWrbVjcHhY8djVgVtStptrXL_B5jU6LtY7cXNICq1hwxUqCSX5w7GbhPkKg2sJwZyJKmTytLd1MR6CCvqF6oXnlY70BXKxPAiYQykcmK1DcT71q-9_1ynEIuchpkN-Cz4HYSy2MFK1WKhsrfoxIAh-18DuATKFGH6uigypmqJJvYMailClGDGyI4A02ZKKNH7gwZogLESybxuitsi_Q3EcIs15OoCzOjGitKeY_jE25oCkAcVwX4-FbJKavAsxceOwofCseTQaQI0cP8I4mi4qXLQ9tNZYp-ZisKnPsOS3RPAa3gabt99KLpBVIVwgb1AbK10GmMyR_faigdDTcNnSSXuSPmmpHSZUSKQSdvUv-n3YpmsLjJ6k4ewFci-iCC6ALFzKU1dJ-1c9Esat9UwgHxBXT_VN9d5v67El_0yho7mTVAnIC9x6W_6JWFzpnO0RSBOcRrUq7Xcrvs2hTgdZFodfGrphVHReSUySGQdueMmWbPiNEXNea_xI3YLHctH0fEW9VorlptFRSrwkE6-N0e9XpevPgmQHXHikrRzQb-jKxkG_Qc2b7IbISTp7MvZawC00qQeyI8U6ocxZcyq5shwBFKleBReNNYAHGORJ4QkUBi2yuFk_iEi70iplgYi_xP2bN3Tqaiv7efJcyEuJlaMQSzX5PAe4dXOOXK5euV=s500-no?authuser=0',
         cardName: 'Extracurricular: Sports',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -977,7 +915,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/FWAycijz5jeQvgE_WTtlqSkoK8FTWdGLLXxLJxWngqU2DdJzdNEHvEoMBFuC-z9JI_aadEGdk9b-s2UIoheQ6jOWfLSh_Rxlr5oRxthbcr2AP2pHpzmwLqpiSSWt5uJOgK4GkZJjja7tnqPBqQq7D_8lOwAS2Vh6u_V0ZwQyyyboueL57eJtPEhVL8DH39decHm4-kSxd18aHz_-2J8sw9ZLR01O7hAYVA1DSlKSTiZv_TlwYdbUV-0_PnlS4RqYIsMkdZ7d0nw4EaoymwZG_S3hYQtkvNceSqO1Mdz2B7Q8d8cKG192iz39gL-EF1L1GwgRtH_ykvS_hTkFAfcTxfPCdLS8UzopbWyODhDyTKxKoHaah9X-PM_UEmXjPZEK1nB8dKZKlRUdPNXhbqz9daevWMuKAIQINHAlQT05qx7nswBlh76I3l3b6djG_nSqJ9eaWjxfZgpajKANQIw9GPJbSq4bwY5OIRBhPQI0xTYDkjmi1VudVk8kJZdx7safdENmAFAfTJz5zMowdP5hszD7ioD6ra07eIkzPyCe00NqsFRARHqv--4Tbd3gLgUX587AobekSyESI_byU9b_3TPSIV58cK8_qDPOFjPoCamzVLI-_NkIkC1SemiK8CMvVWLv0yvCG1D_xIHXV7_sPNSBnEOF30XCAsahiMXQCcRGJr6gV3Q8OzL7cwRUZ2gph2kKe1uy-_9tdQX9-xMB-VbK=s500-no?authuser=0',
         cardName: 'Packing & Unpacking (Kids; Local)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -991,7 +928,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/GevAc7SJ2JfNuDDNOvC2iwdkrhPxgGvUtk_ujNjwOVX8XUzISVPF444JhQDhyp4WB2OSDPBfXDfL7LvhEVf2e8KOAR6w14_ic2dnn7phc2LZIPZ5MPKnw59XbXOChxoTY-bIBMQjff6FCgDIpF_759qsJnnSJfJA1eLvoIRvOkR-VDi4ati1Wrv9PXxR-1HVxQaQWMhYEi-94XWhlsqdFR8N-ATPvIzV3klSX3cOMYArR3DDwzRrB2-KJJKpH_TuV25Hf4RWho7PTy6qRwb5NEAkwNJNG8f5Y7OrHyhkfgKYurBZeP6WNVZvU2qwM1rxUaeRtwoCp9ZZ1jUTta_gJCUw4ZfNOQ-LM-AalwXpUpXaU2beEcGuUEBGWanqVgqtKP6gi15A94Y-DTvbXSTK_qZLV7XQaR71-FuvLOQ8Wa2DLjep5GILctiajRmjWZJAu96Soetf52RG1VNQOBvPV0rhUlPxb58iIc8aUrkMRBlC8GDeqGypFEnCN0Cr8gT2nf6TfktNi6j1egHptF8rqwPUO9DkAdzdhLSm7UyVNtISwaRdg1Df2xXtBqDibRK6ZEaWeGkgcWKwZ8yHAU8GMAvrMnUADCMvcgY0BXHYtbqeQNk8ui2oKSohOwagyAYmTWkSbSGAmErnCQtqxLIKiPiBgIJ4gnYn855FKyV_Fu58ibx0kqyxaaN3qxYwro9MAQVJOzRmSrqyBCm96hzXE5vW=s500-no?authuser=0',
         cardName: 'School Breaks (Kids; Non-Summer)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -1005,7 +941,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/iQ9-eeUIJ9I2uDPuegIo8Nt_ihOE2j78_JI8hdjI3gZDASIF9UzVQkQAUnNEWK0sN6L-HWZdL4ddlcW_zHv5kcbfLF82XCx7-1tvRRtyJoFv1c2XWCknZTBLJ9mcQ9iu7gwKLBETFIu1g3VSmPX-5rYP1HQ3pTT5aHbWqiJNadJ2Jl65t6t4Hd9b6scGK9I2D-eVkYHfwumlzu_Yva8CmqkFInkSsdTfVWxRDdj-z1MdfxoaU0SXvnxvHBrslF2dWyGXykBGJhQ-uDtaxeRe-oePux8-t78BNE8-L-jH7m7idQu7e2LAnyDYB6NNuNMlNbxsfxy8Pz5-fs0sEox-WZEFMLaooMgc2DvX3zjSUrZapa3S5HhiRvKQaFUKKBgLALfa--BQ1WnMugTEMBlUSgQ9D-BaqrZ95jDcicE8_Qe8q_sxKCKtDqeXMRru_XtPWN9pZBATUosbLSAPdyGjFr2bT-HddWu1FK2O6ieCAGa8IL3LlSrcLPWSVC6CzqoBBzNfv3r0pJprG4KKCX2VW1I8jOJLmdM1Z92LZjeWY_GKX3SfKs93z_jLqall2Czi-iAUhWDZuHwzB4ijbzfC1ucNwJ6epjHTDp_SpTiS_TLocWjCb7taB6SoA20UWnEZA_m9VM4Va5AwUnuGy9gFXHBQBnjHy1-B1lb9csAydkvP-YbmY4Zams6gfkMKAF6SMt3NKV4bi3ilhPlQVbNUE9Nc=s500-no?authuser=0',
         cardName: 'School Breaks (Kids; Summer)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -1019,7 +954,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/OWDBpvbOOz-za_zkBYCRttm-JqnVo-0rQs2V8Um0XjH7ThzljbWuhdwNXgYHi0q0sXg_50Rnv_7AxgSDhZK2FS-z0FDs7HQaRgErit0MMIgm8BVBwMQffd4SgabmWnhlcs6wI49cTSws9f3MWBCz-tafOIvfBT2FRMrC3q8R3aNHvXVbXqZWotVCn-eGSkF6sfjFcJASey-RP-gTYUNDpO91J6-aSlcyZs3SytQsYjkBuYb9EORx_ov1WfH6ktmnVj8P8jk0clyml06ZBQKfJA6t7DA54iOCCawOTKmaxtjmVQcCJqU7u84RR6229cW9El4bLnqn6Z6JA_JqDNr1LHw6XaB87809jSeO911PMMsw90y9FD7zaUA0n_1k5S3Zt4U6FmpmYui77AV9a8_EMYHA7ZJRGCrQQ1zNqnSC7MCH7AubDxGg4Ew224eXlkO5snMHcEphtNSF7G5Ip2z2PkFuw8zsqy91az8Pbf5L1XpwOXNFozHGIW6nK7oWRlL3hP0WtPzWs9jx7a3yOK6V87W2q1wN2piz-iTARZicy_R9B2ZgejxhcID1vG1YqZCM9aMndaj9HtNmL-4Gtm_HTyboBkcxjuzVYk05xJjI_BFytLqBdfpNFOQZeqeyz7HCk1LE_N4O93DFlQsIEpM3CedGtU-uFwbo9Adf9fgUHx8hGVtS13DBJgz4QK38iv3t75zvbwDWE91NILu9Fui8W0ga=s500-no?authuser=0',
         cardName: 'School Forms (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -1033,7 +967,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/jCUe35upzya3Z0ps4mxTb23qzguMXiQnRr5y29idg6OJG86VwHwEwzz14-kjZCzJF2J9MKnOkqR12lq054J9MG4eaKC5GKUFcdlqBk0Td5UIx0KwwLmi3ZedDmxr8U4AfHiJym0QKu1ltJGlwZy3mK8pvZyiac7J81xTI7ouORxU-SKc7VAU0Fo0PnbGCNOTp1iGZILbw2C1JHrg-7ZAuqgjuYAfxOgWayIydFgDex0pi0EZ9EJIwdu9cIvhTaNT5UTfuI3-Isg5sOgad7Z3Otvwc1TrFCf08yjW1gRkPeJDnNCFy-l8VnI-2xbZAcWhb7_JB_8X18-qZ0u8N2m5Gh2Wawp0jdJT-iRO8IcJ8H8GkNafgTP-1uufSt8wigzjacniBfOD5H86w51kwhM9CXCC-axJindD-z1WXzhgLY5Gpk81WRKS78eYQJd5EfoGtv1L99BOVBwGQax0gcbSxfzZp7G1-F9cUaaLNqxLpl_XWpMzCjct1t7fu2Md2cab0nIMISYsv11-vkjncTqHfe7tAs7ZzVTso3WcySbmsaZtfzfQr53ZYhDeFSIQrbcpEMY6sgxRO3yiOqmxAbbdToQyyQ2-7SdHkxK5wbCAl_kbK88eauAkuvL-ZYBIM9KTME1IlAmRGCCr8YS5F5DJ3vsp3UNea1gmKbFXB5kmbzqfPv_gg2O5Sbjh1QFQ-nQ5Z8d0bAB2oMxmc0ez9JPRUooi=s500-no?authuser=0',
         cardName: 'Transportation (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'B9AE5F4B-E539-434C-994C-C914281AA79A',
@@ -1047,7 +980,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/QV7nNxsfw6WIsr9LvF0djPL_HXxunuHkPZAYNFWY7JnXyeuJ2Qp6hdU_-jx4e0zSneqZpewyKcvrKrSk9p4Mae-07JPA-Tm700wYiBTnI2MEX_PyblLcoQI5lxov08-WOLLZd4khozhoUonoBUWC31xkkBqI5VjaHjY4xG2zBaxxHIQKD129sUGuWRXwBuVLvZLkcWHgAxGXkklTQhwLgOUlYRXecvHPQ3KN-tHIFsVVaXd7y-riYY-8wnLj7zMAEIYUJH9zUMf7F3AZhuuC7YAHA7giUEREM-vGHSvXbTitDqTAGGT026WtXd-f_eOAuGsFW-oVljOQq17sCEjFISGrJkHdJVtecBkh8VTg2GxZsdg7Z27jugnQqknipQ8YPnHSxoVlCxyrt8lpPkibjvLw7cmLyb9CEgRz7IknPe5UfRCFKvFiGA1YOS38DNOvH_n_bFQEoCs1OVDV9wAMDm3hyq6-o1_pc0nh5IhXG1d6sVHO6br5lmF7nrbVwIjERWqrw7IogoQB-AgkbEcT02beQhmbO3Be-Wwysc9ZK-R968yjnt0Xae927xl7GsbWXLWXyZf22Iueqfa5DIY6I2Y8_BOkDKX6kq-eVLDQPBNyL9XxyD3MDuR6QSJ7sNUcExOSBFsghtfwNRnkRxuVu8CegKTKnCdfeIHNBulRoGYTKZAH7u7nwJzsqE7uEABAHtfz_JPZ0fGULKW4PpWpKgoR=s500-no?authuser=0',
         cardName: 'Tutoring & Coaching (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -1061,7 +993,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/fqJZQckqcKrrOGVHs8Pf1cGVVRUbkJ0k3Mz8UM0BIAnbI8blBMKERJsz6i8E-E7zC7uDg0l236GmHqrnvnUfhmxfrdFi0hZNrH3eFJeCzYVF3zdxtJVGYllZ-uM5KBjq8Xk4IPkirgKRyTPPmD5jCAtIZTeTl4tP-B5F2e5VswclTNh4XzQOUfXe-ST35DgX4v50t9t6_iOXugYiBqFuc3ZDgNSo7ZAZ3h2F9D54jbhXjwKUqFGr73jVuisqWrweNT2jt6SEG1_uIcm286Znpa_-EMGZFlEoGDqR0RueBeXHjcGnA5QVJLREXL_mmorblYuNVRLYo5shDYSYaFyrBVJuB5WJDRYJMIGa-kUCdw-NtYNwN1P44H6QVE0wyrmAZcNoQQp25JV6AzKfku0kR3zX_JcqpBxHA502a1CXHsEJWKPQWp39IdtJOWZQxmeKNvg9r2OiK-ghI0JN54xM3JOWpb_QBbGsB6-1AI3cgE6eGlZke3iaIfGPVP10-5mpNDXY5uQGKWN_RhrQ46gbzziVb5RlyqAzPDNNYD7omE1g9Fslc8FrIt6rPktERy5rFNXUoyl0MXJ5_4wUmS7GkPcRQjysYrus_70OfoXD5s7kz2LFr-tVSCxhMZyu8sSss1P9Wt4BwuJdCVtrKS70AfFavDabO1r4W2T2TvQZ-c4X7qFhPO-MTPBBxHcLpOlpy7Gy0ujfJZIxuKyQ04_rqvOr=s500-no?authuser=0',
         cardName: 'Bathing & Grooming (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -1075,7 +1006,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/FmV47Ct26K6QtdUINyB9zNu2u8As0kh_SXlW8sCrLfvnTbiES4bgQh47jeGFLXvJXJhtl7vPriFBgIyurYedog34pYIhLitjIck89xpUtTbC6s2kKe9uh82TvYmE9OUbtyPD1CoMJ8u1Dglwb8RBZ_i_AI5GNIYs4gJMxqjUub7Ho1055TtLmjvBGPCQaKIrJvC19AQvraRWTcew6i4XC1lqNBWu36OESF0K0K7Ud06t6NHaO3sf6q2P_23u1UJz93gRWBlnJtGxEJ1ZDSiY3UA0hAj9b7af7EmMPoMiSeqsgifJGz99H_sg6AGGIteDEHaPgYLZAcTqYATdycuhqi7px4w7ZNP-F-2FAmlVSHYB49la7P34ZQWu3Jlgw4C1SbRLdMuxb8RmKOLiqcdiULOxcnF4rp2skf4Q3XsHhe-Ov9Nacf1tJnM8MefMoyK8f9-I8RBbKDrXt403WvVDx6GIymx950Zc_aj5_-YKypruxxoq169rZ3OWSvWHrj2a0gAw_ZMut9SVb0PN3SYbU_pQI0WPOIsDLHjJfjWkDkGImsR_UQDNJM_cbgfMAqyCs9OOAC-6vUl6VuwgUmCX5A3Eo4vCd_F6D3kfkxjqQ3Q2ToAz8NAi_s2Gnp51aYa4zLtxTzeC60bjyTrX8D3u0ubl_S-yTM7Bmgb0fGdRRacOYfik7ID8W0I-TaBYelVqJQ0VoHuM4djwQML4PFjpuCgr=s500-no?authuser=0',
         cardName: 'Bedtime Routine (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -1089,7 +1019,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/_n5bGtidgRhVUo9v0pMBcx9Hj60QjDMqOuAGM2lcYu7V6csJh60Jg83T-SRJUEUAz3sJ0EVFPI1k-k4_gcBB9Y75RLAoZfL7ZG0BCHJ4Ok8SAsHhDRIIJ8YgwIA4PzhW7Dua8Qk9wJp8qcsi_Hf019hK5gEPIYs4t2moxik3PdiIuUouX4rq_Ke6ZMAPmEXkIFstmref7FI2xx0QgW2zBdVz9yM9H0jfHaMimEuFalfMiFDQHoR6eMIngwdfj_UeIw4wx3g-zI2pUPjSeex7H5ql0AYxOye-7Xhn7Qmoq9xGviP3rzTd0_VzRTzeZS1wnw0LoyIXFXFuTcknDWbtz9t21CwOzcjmHilUvU3K_yE4akt6jKspgnSZToFTY4uGqzKPU4DNStiPIFWY-qjh6z2WTRg4ihwI2YtqHjOoNDawZN-1mLs1503kpxpva6bC5DeexzC06Yxn_fMfkj7l71diUwGO6A-7usG2bpooqkwdnSLuEk_K1f9UeCEp2tqRcrayOh0FFfVRyh5SRsNgIhxViRmo6SBrCP9QBPSJB8pSENJXiySInKXAc3I7wo-0A0Pz1kykHmAoVmKtKaJkD7oVBdbf86TSD5YIDm_iF8W3y2NZpm3IuLBXSLUblvdw_IrHQaLZCOpkwMgxwpfXKcidXUbEpwDnZao1OpM1JKKQP6OVKIpCW2cIhKzNbKQn5OmcBF-Cij45sCM__-j-SXrx=s500-no?authuser=0',
         cardName: 'Clothing & Accessories (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -1103,7 +1032,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/WvOaFuQmJh_23M2SB01cQSluWp3DarQj2jaQfBj-QwcwDI8-dXHm0WoN4ni5Unwt-7bzwudzneQPwKP5z53hKRnYuhK5EYOPCsb1oOeQZp8qvqqdSultYjM2-VRHl6vVvLl9IGx7IKYw6Zdky7dUQUYwAUNPTxG9chxFP7ygQYEju5k3HFE1KiQXLmaXhWlzl_xt45frnyNvd_W3dh52QWldamedfNQv5zX3JCXss7m2Ic5Uxb50z5AqGz4jk89f0sCX-KFKGRId2BMxK1b8Qdph2_xcFWEJp5Ix1aSW6juBmT9J6t-ptcX7mwbOp4dSgB-93GepTFo_zYAx-tLgEb6vpoaW8Uq0n-clFihYsWTH6k98PP_dAJAoy4HkJtawpAjJN3Kk3Jw3GSklr94bCEUy1UBQN5rOgnpgpek64ejh2ukaO-wmNmRnDQhATf8JZR0Btu3U8t31u6DU3emQhR6MNqDzUNGUu7TB7h7F434OwnNMacA-9PFd3yEUKeDamQocak6OdX7FXF8SshNCzWw1eJAbyzmMU9Lay8ezHg2hXaz-bA_d5lCzL8GPQaH4Cnwe-2sOS-9kqkiOAXE1NB1oqYCDUGep7Nowk4n2AXeAHHR5Vw-InslsNmPq_15MsMMVBOYIiOyDoNoa1kurvbxkGMGsxjzFc7smkGDoVE_4wj7TpfpI07Fj4H9dhfIlWIyAiFmp3GsOQarkh75eyJNH=s500-no?authuser=0',
         cardName: 'Dental (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -1117,7 +1045,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/6WALRn_402FsicsDnw-pHGHKoNrW4q5duznn-TFlp0ic_NtWxkeYc1OUXCNkfCDuBiO5fqlbuBFSEM4EP5qTYVZolam3kBHBlR4iV6TXtUwmV9Gj5532knz_v1lXl22-ovz1ugZ-gh7eyBLIaUSBrA8Ru6s4ypispATSiAROoO-z_layPCuxzMG_hzq-xDBpoJUZPfz-J3LIoe3Wz7VP-tYLpcz7xSkW2GjbhVNJjVPFR8NgxE0JSrYGUiHiHYOLyq2H7V_3SWeQ83Rh0R7fXAo_o3ixk8N6psoNFJ10jYaw4Wxt7yBVrJBvDmPxLBpyhla6Uj7-JGyZmnjdDhWxJ1RdeOh-VUtpJLMkHhlKnd1m1WPJHD1F62pkCrZ4FDbyBQTmxZTB8hrwkVJaIluu8FWyOf_M11uf5yJKeAWhBxrCSAGxoTA65H4jIbVapS1tJoDehdkpOIzObAHxRIOEs8BXNlC7XcNZCHNwJiqNCENr0lOeHu1o8ld-F8l7TgB1xDxev381KFrcbAi-aKsJROW6T2NjTngtQq-r2XXescWzELakWfpGjaem6QfEentWJZwRvFmrlGS4M_d8-BD_6NgAL2vTjzVeRxx8xTFFkb17EqdJ-utVwtXZYXJgq0IQPJMbsY9cPHZ9OzUEXzNicqM6oBGUWuQvizkAHa9k_mvR7aj-vCQTvMh219mQFXh-bBUODnrwCaiQBIqI_gaih1Zo=s500-no?authuser=0',
         cardName: 'Diapering & Potty Training (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -1131,7 +1058,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/OqT4dggf2f3Dd2tFsFAzDswU2-z3H6etu0mrs2HHB2VmrNVySdajoB3rhv3cWn5z1bO1sMxnDqhP8RP_ObtUZn5Dxd7sxy4VI3vZBpcQ6sQ8glnf8zDXOJp_fauPLVFRNbMySzRKp8FImSwvihcB7RAM4sLL5LC_JgD2vwwoz7-hvjkDERYu5b3r_o1g5yL9Xw2Y3NczTyu0N5slzPBpqdZi6GISiwOF35pQDTReLvDD4TRBaAY1vScK55Yj3RgdBuVsi0iYlxRtvxAlZ6kcrCOS44-KW5FFus4lkW_ufxBHE7X5S7nyRLKlpSedQTPEMSa1stqNGyA7SWAffowK4hmP589mYVRdH0BmVepWY7yNp7EiWztfi5-N4aM-lvju-uIN-39hvSxTs4-Hobji-cU_UX2eRogSIZc9tDw3learAqIp9ATMxIQVMHTx-n63zuRCoWk4IBJbuviroKR_x59Jea7CSKKUW7wnII62Fw4aRcXYnfZo8bil0w1l8NE4KZmb2Uw-46-mlWbVKxr_6wxTc6ff-NvmvSMS8ltNE_KOVeNUao1_kXVZHD0Le-uuOtb-Zy8fiewusHedkgfBxhSQPGu718s6tsDs-ZD31tT7j2xFayGJ069nD5uJcuEVLwdR19Pbxp2K-Wveu1B9yqjsJ2kOEeg0wEHpXCGAqDp4w4Wds_ARswMjRes_2RT1kfLuTzSDRZ4OwNUM3E3_c52L=s500-no?authuser=0',
         cardName: 'Friendships & Social Media (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -1145,7 +1071,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/sr0LweuqF_1aoXDBHS5TIIJyrFrQoAZ7r-Dl1d_8nstND892VMfCdWZhVNqTvSwd6bIEhZYtTEhc6UNPrTZmrDb2hbNFW5xzGLBXPZXVcCCXJzIQ1Xm4j6Qg_NjgwTivn5wXztq6tw_hPjXyR66fA0OxF-AM_Y4iLvvAdLt7WAseI9dRZAwyfAGaG9K17xV1ByCB4F3QQUua76GGPBu7eTmHvAOPN1pEIgSbYC8NJL4TlMeCLU6PRTs1IP1rqWhwCDeKoDIK1Sehf7sriFOyyhXVEBh2vOp80f5A3kFkk-20Mj4Rt7Nqb6YjxhNCMm4YeCA0HFTjfs9JPKBha_8IixoWbUgxmPvJkXC59dsmPaXFAOsGbPL8gR8TbPlLMuaXDw_O8a7W4YNtu9tSrlKQofD16U9cju6qgJeviX7YgYoyHzilioXoMZPG78xDXyspi8jGNnjO7q5B8gxTjCJd5gZ97dFclD6GDFzRloecNgy1bVvkfDxaJcKOgsYJaUGhbpyPM71U0046M4-u6Nx_VxjTC6g6xotCu92yEXYtc8wlm59jnLqcuwIZrSC-Yq6RE4Dv9eYOc1_FPbsZnJnBRHHCFDIC3PT9-Vk6MQXQ9gbLe7HAlKpD5uxKp1o_V5dBJ_YCWmrdt2_vJoyYKFeepU5UV3PGqMzGjQ9kyI91WS_nc3SiSk0RPt9O3V5C72gsyZTzqOSdJVMUhsa83inNPHaO=s500-no?authuser=0',
         cardName: 'Homework, Projects, & School Supplies (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -1159,7 +1084,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/D34iRVX8bvDPzO15eCnPJ6lX7lvaRvJk2O5bJsdb-6H_SMJ5ryljBZjc8Y5pPnA6SiegYe0mV3_D8sludY1HLKEnIoAKRSKCQPtYVXFWd_WaZ6MvjavviowSBDXj6u1w0DwTuAazFsR1cFi0NEF1yrWM5c0k0kOH_AMA3PdNKmvGOV6e1DC0JGkd1lDzUHVZrtWdHN0PqKoHfPWqDKI4bqPSeiG7WhsRXGcZI-UMeE8fqdadiIrpilP6u_uXr-cqQwwyp3_AOESG9ycvm19GaUmrRpIZ83OTmfzXe9GISjNBzvCscb36l9Ym0CLn5x6dl4jVYv8HuVHweOW45-PVpAc8FW6BTUsKSEIZfPRxJgRlOpXjKOLhdIlmDXcE3Meyqk7mYHCkimoFU7hf-bscsCbzafuPLdyR1KzpnsbrN1C42j2ljJhUycKPF2Bu7Ma8_56wAc0GejRfH1ZZqSpXVSANOJ6z8Tr0z7ddnIvvnixQK0gFP3_6GsH8HU6r91kEl7l28bTm_grTzdgRqwHEz_6UEDz_AJjXal2kQ2vJKGy5rxzF1mcRmEIF6YYyQFEjo84uggK4XIhnRX-PH1FMyriiIJbC4ORqYqdXPUXpkBQpvhdPOnGAtOpR2yxNBnM7QaPfIU9nvpw8TtqLseA1bT0_Y0QdAZKmpmzjunDz5o0xhhabj-sgzodEHBFgkb5ZnvquMZtVEYuM5gijDVcHqXPH=s500-no?authuser=0',
         cardName: 'Medical & Healthy Living (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -1173,7 +1097,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/T6qW8mQ1YdbDGJU7-tOJSv-4zmlNWma0WwpJZbWpHTfKwXMuQ7RAwuV31acLHYrALlgElIIbhpdX77HnI8qsJF62pgH95NfSBqJUB09XppmH7GILKf9M_DJeDpPTo_ht7x8i6x90jcOI1-nGhC-3Q-zBqka0_z_lt_F5xrGAFzzamMWzQVhP0CbtqAKQoSY0Q6jlUNGJtaTcxoG5o7IEAbkmamYBOORg1kFqfnL5U_J_YT-oq5BaVYogGqN92CUtF2XzqlqDYexjPdo6UwqGZcbmpKatgpG-7v1m94_2dyHlgMIbhhOJprkNRV9Sfs6Xw-DzDcNnFq2EC82t2rbOBLvJlmPh7KgfpfzidEn4XQSwuu4BI9cAcHZLf2N1JemW5-Ms9fGozCcDwG201I3FggGLd_qHZnQcJVFhR9cm05RBOkirO_XsrcjgK4ykKLNdlwyvbaXVZBgOZAjwaK7zP6dn5Eor408GvJ6B1_RSvD0zzwee274h55h-qBNYfocls8pvQHMG_GSZlGDNT-cRzfyt2c4cfIQAeN8trnjr9W-qy3wvTbRMtyWmQ5u5tAx5HFdZ64jUriicouzHf3HWnnDj5Q0CmA4HUhhr8TAG9wxANnkwAXNW-Z84ucTuzRfO31ERAUX-53YyDuQ5FGjNOwL5rtuFa9xpTggpwkRqTPR45uydE1dgStBQtBhdP_BdoOYOldNEUbEyD5kMFsRJLkr6=s500-no?authuser=0',
         cardName: 'Morning Routine (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -1187,7 +1110,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/J4mrIEwFUMu2x3CrQuQx035Rsc5o2ta87k3QM_UmOaNsh7tNhK6u_yfux43qULqoElXiFk87wk7IXdmEHnzpK_9xsZ04yg0N7BwHZo3AsrSCyAy2_8hstSA3hOa4knRD81bocyotVrY45AlWxSBmEftV9RJOZhPeoMcTV-ovEyhXmgDHodVv4BD1oNp6csqd1cnnInEJBrZgWtREVeawAiOciHh6gWLOoU6slXug6w8_I1Nzce4q_oG6cnsRJ3GDYKsDltBJp1HjsS9Pn5gn-PKlxubM9V7MM90TLXQEz5Sji1MMy0MIWcYhyEn94867HTjbHTfUmI-Ey8k2Dn66isyUGgm4-jy71J_8mUlKkfat7iHkXzlfCDPwnyUW5-WSE-FsYFbYRx_Ly6XirDD-stBTOw9qwOazGjHCX2zc8dDm7PTMBDxR5N_3j4Ms9rxvfPNM2Mpves5Yqao4z6kVfcgw2HSUzv6FhAkiAhn2C_ls6Hr3IlvObTZgKDqytJA0kA2ZEVef989vWYu8AyIBAXkE9pnW3rqJn5wiLLz64VqL_xWnNkiz6EWKx5CD3z9QBDlkeYtCtU_7qoB1AroPYChfb9Y1TNaGheiwP_IxhCC7p5gpHyz2LGDFqQlgMw7woIcRfv3SOfGwimqmjuYUdaEa93X2L4JF3Jnt2w9NTvhXbx9FyWanGVWyCxau4DbqHIL7kdkUVyr2C-DqxaXeNQXU=s500-no?authuser=0',
         cardName: 'School Service (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -1201,7 +1123,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/Fkkg9NhzpjX5i_3PUCTiKcCI-lglGn7fO7jfWdMSSFAmNTYt6v5GYzFkl0Kc7YYSZEB_55EvaUndRAGAofTBwi6254Rr9KxqRO8dhxA9drATkjKYB7pKEEq5xXPe58JCwOX2wmz5SWx6nuKFT5jlRXnnYKR_C9a5M-0YzDXEkWDfJVVzlzgvW5o-EJ1dkRYGC5rUtgtTXspT6n_Lmh9jOh_pjqs46nG1z-Pazvi1yntT8HVEMVUTyFWU5OhtPcsPRE-zejpiMQ90hjK8o-3Tcq5Klx45rL7a6zEfwMC8oQF5rbV6qv-nFB24Of9l-0ldpTHaGBzkJgOW06wMAsoyGsCQ9Oed_2SKZF6DDBXRvgsP4AgvKSWHc_BTFlm9EilG-1IGGtm5jLFkTF91ES4YBEyw-1OZfz7wPyjV-d54HNGm3VaQE01mliShhxtBR7OQQMqUfKhVFNj7i3NzvtUi21qj4pGWyjsGXhVs_8bPfCXndAeCvDIskMmqs8DEqdgZ7iVm4aOyPew9Zp0SumIekLCZ1YSA-xkkiOK3YIR0X9J9eAppU6qUHkKo61991FGQx9wxR3geiGJyEWgHuYiE0yPY0Y3-Am1jLFGmMm8-m3jkYU3bVCG_2XguRMSWe4sv7CSU8wYQOgVi7vmYAOtoB83tV5ZH8hxe-qJzp0pKok7Nf7-YEkRg1wXGCijEHgtNZMxX-EezgDqqqTipUvAVzwxV=s500-no?authuser=0',
         cardName: 'School Transition (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -1215,7 +1136,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/emnwWiERFwnD8ud3COumHqcOZ-vIhDiUl2BaMdxroizUmLk_U69X_msVRtgzwW7G8V6dkTz9fsUEy3okhygK6tcIl1PzkWFMwNcG1ZQIGrK6tpgm-3HXHq84j4vupjQFfPogrzs-K1hP0n_UbCoQANuSMOrZ6HOQfHp6kGUyhVL7JBTuPd5ZFvmM3H4B4xuQ1RCF2-OOtj77s2fya7u2iy3Iy6OGolQWX19ByyrNKtXPGqoeNS-uySj7n2f3l0mdH4yd0xswodRCTW90vuRxTjsLPDaAui2u6JqlaDJITm-rWLG-N4nRnDj46RdRQGAAKx44iGUk9vFuVXzsq-Xr4p_BVulHshgfvjEegvE7mFkXdHcfvjfEPrxf_Pfa9K310hZVLYS3nS4287c9FnSoudfTvdpYwlGONlgxWJ2DpQuQ4MCFI0Quah-nCxn9i6VST1YTApjpthUbYGFBPF9tCnFSP58b8LSjzO98uyaQqUavxIvwu1zxlyYW5Dmd9M7399MmScDTh_gpTwHSka4_qnzDnszPIb8dR_f2EWrW7C7Slagl7FOH74SE1KPD_gtPEEfkf-zxpeLLxs-JCQxhA0uVnoshUU7sclOeVVKHSPvfbO6d7vP1ybJApIld6JqrF2kblbl_rMaYssOJDSjwU2XZqjB21STwtUko4jdkn8tPo0AMbkvwbrUFG1zRLPhIPYiaUim-YxX3W5CuqssNy9SK=s500-no?authuser=0',
         cardName: 'Special Needs & Mental Health (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: 'BDE790A7-DB93-41BF-BEA5-5A595F1632F1',
@@ -1229,7 +1149,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/fjFtEP3fpySczL18RsUEv6sJrardsTAIavTp2ez8LbtPq-aHhi-V6chDW_QRhSU77rp6Sj9TRFTEk9zf835dafqyZM_Bi8gzrzjHTocKq-K848yhGftNPCZFJ0hV6QTEioRiqACIEaz_t54DvbLQKZFrlolJfW3RX2Iv8Iey3sYKvoPo-b8-bWFWgL9vvz_PVtdCleoZZJKpX8Plq6qNQSq7oQE3WeOX96-48tNxiU8lD7ba7hOL-xGljx_wTuyVMl77LAINuFymtjSVBHY4IJ4D46IbWeJL4XSlVnpnL3Lq9Fsx__flBF5aLJx79hjiEF6sgWoFYt036C6AoivmxwsiPt_D9BHYriA0E-VN-U5qr6ldGWfMJ4Kk-6tMbjcrBzNHw3XaLRXGJUt7BrVW8sBCsU3tCDgx2kf3MEQCuXFcz3Xh3D_0ssV0Lr_pToB7GQ74uD3DKiRwjcZ_5frg0PfU7zQB577DTo4Qur1eFr8as0z406WaDd8dvAYrbc30H9ZBboKr1asIdOk1Z69BObOQykJ18XSUCz6rHzCG4KWMA-SSDuwKgEJMqZyD2yDwrlHmwQh9F0_S9DMddOnCCT1Q214p-WdOeRs4yVJlf--clH8j9uRnOXGhNgs9tL5D_VY8_dejMeJvr-cFghF-_NbstkibpnKjProSnJpxRCkt9iZcxcK1fAbLbvPWXdYqB4Een6a-ePnBqX-xjqWJnPX1=s500-no?authuser=0',
         cardName: 'Teacher Communication (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -1243,7 +1162,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/gkMll8siNsiJrUN7VCiDJsjLbltNOdKx-mAYBCwpnMul1hgU4fHXkTMc-EqeR0HQpPLcuFKR1ZEe2RThW8u8pYzwXCUisdeq3pDY8zzsSmupDm8KQZUWuvSNSUKewmNYZ_Lt0QV8tvwcTS4i6TptrHPBcH_ykUiqvKQyZaY4fldGAwY34wMj8ntsGvy8XjNYHpJ0hLNEw67tP3VYSpOEBI_TnXAATRyfZfYmT1LaQqmGHoPu21-KNumZu2s2SzZJEugkfmMbYN94TeRNhZfvTzf2gQWr40uq2VqGStGPISU_yUHnU5h0Cc9a3BvuQWKB7a4G2FHN2ZZ_tsScro7tb24giqusJaeM6-pZzZ4iz9LDW75l-XSzbNtI0N2RQCgbt7N5sPlY8lgMvfRdvBiwYPlJn58d8_kVfqSElLgirQWRQcqjTVo7Xa0ZGmEaJw_Nc7zQAN_LuBph_QKAzauWo6_TJDJdhGvW6ER3LApaXRM_EZsmXvi_M5d6w4kkJRBpO8GFi0TWK5qJ4ApDm9CM6xwFhP12C1GwsUShwzU6NODXl3--bgtq8CyrdrB-hONjv-i3jRKKwwiVIuu-42NhxzxklxxFf_40ehdRShQMO5WzgyPqccbz06IEIbKeYbYXbCYPhCjD_B6zx5NnXKV4MH7pPwOiULmFw3pFUqcu2_ijWbvXivi0cvFa79IQ2ASITIDlmmycrw9xvqJ9DOJp7D0K=s500-no?authuser=0',
         cardName: 'Hard Questions (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -1257,7 +1175,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/qqnOkk2wpHQ8cPx1nL6I-8vO4aObxC738NpiOGlYoW-XybJ3aALFOLL3dz9pOgKgLANb89VTg4lYbuCG7wxRrdJGneuIUcyzVkqHOS02WifUTfuNNx_aEwPcbEw7jBmROcvvUzSSx5TQRJpW4wMKvRoNr_vCA7DwSMNq3Jqim_4jK8zgnlx_p0yQWxwhOFASzo_ZJi4RTXf19HVDf9woKYYwmN0fNZdH72rb6dIlXWQ5nR03hnJRuNLPOhLJT-jOeZfYRZnOVo10CTT8L1jkQO67LfBTepK-2MgCCE-s6GLAQsvm5wTvwWiCN1mcH_NWeNK9sdLEp_rJCx_fej4FWDBbqVOzNDuUKmjFbQGPDycgbP8VRxOirbLJ9OlWuXe5GuBA5V5nn2sPBqmmswIp1OKgq1dtrvp157KYAvOBTWqezE_5rUfmaYwmiUByGXyUZGqVS5jJOOXutCikczoJ1Njm7oTGXzKQuhXyFSHmZjnc0Ekz5jQZ4pptYURCyzoiEQNF_jDi5SNuK3fc9Ohl0LlKaA8uIHCr7XedbsRgTfjAFmtj4B5QGbjitk-SU_NCsZezjaRmIQ25Z1CCzmZeL3zOahdR6NSpRz-sAd1qY_vNuMO3lhivjmSCflrFt-3Qwq2jI4ZQzEYrGC8fxsBuIJxjr08fXdEXE6j0Yk6ra5jxplQOO1Cy7_rNiRh462WOMFw3mi6As_xI0LBY0ae6AlzB=s500-no?authuser=0',
         cardName: 'Birthday Celebrations (Your Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -1271,7 +1188,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/nD5ZbLRIZkQRuMpzGEnHyNkquDMZEWHyVkOQ7bvVYCX0rmAWrnZcpNib_rOkZ1qNXitohnlGh1gw5jbrtlN96Uke2-vRjaUGwJczKKGfaHljQt1JzK-AZsXSy7DnJQcUaoccavK5OH4gTaHT-Q_KqwQzS-3EY-JgRPM5P_k5QaPnRY0W26S9ByFxBXBiudQNzUE2gYsR66OwHYxGQzqMc_0N-hg_ZmF5MdK4t5Jmk6aCEb0kxN4A8zWWOo6Ih7mJzwZZtL7tvRzSC33dnpq6v7CI2hK5hK3lk1Y2gTSnPBnCiYT07TC4qHOUUKjX3KOy4XwXf65EtWbG9MrCWsBg2CHcZpXZ0Hz7n8LHch6CXshR0dbHSwaS3sk6bkEIEBdx-rDnVWCa3hEOtwHEL-fVG12DGopGUIx7nlCnyJCkW0WQhprAeTgTz3R4WB4hLjhLSt4wunhqQ30-Rpt9MDg12snJzWJY4SLPgWvMxxni6iIFNhup7CrykVWzDpbWs3qTAoRu5_NnWuPvVaMKyXZJPjJheHjefWaa6qn7G2-Pas20IfE4JvGd-leS_BONWh8o2teWaTCVe1D19TKg6PSuwfsUdwt2o2pqagEW6CCOF-coC-Lq-IeBdHyMqLToRKaNDTy-diZwWntKZQPszSR3q1PYVaupZHIvKdZ6TzLrCZtWR2U3-blsXR2r8VUyXYPfDVqKQG4Edl4s13vMBIW4LsXF=s500-no?authuser=0',
         cardName: 'Discipline & Screen Time (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -1285,7 +1201,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/l2LVht5HNd__9HOy1MaIQz_jesEnn06HF68wR0JIGWCDM2KM8qGVAd3FFpwKN8mmAa708kjPjXzyZLRfrzCQazkPe1GQ9rSWJiQV9We8VdC2rp3OWZoiyqjQd3iU9BasWFW6N7bj2c68foHZYuk5qjjs8Rtn5JwdM6yy61Ez9D7bAv0RPF1UYxSQbjfi-BVbiZERbtiGOZMcn6ZBWf9GRS7YA6gNTxPM0rOfE7bFdh8znz9CaHSLbV0w4Ltodn3tYgLsyp2s09EDERbxNdiBIftwPHHIyE19naQXnsr2YIVFnCtCnfZ95xK_BPpu9zhq8k1pvE5s1YXiPVhPFpJovkUO6zDF5HiHx1DwqSPneO2vvOHmvdIU83M3HiSgICVZayevn3lOgo1zYKhS9zBOuvkw9FP7Kp4B_U0L1n7slDXynhL_9IwmPPwqaPeM9NkP8b_EM0ukTnnlGcCPq7HlDu51Onb3JgH4l22gLFWxu78-94DbVUx2LDdJkIfn3Iw4oMXWc-B3KN5QkAEU9v1u87nCei758uFXDQtKGreJxYv7qPQ157tI63MMrvmMfnJ8Thk28N8_WWWShNh5XJoVYnHRFySBLyG3fxf6DirTUckxV8GISUBihf455w-bvKPa6zJaLEYlGIB2DZCc5tAs1PYxZayzL3DsFuOvkfs8lPCiBQ8pyW9EmtV1qn9yusUF8qWaFHAeb6WK8odjYzpN5QY6=s500-no?authuser=0',
         cardName: 'Fun & Playing (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -1299,7 +1214,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/JXDP4TM3OMf5MlQQDA-w4ddGQw72PyfKY7_SGRvMROKrownEcodGqHYpOUUC5rDkceZtwVQtIQn50vZToi2iCRRvSlqnGBgf66F7IT3gM6q2BH7WGJkWS_BQg_CYPP90MxZO_T-ZP_lQy2X5oEinG7RZ2jyAMua09sfWxVhx0BwzdSa0LdWlk6ym_y6j69keK3RWVoCUIz6H14GIcmLFGeobFRte4u6BY1S2GoAQyEIIChE5K20TO3fL5VdzUPEwI15lc1XZbirFL-exOtxyhRfjjCIbKgzB3fX4WPUOahsWyztzhoOdKHgqIfGng0CX3czMRm2kBIw5jtDv8UzlZPuoq4pXfbExnL5ef3P0il_Pzk2PBgQd13au-r7dgs2Hy2Ayc-w853Z7eW5MZJ9cvIPIa-R_H5lXUwdARc3kCS1lsXYQjeRh2rpghV-4k8J1lYo0lkk31uCui_BNvyvmJLivV4MbkO4OBysRZtkEYMGUp5kD1eUBDEo3d8zrh9VAeWBIOx5s2GW3U-Imuo_aCTGg1atOsm_uwc5OBi4IIaN3fxYjP3FSVKkzk0EZz7gdV9OeSQgFZ4eBqnPvhdRQi8LPHYjR-5egAo38_dlBg_Ew3ueE7Tr849waqPQvfKbRDJtCBnYfHe_YHyk80jA3gMzEevPzD4DbWdzGJ45Yc_d6vNsHRc7cOr6DL_0aszCHosX0rFzxWHLFhNXUbsp9najb=s500-no?authuser=0',
         cardName: 'Gestures of Love (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -1313,7 +1227,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/CPMyhnDhU3GrELOWcRcUL7HShgcO3BFCNf43ZS5DvbpdxOzu3o4Yl-Qdhqg-nYegn__t2VkTSQ2nHsmorTWPyh2_mOTmVWM15LSVfjwmpKEnThLu0sWET_E4Y4LbXxXk_sjWsMT0pp2GQyOVl-TPmLTCVZZvUQ3iVDXRTKeUJmyB2Yh8_41_L7sYtBLbMBbyh0XEhXKKv8hIuPFhYnlY_RfMKPWrHsVZ-r8khYIBaN8-07XUOTIYoqwy4V4KXNiKiNY5P0KNBYPBEhrs1mQljipByiFpDGFDAJtudF7TvUkCrefa8Zj9E-aP7wBYCldZjD1jGseHYFsyrU5OGg0w3pU8mzKBy5REevmvFg3t5TEIySqcXO2X1hFJPe42Lnp7o8ZLHGaYOB9VVqWD0faULA-KyasO2o_OKCFnE65g-0NVG2M0u1fYlHpvPaWL-0M_Koj0qbBg7Ewk5n-iKWHSDj-WPt9SWXkStcA-LNzdVJkv0SLbXIrGifffCp8glF5q_ak-E4DLkHO5wFpPIQb_zkoHQ4-vJtSgXtBcehZt9vrQKX-w6rKnwtCDywPYFI12RtLWoyWZGvOPlDHoGIPaJvjPPcZotmEr51YbzMLwcGCEBmAZeCHaOauabrwIAX3T5GhWRtd1iliOiqDLNBDl2ENES2L5VKpPt6H0O4RbteyV24bC0VMNWcfi0e8MlOcTz2d2nNme-YF8YF0JhKSgSmzd=s500-no?authuser=0',
         cardName: 'Informal Education (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -1327,7 +1240,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/Z6MUmYk8eMV0PAeTstlHohoSPIZfUTWc-7oyRGRJKrophxAXlhZwtK72ua2oOaz_Ina1dwoawV9vKWaXz2QJ-_XGsxD5lI-CW5qoXOi7DzyfzKpDB3bbhGysok1G32W2As_ogO7ujq9duEEE7dWDfZripS6TP4jJRv4MygClSK98g8FCbbwye-4ZOGQSVSfaS_0hXCXUFSLPnbUsUHRdvnbSXtmW3oWPM4SVp3DWTVRQzZdwbF8J6-0kbFbmC3ae0sUboOpbWLUZikZkTnBHnS1t4-gBHD0Mckd-TRBL9JTicpOr1anF0Kyug7LZ548zYSFPbaCHVE6GljaEJzICDn1M8oF-L1_SXGVrR0AjLyW_pSKKTAPhuy6KEy94-sYXv0M2s157ZOMRynWnOJFNNpyzJlk0FRkK-Ij0u9yk_MTiLq820ouWbPyfOiSWIWVC2enXPhfQAat_51f8T4-w2ah8jrEsJfqFQfBeyQFnZe_8K4l4vMC5SmdADkIoo_LHxV46-i3An9gQfRx28_LfmnKr1IIcfGW__-1L3mzApZShvas9rNie5UyQ6ZI0odgB73mlZCXU0tq0TFAbl02fZnzCkRVOAYNGc2PKscdL9eqfa8EiqY72xpf9VYBBciHRj4ssXN5l46s0ybiVIbrX7KXdW3g8TbrK1jp1m_O7dQKWllD2dJqelf6BiJrw5x2DDY30HixewWOW2bsLeWhlll5V=s500-no?authuser=0',
         cardName: 'Magical Beings (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -1341,7 +1253,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/2-d0xfd_jXbasCm2Jmd_4BI3uEykaCfk4pkqVVYJRuwThhd6uU20-HBuzp2AUKPQ8kmVMJtQ-xHj7-8jfczdbKpc0MOdnQN_v6XKRMkW0xurTNrQ-7hTaJ5-V4MeMMgu6jzCS9sdxWcZX5mW165rGj_sBmpG-Hk65t4Sg15Urv5vAmSgJZF03lXCKCCvWt9S-WbfQj_khrknT079ztMQPto3IUQ7yRuV-jrUDQ6cgTsTMcpw13sj7fY4E9hBobcO4XAJDeeQCB5sWpR32whQAYqQPEzBBWwlyPy86kVIkM3GlWjKDKavAXJL-KaKUgINOJMnZf4cJK22X-o49puFBfWEY9pcd5uZ0D4LemkRRo-5UfltZNuL3f5lXolNEQ8xrk9CXm7NV2YKDvcRQAoC5IvgOsIUr0WLExT4ZtE6O_ZXeFy8ygFyCUb1okhqL4tZ-ZwOCVdUizSupprByhCdiBf5xGZlPqrtpkEFZLf6ZvdSCWnccpl50xQCWgo5DhO6OxH-0FIdzdpE_SVAsHfnlmn2nQMAShijHidf2F-WmaShl4Tl6AABCXjUxwRwG-zIdk3rWsKQhDIYLncHYickt77LfnTPsokmc_qpPzG1I13rqJ-ZDILdEn-mvWnnpgrrWRzQkTjiloP1hYtKQK5p6Yt4nlYK_QfnUHf7AR26qIyIMl5kX9-YgIeGlxPF65jzwg5EysqpSlc-L6BJceYurh7o=s500-no?authuser=0',
         cardName: 'Middle-of-the-night-comfort (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -1355,7 +1266,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/ocq0NgfOvoqa53wVO5ziO8H2OqC0FyCxorg-M4dyNIYNnDFR-lQWC7ys5vmK4kRgUrnsnWileMj_7LdCJcmHmeFhijk2o9KxU3ypkR5wdh1urixrADQbNN_xuyRACnBFD6Ts2havEJMR_PoJ7XPi4dbDaJVFi0HMtNtSnQhF_mVcgdYztLDg6PGxFjbf6qsBxP7WzNSTD7sm-Ikgz_IEGEBlHFuibiJb5bFjXtUebokH47NpZ8fPbMLl0KjOGcBAm1IBhWn5pLWShcjhQGgtcBEvO7W9x4PzuHxL2EdDFI27w7hlmoom2vjW9Wfd-nhjMZBA2w0cX74WwkpPmJUqx8zDlElQaY8EE9C7Om3CRGhTK8keyJrHMpo1aXZj1W5pw0VUfIZedOTMgBpKLYP16SGC531PODvDyA9-lSquJNO01rWl6PtV51TMQeNtMjf74ho4UaNJlhqaiUOOJTY8nQsHgarvXRhSH075w7-5qAaa_izSbZURE2h5LQjAeftMa6VgXTzU9BTIypPtNOq_p6vERLworc3_6eKH3I0nQ3UIJsybafEMtJud4JPCahgpxME4V16FfatHoO4TR91PxTwRsjKSrl_bSmKquQkYV5xyS6SQKYFS5M_6aFZc6vHAPOrFxuXyneO5cBLDqueUgApba8ZqQnFyHNl9_jR5mIyJX4NJvqJw7PbyXtv9ACb4StqEO5BYXVNQGCLh9kbfg3-W=s500-no?authuser=0',
         cardName: 'Showing Up & Participating (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -1369,7 +1279,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/v_KLRSVLBJvG0oYX0Bzh4x81thx_A4GribNTYnkbS1K_qhbGHg1bjyjZAaRNFjCg6DsNyBVSKnDOBQ4xx3ljoxPrW1P6KfUQx2whfoaAhzgJ1c5hfkCdaIfaXSdPZvHHYUBZYCm8Zpr7LDiMyXgwkAGtYWBy_dKXNa9MMS8H0pUewJvfQB36miDaBEBkJCAnLGWHfTAV1tQ2n8wuL9eajSXXGoA5p51BMUOE0qwFaBykNPznkMTUSX6-34bsFPHxxa85uF8KHVaOyd5DVezNE5X4aeZVCyHHjO6enRvr2tvyp-WiEi2dqfl0M1PJTXrsRUWMoLGJrqCHQZBuZ9LBx44xrht0GthFXAJ7e5eb-mo01LwPqaI_aWYK85Iw2nko8VHjdh0_GQz41jniod8iC_YJ23gWja_3ScoTOee6DCQpBIQ1r9rOuUtH_7QTbtieOg0_9iPq2SRkiT_6VeRRHxsGmQPvagVi_N-4ja7W2n_amkyjb63muJk_whtqEDH9JoCrgmQH-WzVcgNgC7SDb2KECqQcahcerRXXGiPzNOLafe_iKFy4uAX7dOYZkB-gnPabgAfRhpUiUYOZac9Tz8j_saxyJqBRWibwbxbWBunypgr-GZK3xgOueOVU1ybiAPTFYZ5CowY7AEPIILcsRgJ4_7fpJF0iMTsV9cBO-zgy4GfNdu8xRJfHH0nKGB6s_rG0Ed9c374kcyCa22pf5y31=s500-no?authuser=0',
         cardName: 'Values & Good Deeds (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -1383,7 +1292,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/Qjn_R12ZBuIc5FlWs17QiO6E4g0dQltLZ1jN9slvZg8ZbeY7M-VxsKm_sbY2Qh1DNLzJfDR0xh396oKXWfBoENJO3U_arv90KnX3I0PuqhIryV-X7m9zXqZ_Vcepo0SzJeO4zwQgxujgPMsgBXKFj5mE0jC0nM_z2i_AzCc4j_kT2e2KAeN2jqe0XalDQAXOIiFCXheyxilMJl4OdejGcoFjMFSsmDIDOhu6nPjJAi5d1N5F7EJjgaHfmhytMkHXir7x6p_PrRT2CJmh7_2ASkaNihQhpNqakyA5q3II1VKplYCS7ZrUrfIw7434CIe0_czApUK_9ziThZg89kKVbnlVnGvd12l4pQ3uhs_IbFmPj3Q5XiRSr_2M2XNDgCUNlmjt9OaW-Qr9O7m3zFNgrOUfTw_he6ifw3I563n8ut7-LhA28_7ygukeI7EqepoqTQXYor0Jrx0SWsbVg32DwGeeb-yQml4SiCZTP8k6uI7FuPjCMvaDaq91-824xtOhpyqXt7wgi5HerUoM0IK3G8w8_39MU4FVBL_fzLkJ2nH7uwByOgimVOY1VSmaVtyLDkHA1P6xK8slNgQfqA81eM8f2iKDaJtOiC-PUfhuZ_Ca5zTtl_yR3w4aR69SM3usMnCE_z4xUC8BS778C93Kq7OwYnSJQILIQ6_umK-j0sR7poxr4E9upNwrEVqUUKCsQNJrd8RgtvWVVwL1xNeBJFuy=s500-no?authuser=0',
         cardName: 'Watching (Kids)',
         householdId: household.id,
-        assignedUserId: null,
       },
       {
         categoryTypeId: '1F2F10DA-CA96-40D5-A53B-DE2FC50D3C54',
@@ -1397,7 +1305,6 @@ export default function HouseholdForms({
         cardImage: 'https://lh3.googleusercontent.com/1WluQasudhDstiPe0YLwMdq9P7LyE9E1dGQ_QGqdQj_XK6qdnGZU80EStq6y_PISXDuwvxGgI_xQZa6cCLu47qP4vl_USy4ymejfxgCZ2LsX4_W9tjDEtNGt_l62DUb_B1Os3c3NH8A6a8augzCw5RLQK1vpOr_xmpajZ8khTWetExPpo7p0_6igbNEjemH88IYVRZyPOZqHB5q3gCLw0d-sPgffDQiHDN8KxukUM5bUUlqpAedwqoYv7oUVEZw4867Zeo5scTHO4JS8cPz2dgi-WT1zlLEuQmlw3HfE3_xe3ASEzqfvn95y31CKynjhGYsW01iPq2r3JJ_dWsi_NqlEHwS4hwmXrIvRmVX-OIlqsn8THfxA1KLGRe9nJcorZVqPjfDsbGDttK_NlpsZaKmA4w_oinE4G2nJ7IWUNrwTXlQ05ifDCCXjKsivrpsKUt9uagdL5uVXiBxqt3ueNy2CxSb4u02U27L8f_OYMHZ4xFq_88raDEkEFxRfHD8SDlwsSPH1nZPO4xzKADRrhEstYhBSFBJCR2Au0o-ZOQwT37Wn9EZ46hg2oliraLr41QU5mHQQexToq7xfnsZzRgFuDR70Z1hgMkLxil8dTyncu7YH7OyqgsTrXFK0yQ7nvNHBItz9LOooGkROtyIknUOrRa5I-Zx5mEKJgnKPraL1z2p-WltO-53X6LcBat9vN1IsHQnEomftA7BwIqzux79e=s500-no?authuser=0',
         cardName: 'First Year in an Infants Life',
         householdId: household.id,
-        assignedUserId: null,
       },
     ];
     noneCards.forEach((card) => addTaskCard(card));

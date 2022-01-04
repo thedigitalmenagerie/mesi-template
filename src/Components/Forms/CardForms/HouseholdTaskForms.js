@@ -1,6 +1,8 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable no-plusplus */
+/* eslint-disable max-len */
+/* eslint-disable prefer-rest-params */
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
@@ -10,7 +12,6 @@ import {
   Form,
   Input,
   Label,
-  //   ButtonImg,
   FormTitle,
   Row,
   Row2,
@@ -19,7 +20,7 @@ import {
 } from './HouseholdTaskFormElements';
 import { getNeedTypes } from '../../../Helpers/Data/needTypeData';
 import { getCategoryTypes } from '../../../Helpers/Data/categoryTypeData';
-import { getHouseholdTaskCards, updateTaskCard, addTaskCard } from '../../../Helpers/Data/cardsData';
+import { updateTaskCard, addTaskCard } from '../../../Helpers/Data/cardsData';
 
 export default function HouseholdTaskForms({
   cardId,
@@ -33,25 +34,36 @@ export default function HouseholdTaskForms({
   dailyGrind,
   needTypeId,
   categoryTypeId,
-  assignedUserId,
-  setHouseholdTaskCards
+  setHouseholdTaskCards,
+  closeModal
 }) {
   const { householdId } = useParams();
-  console.warn(householdId);
   const [singleTaskCardToEdit, setSingleTaskCardToEdit] = useState({
-    categoryTypeId: categoryTypeId || null,
-    needTypeId: needTypeId || null,
-    dailyGrind: dailyGrind || false,
-    msoc: msoc || '',
-    execution: execution || '',
-    planning: planning || '',
-    conception: conception || '',
-    cardDefinition: cardDefinition || '',
-    cardImage: cardImage || '',
-    cardName: cardName || '',
+    categoryTypeId,
+    needTypeId,
+    dailyGrind,
+    msoc,
+    execution,
+    planning,
+    conception,
+    cardDefinition,
+    cardImage,
+    cardName,
     householdId,
-    cardId: cardId || null,
-    assignedUserId: assignedUserId || '',
+    cardId,
+  });
+  const [singleTaskCardToAdd, setSingleTaskCardToAdd] = useState({
+    categoryTypeId: null,
+    needTypeId: null,
+    dailyGrind: false,
+    msoc: '',
+    execution: '',
+    planning: '',
+    conception: '',
+    cardDefinition: '',
+    cardImage: 'https://lh3.googleusercontent.com/F37SnkSMc93Fcu7Tt3uyWClYcGRnANi3EYEjSmiJmJO8wO5gXNca38QeuMlBR_2NUvzWIGXnY7CoJl25EcjanY3meMDm8_uhQUrbRwPN_o1el4rgUixiISU30DLv66VJA2K9DztE3IK_XCFD7FUYzkbzbasMfDnBVZEMaPj0gJe-qbq8EptnZoCb5Qhw5OORFLJ576ULiJiC7A1QR7KyDgc3geELCxF7h8qHBZvxLyPLAGegrxsVSOti6xLh4mEPFXkLi_QzYPgvNCJHbJytXXfzWyCiPVXLK1ca5zJ8lk2Ra-HCXjNh35ZlFV-u7ayuguocB8Rf7J0ndx0g-dySZCtrwH6tKX74_87nCkr-Aua117rnxbRiHaUzT7l2KKRmIRTLqWwl4A851sstqbzmBN1W4He9awTl92Ap5AELkV-i5WOffdJGw9ceJRh6aljG5jTImtFF_mhDkrG6yFxnmwlzYW1vH9qKeIt8dtBCs7qDTts_dLyrwDaScjHoUt6AHynxO9CDj6trEc__889vxrL52x6f_SZC-8u0cWkPGs1RyV-9Nxd4eDBhq6itdaBpmPHQF9dA2kzOiCjA-0rGiXRPCSSbnmS9iGPd8XPMYG-O-2p_trRZ8XDzC9hsBUUg1d1bQ2UH0sWY-Z2AWQfk8wa9rpGi35jzfqiGx2MC1gOk6zbiH9kWMbe2Lma1N8RpqksEmI-rE2ADQJ3nl3LaDcdk=s500-no?authuser=0',
+    cardName: '',
+    householdId,
   });
 
   const [needTypes, setNeedTypes] = useState([]);
@@ -62,11 +74,48 @@ export default function HouseholdTaskForms({
     getCategoryTypes().then(setCategoryTypes);
   }, []);
 
+  useEffect(() => {
+    setSingleTaskCardToEdit({
+      categoryTypeId,
+      needTypeId,
+      dailyGrind,
+      msoc,
+      execution,
+      planning,
+      conception,
+      cardDefinition,
+      cardImage,
+      cardName,
+      householdId,
+      cardId,
+    });
+  }, [
+    categoryTypeId,
+    needTypeId,
+    dailyGrind,
+    msoc,
+    execution,
+    planning,
+    conception,
+    cardDefinition,
+    cardImage,
+    cardName,
+    householdId,
+    cardId
+  ]);
+
   const handleInputChange = (e) => {
-    setSingleTaskCardToEdit((prevState) => ({
-      ...prevState,
-      [e.target.name]: e.target.value,
-    }));
+    if (cardId) {
+      setSingleTaskCardToEdit((prevState) => ({
+        ...prevState,
+        [e.target.name]: e.target.value,
+      }));
+    } else {
+      setSingleTaskCardToAdd((prevState) => ({
+        ...prevState,
+        [e.target.name]: e.target.value,
+      }));
+    }
   };
 
   const handleCheckboxChange = (e) => {
@@ -79,26 +128,11 @@ export default function HouseholdTaskForms({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (singleTaskCardToEdit.cardId) {
-      updateTaskCard(singleTaskCardToEdit.cardId, singleTaskCardToEdit).then(() => getHouseholdTaskCards().then((response) => setHouseholdTaskCards(response)));
+    if (cardId) {
+      updateTaskCard(singleTaskCardToEdit.cardId, singleTaskCardToEdit, householdId).then(setHouseholdTaskCards);
     } else {
-      const taskCardObj = {
-        categoryTypeId: singleTaskCardToEdit.categoryTypeId,
-        needTypeId: singleTaskCardToEdit.needTypeId,
-        dailyGrind: singleTaskCardToEdit.dailyGrind,
-        msoc: singleTaskCardToEdit.msoc,
-        execution: singleTaskCardToEdit.execution,
-        planning: singleTaskCardToEdit.planning,
-        conception: singleTaskCardToEdit.conception,
-        cardDefinition: singleTaskCardToEdit.cardDefinition,
-        cardImage: singleTaskCardToEdit.cardImage,
-        cardName: singleTaskCardToEdit.cardName,
-        householdId,
-        assignedUserId: singleTaskCardToEdit.assignedUserId,
-      };
-      console.warn(taskCardObj);
-      addTaskCard(taskCardObj).then(() => getHouseholdTaskCards().then((response) => setHouseholdTaskCards(response)));
-      setSingleTaskCardToEdit({
+      addTaskCard(singleTaskCardToAdd, householdId).then(setHouseholdTaskCards);
+      setSingleTaskCardToAdd({
         categoryTypeId: '',
         needTypeId: '',
         dailyGrind: false,
@@ -110,7 +144,6 @@ export default function HouseholdTaskForms({
         cardImage: '',
         cardName: '',
         householdId,
-        assignedUserId: null,
       });
     }
   };
@@ -243,12 +276,12 @@ export default function HouseholdTaskForms({
             name='dailyGrind'
             onChange={handleCheckboxChange}
             checked={singleTaskCardToEdit.dailyGrind}
-            value={singleTaskCardToEdit.daily}
+            value={singleTaskCardToEdit.dailyGrind}
           />
         </FormGroup>
         <Label check>Daily Grind</Label>
       </Row2>
-      <Button className='addCategory' type='submit'>
+      <Button className='addCategory' type='submit' onClick={closeModal}>
         Create Household
       </Button>
     </Form>
@@ -270,4 +303,5 @@ HouseholdTaskForms.propTypes = {
   categoryTypeId: PropTypes.string,
   assignedUserId: PropTypes.string,
   setHouseholdTaskCards: PropTypes.func,
+  closeModal: PropTypes.func,
 };

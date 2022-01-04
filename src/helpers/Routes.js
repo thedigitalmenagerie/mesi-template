@@ -12,6 +12,7 @@ import { UnassignedChartView } from '../Views/UnassignedChartView/UnassignedChar
 import { NewVow } from '../Views/NewVow/NewVow';
 import { HowTo } from '../Views/HowTo/HowTo';
 import { AssignView } from '../Views/AssignView/AssignView';
+import { RedealView } from '../Views/RedealView/RedealView';
 
 const PrivateRoute = ({ component: Component, user, ...rest }) => {
   // eslint-disable-next-line no-confusing-arrow
@@ -104,6 +105,30 @@ function Routes({
           path='/dashboard/:householdId/assignView'
           component={() => (
             <AssignView
+              user={user}
+              setUser={setUser}
+              steps={steps}
+              setSteps={setSteps}
+              users={users}
+              setUsers={setUsers}
+              households={households}
+              setHouseholds={setHouseholds}
+            />
+          )}
+          user={user}
+          setUser={setUser}
+          steps={steps}
+          setSteps={setSteps}
+          users={users}
+          setUsers={setUsers}
+          households={households}
+          setHouseholds={setHouseholds}
+        />
+                <PrivateRoute
+          exact
+          path='/dashboard/finalDash/:householdId/redealView'
+          component={() => (
+            <RedealView
               user={user}
               setUser={setUser}
               steps={steps}

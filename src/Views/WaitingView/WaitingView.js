@@ -3,6 +3,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable prefer-destructuring */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
   CommunityAgreementContainer,
@@ -29,6 +30,7 @@ export const WaitingView = ({ user }) => {
           <Subtitle className='subTitle'>
             Return to your household when all users have completed this step to continue.
           </Subtitle>
+          <Link to='/dashboard'>Dash</Link>
         </CommunityAgreementTitle>
       </CommunityAgreementWrapper>
     </CommunityAgreementContainer>

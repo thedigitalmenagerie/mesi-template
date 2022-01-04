@@ -69,9 +69,9 @@ export const HouseholdCards = ({
         } else if (stepName === 'Four') {
           history.push(`/dashboard/${householdId}/assignView`);
         } else if (stepName === 'Five') {
-          history.push('/dashboard');
+          history.push(`/dashboard/${householdId}/assignedChartView`);
         } else if (stepName === 'Six') {
-          history.push('/dashboard');
+          history.push(`/dashboard/finalDash/${householdId}/redealView`);
         } else {
           history.push('/dashboard');
         }

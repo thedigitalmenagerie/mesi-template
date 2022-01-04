@@ -23,7 +23,7 @@ import { HouseholdTaskCards } from '../../Components/Cards/TaskCards/TaskCards';
 import NavBar from '../../Components/NavBar/NavBar';
 import add from '../../Assets/addHouseholdButton.png';
 import exitModal from '../../Assets/exitModal.png';
-import { getUndeclaredCards } from '../../Helpers/Data/cardsData';
+import { getHouseholdTaskCards } from '../../Helpers/Data/cardsData';
 
 export const HouseholdDash = ({
   user,
@@ -35,9 +35,10 @@ export const HouseholdDash = ({
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [householdTaskCards, setHouseholdTaskCards] = useState([]);
   const { householdId } = useParams();
+  console.warn(householdTaskCards);
 
   useEffect(() => {
-    getUndeclaredCards(user.id, householdId).then((resp) => setHouseholdTaskCards(resp));
+    getHouseholdTaskCards(householdId).then((resp) => setHouseholdTaskCards(resp));
   }, []);
 
   function openModal() {
@@ -113,6 +114,7 @@ export const HouseholdDash = ({
               householdMembers={householdMembers}
               households={households}
               setHouseholdTaskCards={setHouseholdTaskCards}
+              onClick={closeModal}
               steps={steps}
               users={users}
               user={user}

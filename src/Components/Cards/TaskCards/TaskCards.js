@@ -2,7 +2,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
-import HouseholdForms from '../../Forms/HouseholdForms/HouseholdForm';
 import {
   HouseholdCard,
   HouseholdTop,
@@ -25,23 +24,11 @@ import value from '../../../Assets/value.png';
 import daily from '../../../Assets/dailyGrindPink.png';
 
 export const HouseholdTaskCards = ({
-  householdMembers,
   cardId,
   householdId,
-  needTypeId,
-  categoryTypeId,
   cardName,
   cardImage,
-  cardDefinition,
-  conception,
-  planning,
-  execution,
-  msoc,
   dailyGrind,
-  households,
-  user,
-  steps,
-  users,
   needTypeName,
   categoryTypeName,
 }) => {
@@ -97,25 +84,6 @@ export const HouseholdTaskCards = ({
           <Button className='modalClose'>
             <HouseholdCardDelete/>
           </Button>
-          <HouseholdForms
-              householdMembers={householdMembers}
-              cardId={cardId}
-              householdId={householdId}
-              needTypeId={needTypeId}
-              categoryTypeId={categoryTypeId}
-              cardName={cardName}
-              cardImage={cardImage}
-              cardDefinition={cardDefinition}
-              conception={conception}
-              planning={planning}
-              execution={execution}
-              msoc={msoc}
-              dailyGrind={dailyGrind}
-              households={households}
-              user={user}
-              steps={steps}
-              users={users}
-          />
         </Modal>
     </HouseholdCard>
   );

@@ -40,6 +40,8 @@ import HouseholdTaskForms from '../../Forms/CardForms/HouseholdTaskForms';
 const IndividualTaskCard = () => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [singleTaskCard, setSingleTaskCard] = useState({});
+  console.warn(singleTaskCard);
+  // const [taskCards, setTaskCards] = useState([]);
   const { householdId, cardId } = useParams();
   const history = useHistory();
 
@@ -63,6 +65,10 @@ const IndividualTaskCard = () => {
   useEffect(() => {
     getSingleHouseholdTaskCard(cardId).then(setSingleTaskCard);
   }, []);
+
+  // useEffect(() => {
+  //   getHouseholdTaskCards(householdId).then(setTaskCards);
+  // }, []);
 
   function openModal() {
     setIsOpen(true);
@@ -156,6 +162,7 @@ const IndividualTaskCard = () => {
           categoryTypeId={singleTaskCard.categoryTypeId}
           needTypeId={singleTaskCard.needTypeId}
           categoryTypeName={singleTaskCard.categoryTypeName}
+          closeModal={closeModal}
         />
       </Modal>
     </SingleTaskCardOuter>
