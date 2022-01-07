@@ -70,7 +70,7 @@ export const HouseholdDash = ({
               id='CommunityAgreements'
             >
               <CommunityAgreementTitle className='CommunityAgreementTitle'>
-                <Title className='Title'>You are currently waiting on other members of your household.</Title>
+                <Title className='Title'>You have made declarations on all of your cards and are awaiting other household members.</Title>
                 <Subtitle className='subTitle'>
                   Return to your household when all users have completed this step to continue.
                 </Subtitle>

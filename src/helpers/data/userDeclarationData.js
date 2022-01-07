@@ -16,6 +16,18 @@ const getUserDeclarationByCard = (cardId) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
+const getUserDeclarationByCardUV = (id) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/api/userDeclaration/byCardUV/${id}`)
+    .then((response) => resolve(response.data))
+    .catch((error) => reject(error));
+});
+
+const getUserDeclarationByUser = (userId) => new Promise((resolve, reject) => {
+  axios.get(`${dbUrl}/api/userDeclaration/byUser/${userId}`)
+    .then((response) => resolve(response.data))
+    .catch((error) => reject(error));
+});
+
 const addUserDeclaration = (declaration) => new Promise((resolve, reject) => {
   axios.post(`${dbUrl}/api/userDeclaration`, declaration)
     .then((response) => resolve(response.data))
@@ -25,5 +37,7 @@ const addUserDeclaration = (declaration) => new Promise((resolve, reject) => {
 export {
   getUserDeclarations,
   getUserDeclarationByCard,
-  addUserDeclaration
+  addUserDeclaration,
+  getUserDeclarationByUser,
+  getUserDeclarationByCardUV,
 };

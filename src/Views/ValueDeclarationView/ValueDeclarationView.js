@@ -23,10 +23,8 @@ export const ValueDeclarationView = ({
   user,
 }) => {
   const history = useHistory();
-  const { householdId, cardId } = useParams();
-
+  const { cardId } = useParams();
   const [userDeclaration, setUserDeclaration] = useState([]);
-  console.warn(userDeclaration);
 
   const handleSubmitTrue = (e) => {
     e.preventDefault();
@@ -36,9 +34,9 @@ export const ValueDeclarationView = ({
       userValues: true,
       userDeletes: false,
     };
-    console.warn(declaration);
     addUserDeclaration(declaration).then(setUserDeclaration);
-    history.push(`/dashboard/${householdId}`);
+    console.warn('Ignore', userDeclaration);
+    history.push('/dashboard/');
   };
 
   const handleSubmitFalse = (e) => {
@@ -49,9 +47,8 @@ export const ValueDeclarationView = ({
       userValues: false,
       userDeletes: true,
     };
-    console.warn(declaration);
     addUserDeclaration(declaration).then(setUserDeclaration);
-    history.push(`/dashboard/${householdId}`);
+    history.push('/dashboard');
   };
 
   return (

@@ -12,18 +12,15 @@ import {
   HouseholdBottomLeft,
   HouseholdBottomRight,
   HouseholdCardImg,
-  HouseholdCardDelete,
   Button,
-  Modal,
   ValueButton,
   ValueButtonImg,
   ValueButtonImg2,
   HouseholdBottomLeftInner
-} from './TaskCardElements';
-import value from '../../../Assets/value.png';
+} from './RedealCardElements';
 import daily from '../../../Assets/dailyGrindPink.png';
 
-export const HouseholdTaskCards = ({
+export const RedealCards = ({
   cardId,
   householdId,
   cardName,
@@ -31,6 +28,7 @@ export const HouseholdTaskCards = ({
   dailyGrind,
   needTypeName,
   categoryTypeName,
+  user
 }) => {
   const history = useHistory();
 
@@ -38,9 +36,6 @@ export const HouseholdTaskCards = ({
     switch (type) {
       case 'view':
         history.push(`/dashboard/${householdId}/cards/${cardId}`);
-        break;
-      case 'value':
-        history.push(`/dashboard/${householdId}/cards/value/${cardId}`);
         break;
       default:
         console.warn('Nothing selected');
@@ -73,23 +68,16 @@ export const HouseholdTaskCards = ({
             </HouseholdBottomLeftInner>
           </HouseholdBottomLeft>
           <HouseholdBottomRight className="HouseholdBottomRight">
-            <ValueButton>
-                <ValueButtonImg src={value} onClick={() => handleClick('value')}/>
-            </ValueButton>
+              <ValueButton>
+                <ValueButtonImg src={user.profilePicture}/>
+              </ValueButton>
           </HouseholdBottomRight>
         </HouseholdBottom>
-        <Modal
-          className='Modal'
-        >
-          <Button className='modalClose'>
-            <HouseholdCardDelete/>
-          </Button>
-        </Modal>
     </HouseholdCard>
   );
 };
 
-HouseholdTaskCards.propTypes = {
+RedealCards.propTypes = {
   householdMembers: PropTypes.string,
   cardId: PropTypes.string,
   householdId: PropTypes.string,
@@ -108,6 +96,9 @@ HouseholdTaskCards.propTypes = {
   steps: PropTypes.any,
   needTypeName: PropTypes.string,
   categoryTypeName: PropTypes.string,
+  users: PropTypes.any,
+  assignedUserId: PropTypes.string,
+  setHouseholdTaskCards: PropTypes.func,
 };
 
-export default HouseholdTaskCards;
+export default RedealCards;

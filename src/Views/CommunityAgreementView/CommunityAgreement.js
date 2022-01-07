@@ -3,7 +3,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable prefer-destructuring */
 import React, { useState, useEffect } from 'react';
-import { useParams, useHistory } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
   CommunityAgreementContainer,
@@ -19,57 +19,24 @@ import {
 import NavBar from '../../Components/NavBar/NavBar';
 import {
   getHouseholdMembers,
-  updateHouseholdMember,
+  updateHouseholdMember
 } from '../../Helpers/Data/householdMembersData';
-import {
-  getHousehold,
-  updateHousehold,
-} from '../../Helpers/Data/householdData';
 
 export const CommunityAgreement = ({ user }) => {
   const { householdId } = useParams();
   const history = useHistory();
-  const [household, setHousehold] = useState([]);
   const [userAgreement, setUserAgreement] = useState([]);
-  const [agreeingMembers, setAgreeingMembers] = useState([]);
 
   useEffect(() => {
-    getHousehold(householdId).then((response) => setHousehold(response));
     getHouseholdMembers(householdId).then((response) => setUserAgreement(response));
   }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     userAgreement.forEach((singleMember) => {
-      // for each member that has agreed, push them to the agreeing members array
-      if (singleMember.communityAgreement === true) {
-        agreeingMembers.push(singleMember);
-        setAgreeingMembers();
-        // if the agreeingMembers array is equal to the userAgreement array,
-        // update the household step to 2
-        if (agreeingMembers.length === userAgreement.length) {
-          // for each household create the object with which to update
-          household.forEach((currentHouse) => {
-            const house = {
-              id: householdId,
-              householdName: currentHouse.householdName,
-              hasPets: currentHouse.hasPets,
-              hasKids: currentHouse.hasKids,
-              hasRomance: currentHouse.hasRomance,
-              stepId: '3C22C28B-1074-4BED-B3E5-D763BB3A6BC4',
-            };
-            updateHousehold(householdId, house);
-            history.push(`/dashboard/${householdId}`);
-          });
-        }
-        // else if the agreeingMembers array is not equal to the userAgreement array
-        // and the current user communityAgreement does not equal true,
-      } else if (singleMember.userId === user.id && householdId === singleMember.householdId && singleMember.communityAgreement === true) {
-        history.push(`/dashboard/${householdId}/awaitingOtherUsers`);
-        // else if the agreeingMembers array is not equal to the userAgreement array
-        // and the current user communityAgreement does not equal true,
-        // update the individual member communityAgreement to true
-      } else if (singleMember.userId === user.id && householdId === singleMember.householdId && singleMember.communityAgreement !== true) {
+      if (user.id === singleMember.userId) {
+        console.warn(user);
+        console.warn(singleMember);
         const member = {
           id: singleMember.id,
           householdId,
@@ -78,12 +45,11 @@ export const CommunityAgreement = ({ user }) => {
           newVow: false,
           redeal: false,
         };
+        console.warn(member);
         updateHouseholdMember(singleMember.id, member);
-        history.push(`/dashboard/${householdId}/awaitingOtherUsers`);
-      } else {
-        history.push(`/dashboard/${householdId}/awaitingOtherUsers`);
       }
     });
+    history.push('/dashboard');
   };
 
   return (

@@ -60,6 +60,7 @@ justify-content: flex-end;
 
 export const Button = styled.button`
 margin-right: 20px;
+color: #eae7d6;
 display: flex;
 flex-direction: row;
 justify-content: flex-end;
@@ -71,7 +72,7 @@ overflow: hidden;
 `;
 
 export const ButtonImg = styled.img`
-  width: 20px;
+  width: 35px;
 `;
 
 export const AddHouseholdTaskCardButton = styled.button`

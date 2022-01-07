@@ -35,7 +35,7 @@ export default function HouseholdTaskForms({
   needTypeId,
   categoryTypeId,
   setHouseholdTaskCards,
-  closeModal
+  closeModal,
 }) {
   const { householdId } = useParams();
   const [singleTaskCardToEdit, setSingleTaskCardToEdit] = useState({
@@ -61,7 +61,7 @@ export default function HouseholdTaskForms({
     planning: '',
     conception: '',
     cardDefinition: '',
-    cardImage: 'https://lh3.googleusercontent.com/F37SnkSMc93Fcu7Tt3uyWClYcGRnANi3EYEjSmiJmJO8wO5gXNca38QeuMlBR_2NUvzWIGXnY7CoJl25EcjanY3meMDm8_uhQUrbRwPN_o1el4rgUixiISU30DLv66VJA2K9DztE3IK_XCFD7FUYzkbzbasMfDnBVZEMaPj0gJe-qbq8EptnZoCb5Qhw5OORFLJ576ULiJiC7A1QR7KyDgc3geELCxF7h8qHBZvxLyPLAGegrxsVSOti6xLh4mEPFXkLi_QzYPgvNCJHbJytXXfzWyCiPVXLK1ca5zJ8lk2Ra-HCXjNh35ZlFV-u7ayuguocB8Rf7J0ndx0g-dySZCtrwH6tKX74_87nCkr-Aua117rnxbRiHaUzT7l2KKRmIRTLqWwl4A851sstqbzmBN1W4He9awTl92Ap5AELkV-i5WOffdJGw9ceJRh6aljG5jTImtFF_mhDkrG6yFxnmwlzYW1vH9qKeIt8dtBCs7qDTts_dLyrwDaScjHoUt6AHynxO9CDj6trEc__889vxrL52x6f_SZC-8u0cWkPGs1RyV-9Nxd4eDBhq6itdaBpmPHQF9dA2kzOiCjA-0rGiXRPCSSbnmS9iGPd8XPMYG-O-2p_trRZ8XDzC9hsBUUg1d1bQ2UH0sWY-Z2AWQfk8wa9rpGi35jzfqiGx2MC1gOk6zbiH9kWMbe2Lma1N8RpqksEmI-rE2ADQJ3nl3LaDcdk=s500-no?authuser=0',
+    cardImage: '',
     cardName: '',
     householdId,
   });
@@ -129,9 +129,9 @@ export default function HouseholdTaskForms({
   const handleSubmit = (e) => {
     e.preventDefault();
     if (cardId) {
-      updateTaskCard(singleTaskCardToEdit.cardId, singleTaskCardToEdit, householdId).then(setHouseholdTaskCards);
+      updateTaskCard(cardId, singleTaskCardToEdit).then(setHouseholdTaskCards);
     } else {
-      addTaskCard(singleTaskCardToAdd, householdId).then(setHouseholdTaskCards);
+      addTaskCard(singleTaskCardToAdd).then(setHouseholdTaskCards);
       setSingleTaskCardToAdd({
         categoryTypeId: '',
         needTypeId: '',
@@ -304,4 +304,5 @@ HouseholdTaskForms.propTypes = {
   assignedUserId: PropTypes.string,
   setHouseholdTaskCards: PropTypes.func,
   closeModal: PropTypes.func,
+  user: PropTypes.any,
 };

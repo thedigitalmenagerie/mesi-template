@@ -130,23 +130,9 @@ function Routes({
           component={() => (
             <RedealView
               user={user}
-              setUser={setUser}
-              steps={steps}
-              setSteps={setSteps}
-              users={users}
-              setUsers={setUsers}
-              households={households}
-              setHouseholds={setHouseholds}
             />
           )}
           user={user}
-          setUser={setUser}
-          steps={steps}
-          setSteps={setSteps}
-          users={users}
-          setUsers={setUsers}
-          households={households}
-          setHouseholds={setHouseholds}
         />
         <PrivateRoute
           exact

@@ -30,7 +30,8 @@ import romance from '../../../Assets/romanceBlue.png';
 import deleted from '../../../Assets/delete.png';
 import edit from '../../../Assets/editblue.png';
 import exitModal from '../../../Assets/exitModal.png';
-import { deleteHousehold } from '../../../Helpers/Data/householdData';
+import { deleteHousehold, updateHousehold } from '../../../Helpers/Data/householdData';
+import { getUndeclaredCards } from '../../../Helpers/Data/cardsData';
 
 export const HouseholdCards = ({
   user,
@@ -46,6 +47,16 @@ export const HouseholdCards = ({
 }) => {
   const history = useHistory();
   const [householdMembers, setHouseholdMembers] = useState([]);
+  const [undeclaredtaskCards, setUndeclaredTaskCards] = useState([]);
+  const agreeingMembers = [];
+  const membersUndeclared = [];
+  let currentMemberAgrees = false;
+
+  householdMembers.forEach((member) => getUndeclaredCards(member.userId, householdId).then((response) => {
+    if (response.length !== 0) {
+      membersUndeclared.push(member.userId);
+    }
+  }));
 
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
@@ -57,13 +68,70 @@ export const HouseholdCards = ({
     setIsOpen(false);
   }
 
+  const refreshPage = () => {
+    window.location.reload();
+  };
+
   const handleClick = (type) => {
     switch (type) {
       case 'view':
+        // if step name equals one
         if (stepName === 'One') {
-          history.push(`/dashboard/communityagreement/${householdId}`);
+          // for each householdMember
+          householdMembers.forEach((member) => {
+            // that has agreed, push to agreeingmembers array
+            if (member.communityAgreement === true) {
+              agreeingMembers.push(member);
+              // if there is a member that matches current member update currentMemberAgrees to true
+              if (user.id === member.userId) {
+                currentMemberAgrees = true;
+                // else if there is not a member that matches current member, update currentMemberAgrees to false
+              } else if (user.id !== member.userId) {
+                currentMemberAgrees = false;
+              }
+            }
+            // if householdMemberArray equals agreeingMembers array
+            if (householdMembers.length === agreeingMembers.length) {
+              // create household object, update household, and push to the household dash
+              const house = {
+                householdId,
+                householdName,
+                hasPets,
+                hasKids,
+                hasRomance,
+                stepId: '3C22C28B-1074-4BED-B3E5-D763BB3A6BC4',
+              };
+              updateHousehold(householdId, house);
+              history.push(`/dashboard/${householdId}`);
+              // if householdMemberArray does not equal agreeing members array
+            } else if (householdMembers.length !== agreeingMembers.length && currentMemberAgrees === true) {
+              history.push(`/dashboard/${householdId}/awaitingOtherUsers`);
+            } else if (householdMembers.length !== agreeingMembers.length && currentMemberAgrees === false) {
+              history.push(`/dashboard/communityAgreement/${householdId}`);
+            }
+          });
         } else if (stepName === 'Two') {
-          history.push(`/dashboard/${householdId}`);
+          console.warn(stepName);
+          console.warn(membersUndeclared);
+          if (membersUndeclared.length === 0 && undeclaredtaskCards.length === 0) {
+            console.warn('All users have complete declarations');
+            const house = {
+              householdId,
+              householdName,
+              hasPets,
+              hasKids,
+              hasRomance,
+              stepId: 'BCBD1E56-4601-4A17-8A1C-F23E6975FF5F',
+            };
+            updateHousehold(householdId, house);
+            refreshPage();
+          } else if (membersUndeclared.length !== 0 && undeclaredtaskCards.length === 0) {
+            console.warn('This user has made all declarations and is awaiting other users');
+            history.push(`/dashboard/${householdId}/awaitingOtherUsers`);
+          } else if (membersUndeclared.length !== 0 && undeclaredtaskCards.length !== 0) {
+            console.warn('This user has not made all declarations');
+            history.push(`/dashboard/${householdId}`);
+          }
         } else if (stepName === 'Three') {
           history.push(`/dashboard/${householdId}/${stepName}/valuechartview`);
         } else if (stepName === 'Four') {
@@ -86,6 +154,7 @@ export const HouseholdCards = ({
 
   useEffect(() => {
     getHouseholdMembers(householdId).then((response) => setHouseholdMembers(response));
+    getUndeclaredCards(user.id, householdId).then((response) => setUndeclaredTaskCards(response));
   }, []);
 
   return (
