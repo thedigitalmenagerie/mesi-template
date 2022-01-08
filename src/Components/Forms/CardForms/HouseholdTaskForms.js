@@ -20,13 +20,18 @@ import {
 } from './HouseholdTaskFormElements';
 import { getNeedTypes } from '../../../Helpers/Data/needTypeData';
 import { getCategoryTypes } from '../../../Helpers/Data/categoryTypeData';
-import { updateTaskCard, addTaskCard } from '../../../Helpers/Data/cardsData';
+import {
+  updateTaskCard,
+  addTaskCard,
+  getSingleHouseholdTaskCard,
+  getHouseholdTaskCards
+} from '../../../Helpers/Data/cardsData';
 
 export default function HouseholdTaskForms({
   cardId,
   cardName,
-  cardImage,
   cardDefinition,
+  cardImage,
   conception,
   planning,
   execution,
@@ -36,8 +41,10 @@ export default function HouseholdTaskForms({
   categoryTypeId,
   setHouseholdTaskCards,
   closeModal,
+  setSingleTaskCard,
 }) {
   const { householdId } = useParams();
+
   const [singleTaskCardToEdit, setSingleTaskCardToEdit] = useState({
     categoryTypeId,
     needTypeId,
@@ -61,7 +68,7 @@ export default function HouseholdTaskForms({
     planning: '',
     conception: '',
     cardDefinition: '',
-    cardImage: '',
+    cardImage: 'https://lh3.googleusercontent.com/pw/AM-JKLV7jJoHZYwQXExNDd_u7KbMoMPWLUqAOtnzxyDRTubbjqBTCRnYES0JP_PstoALCFxbDKiG8xU8rCVAZzBIHFs47AhdIfHULDehW45rduLUtnbot02mTHolOF6xXWx58vSXzW2ro8pEYaayvHUBKETo=s500-no?authuser=0',
     cardName: '',
     householdId,
   });
@@ -129,9 +136,9 @@ export default function HouseholdTaskForms({
   const handleSubmit = (e) => {
     e.preventDefault();
     if (cardId) {
-      updateTaskCard(cardId, singleTaskCardToEdit).then(setHouseholdTaskCards);
+      updateTaskCard(cardId, singleTaskCardToEdit).then(() => getSingleHouseholdTaskCard(cardId).then((response) => setSingleTaskCard(response)));
     } else {
-      addTaskCard(singleTaskCardToAdd).then(setHouseholdTaskCards);
+      addTaskCard(singleTaskCardToAdd).then(() => getHouseholdTaskCards(householdId).then((response) => setHouseholdTaskCards(response)));
       setSingleTaskCardToAdd({
         categoryTypeId: '',
         needTypeId: '',
@@ -173,16 +180,6 @@ export default function HouseholdTaskForms({
           type='text'
           placeholder='Card Definition'
           value={singleTaskCardToEdit.cardDefinition}
-          onChange={handleInputChange}
-        ></Input>
-      </Row>
-      <Row>
-        <Input
-          className='taskCard'
-          name='cardImage'
-          type='text'
-          placeholder='Card Image'
-          value={singleTaskCardToEdit.cardImage}
           onChange={handleInputChange}
         ></Input>
       </Row>
@@ -305,4 +302,5 @@ HouseholdTaskForms.propTypes = {
   setHouseholdTaskCards: PropTypes.func,
   closeModal: PropTypes.func,
   user: PropTypes.any,
+  setSingleTaskCard: PropTypes.func,
 };

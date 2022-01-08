@@ -37,11 +37,9 @@ import editBlue from '../../../Assets/editblue.png';
 import deleted from '../../../Assets/delete.png';
 import HouseholdTaskForms from '../../Forms/CardForms/HouseholdTaskForms';
 
-const IndividualTaskCard = () => {
+const IndividualTaskCard = ({ setHouseholdTaskCards }) => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [singleTaskCard, setSingleTaskCard] = useState({});
-  console.warn(singleTaskCard);
-  // const [taskCards, setTaskCards] = useState([]);
   const { householdId, cardId } = useParams();
   const history = useHistory();
 
@@ -65,10 +63,6 @@ const IndividualTaskCard = () => {
   useEffect(() => {
     getSingleHouseholdTaskCard(cardId).then(setSingleTaskCard);
   }, []);
-
-  // useEffect(() => {
-  //   getHouseholdTaskCards(householdId).then(setTaskCards);
-  // }, []);
 
   function openModal() {
     setIsOpen(true);
@@ -163,6 +157,8 @@ const IndividualTaskCard = () => {
           needTypeId={singleTaskCard.needTypeId}
           categoryTypeName={singleTaskCard.categoryTypeName}
           closeModal={closeModal}
+          setSingleTaskCard={setSingleTaskCard}
+          setHouseholdTaskCards={setHouseholdTaskCards}
         />
       </Modal>
     </SingleTaskCardOuter>
@@ -173,6 +169,7 @@ IndividualTaskCard.propTypes = {
   user: PropTypes.any,
   users: PropTypes.any,
   steps: PropTypes.any,
+  setHouseholdTaskCards: PropTypes.func,
 };
 
 export default IndividualTaskCard;

@@ -35,7 +35,8 @@ export const HouseholdDash = ({
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [householdTaskCards, setHouseholdTaskCards] = useState([]);
   const { householdId } = useParams();
-  console.warn(householdTaskCards);
+  console.warn(user.id);
+  console.warn(householdId);
 
   useEffect(() => {
     getUndeclaredCards(user.id, householdId).then((resp) => setHouseholdTaskCards(resp));

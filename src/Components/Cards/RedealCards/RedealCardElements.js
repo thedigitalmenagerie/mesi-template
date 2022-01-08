@@ -117,7 +117,9 @@ export const ValueButton = styled.button`
 `;
 
 export const ValueButtonImg = styled.img`
-  width: 25px; 
+  width: 25px;
+  filter: grayscale(100%);
+  border-radius: 50%;
 `;
 
 export const ValueButtonImg2 = styled.img`

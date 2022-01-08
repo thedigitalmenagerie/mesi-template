@@ -11,8 +11,8 @@ export const HouseholdCard = styled.div`
   color: #5d7b6f;
   padding: 10px;
   margin: 20px;
-  opacity:  ${({ isOpen }) => (isOpen ? '0' : '100%')};
-  top: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  // opacity:  ${({ isOpen }) => (isOpen ? '0' : '100%')};
+  // top: ${({ isOpen }) => (isOpen ? '100%' : '0')};
   box-shadow: 0 8px 16px 0 #212529;
 `;
 
@@ -71,23 +71,24 @@ export const HouseholdBottomRight = styled.div`
 export const HouseholdTypeContainer = styled.div``;
 
 export const Modal = styled.div`
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  align-items: center;
-  top: 0;
-  left: 0;
-  transitionL 0.3s ease-in-out;
-  opacity:  ${({ isOpen }) => (isOpen ? '100%' : '0')};
-  top: ${({ isOpen }) => (isOpen ? '0' : '100%')};
+display: flex;
+height: 300px;
+width: 200px;
+flex-direction: column;
+border-radius: 10px;
+background-color: #eae7d6;
+color: #5d7b6f;
+padding: 10px;
+margin: 20px;
+// opacity:  ${({ isOpen }) => (isOpen ? '0' : '100%')};
+// top: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+box-shadow: 0 8px 16px 0 #212529;
 `;
 
 export const Button = styled.button`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   background-color: Transparent;
   background-repeat:no-repeat;
   border: none;

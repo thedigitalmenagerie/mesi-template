@@ -28,7 +28,7 @@ export default function AssignUserForm({
   needTypeId,
   categoryTypeId,
   assignedUserId,
-  setHouseholdTaskCards
+  setHouseholdTaskCards,
 }) {
   const { householdId } = useParams();
   const [members, setMembers] = useState([]);
@@ -72,7 +72,7 @@ export default function AssignUserForm({
       onSubmit={handleSubmit}
       className='CardForm'
     >
-      <FormTitle className='formTitle'>Assign User</FormTitle>
+      <FormTitle className='formTitle'>{cardName}</FormTitle>
       <Row>
       <Select
         className="item"
@@ -83,12 +83,12 @@ export default function AssignUserForm({
         onChange={handleInputChange}
       >
         {members?.map((member) => (
-          <Option
+            <Option
             key={member.userId}
             value={member.userId}
             selected={member.userId === singleTaskCardToEdit.assignedUserId}
           >
-        {member.firstName} {member.lastName} {member.email}
+            {member.firstName}
           </Option>
         ))}
       </Select>

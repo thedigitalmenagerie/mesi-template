@@ -12,7 +12,6 @@ import {
   HouseholdBottomLeft,
   HouseholdBottomRight,
   HouseholdCardImg,
-  HouseholdCardDelete,
   Button,
   Modal,
   ValueButton,
@@ -23,6 +22,7 @@ import {
 import assign from '../../../Assets/assignUser.png';
 import daily from '../../../Assets/dailyGrindPink.png';
 import AssignUserForm from '../../Forms/AssignUserForm/AssignUserForm';
+import exit from '../../../Assets/exitModalLightGreen.png';
 
 export const AssignCards = ({
   householdMembers,
@@ -70,7 +70,38 @@ export const AssignCards = ({
   };
 
   return (
-    <HouseholdCard className='HouseholdCard' key={cardId} id='HouseholdCard'>
+    <>
+    {modalIsOpen
+      ? <Modal
+          className='Modal'
+          isOpen={modalIsOpen}
+        >
+          <Button className='modalClose' onClick={closeModal}>
+            <ValueButtonImg src={exit}/>
+          </Button>
+          <AssignUserForm
+            householdMembers={householdMembers}
+            setHouseholdTaskCards={setHouseholdTaskCards}
+            assignedUserId={assignedUserId}
+            cardId={cardId}
+          householdId={householdId}
+          needTypeId={needTypeId}
+          categoryTypeId={categoryTypeId}
+          cardName={cardName}
+          cardImage={cardImage}
+          cardDefinition={cardDefinition}
+          conception={conception}
+          planning={planning}
+          execution={execution}
+          msoc={msoc}
+          dailyGrind={dailyGrind}
+          households={households}
+          user={user}
+          steps={steps}
+          users={users}
+      />
+    </Modal>
+      : <HouseholdCard className='HouseholdCard' key={cardId} id='HouseholdCard'>
       <HouseholdTop className='HouseholdTop'>
         <HouseholdTopLeft className='HouseholdTopLeft'>
             {categoryTypeName}
@@ -100,36 +131,9 @@ export const AssignCards = ({
               </ValueButton>
           </HouseholdBottomRight>
         </HouseholdBottom>
-        <Modal
-          className='Modal'
-          isOpen={modalIsOpen}
-        >
-          <Button className='modalClose' onClick={closeModal}>
-            <HouseholdCardDelete/>
-          </Button>
-          <AssignUserForm
-              householdMembers={householdMembers}
-              setHouseholdTaskCards={setHouseholdTaskCards}
-              assignedUserId={assignedUserId}
-              cardId={cardId}
-              householdId={householdId}
-              needTypeId={needTypeId}
-              categoryTypeId={categoryTypeId}
-              cardName={cardName}
-              cardImage={cardImage}
-              cardDefinition={cardDefinition}
-              conception={conception}
-              planning={planning}
-              execution={execution}
-              msoc={msoc}
-              dailyGrind={dailyGrind}
-              households={households}
-              user={user}
-              steps={steps}
-              users={users}
-          />
-        </Modal>
     </HouseholdCard>
+    }
+    </>
   );
 };
 

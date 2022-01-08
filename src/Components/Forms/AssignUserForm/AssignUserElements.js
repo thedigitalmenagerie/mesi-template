@@ -6,7 +6,8 @@ export const Form = styled.form`
   flex-direction: column;
   align-self: center;
   align-items: center;
-  width: 75%;
+  width: 100%;
+  margin-top: 50px;
   background-color: #eae7d6;
   color: #5d7b6f;
   font-weight: bold;
@@ -18,7 +19,8 @@ export const FormTitle = styled.div`
   justify-content: center;
   width: 100%;
   color: #5d7b6f;
-  margin-top: 10px;
+  margin-top: 15px;
+  font-size: 10px;
 `;
 
 export const Row = styled.div`
@@ -87,7 +89,7 @@ export const Input2 = styled.input`
 `;
 
 export const Button = styled.button`
-  margin-bottom: 10px;
+  margin-top: 50px;
   border-radius: 10px;
   background-color: #5D7B6F;
   color: #EAE7D6;
@@ -99,17 +101,14 @@ export const ButtonImg = styled.img`
 
 export const Option = styled.option`
   border-radius: 5px;
-  margin-left: 10px;
+  // margin-left: 10px;
 `;
 
 export const Select = styled.select`
   border-radius: 5px;
-  margin-left: 10px;
-  width: 75%;
 `;
 
 export const Img = styled.img`
   width: 30px;
-  margin-right: 10px;
   border-radius: 50%;
 `;

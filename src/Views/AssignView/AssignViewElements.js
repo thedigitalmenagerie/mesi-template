@@ -55,16 +55,19 @@ margin-left: 10px;
 
 export const ButtonContainer = styled.div`
 display: flex;
-justify-content: flex-end;
+justify-content: center;
+margin-top: 50px;
 `;
 
 export const Button = styled.button`
 margin-right: 20px;
 display: flex;
 flex-direction: row;
-justify-content: flex-end;
-background-color: Transparent;
-background-repeat:no-repeat;
+align-self: center;
+justify-content: center;
+background-color: #5D7B6F;
+color: #EAE7D6;
+border-radius: 5px;
 border: none;
 cursor:pointer;
 overflow: hidden;
@@ -88,6 +91,8 @@ overflow: hidden;
 export const CommunityAgreementWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: #5D7B6F;
   width: 80%;
   border-radius: 15px;
@@ -98,8 +103,11 @@ export const CommunityAgreementWrapper = styled.div`
 `;
 
 export const Title = styled.div`
+  display: flex;
   text-align: center;
   font-weight: bold;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Subtitle = styled.div`

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import {
   HouseholdTaskCardContainer,
   HouseholdTaskCardWrapper,
@@ -8,11 +8,14 @@ import {
   CommunityAgreementWrapper,
   Title,
   Subtitle,
-  CommunityAgreementTitle
+  CommunityAgreementTitle,
+  Button,
+  ButtonContainer
 } from './AssignViewElements';
 import { AssignCards } from '../../Components/Cards/AssignCards/AssignCards';
 import NavBar from '../../Components/NavBar/NavBar';
 import { getHouseholdTaskCards } from '../../Helpers/Data/cardsData';
+import { getHousehold, updateHousehold } from '../../Helpers/Data/householdData';
 
 export const AssignView = ({
   user,
@@ -21,12 +24,30 @@ export const AssignView = ({
   steps,
   users
 }) => {
-  const [householdTaskCards, setHouseholdTaskCards] = useState([]);
   const { householdId } = useParams();
+  const history = useHistory();
+  const [householdTaskCards, setHouseholdTaskCards] = useState([]);
+  const [household, setHousehold] = useState([]);
   console.warn(householdTaskCards);
+
+  const handleClick = () => {
+    household.forEach((currentHouse) => {
+      const house = {
+        id: householdId,
+        householdName: currentHouse.householdName,
+        hasPets: currentHouse.hasPets,
+        hasKids: currentHouse.hasKids,
+        hasRomance: currentHouse.hasRomance,
+        stepId: '4BA2F839-82D7-49BE-A549-71DD4AB0152D',
+      };
+      updateHousehold(householdId, house);
+      history.push(`/dashboard/${householdId}/assignedChartView`);
+    });
+  };
 
   useEffect(() => {
     getHouseholdTaskCards(householdId).then((resp) => setHouseholdTaskCards(resp));
+    getHousehold(householdId).then((resp) => setHousehold(resp));
   }, []);
 
   return (
@@ -39,10 +60,13 @@ export const AssignView = ({
               id='CommunityAgreements'
             >
               <CommunityAgreementTitle className='CommunityAgreementTitle'>
-                <Title className='Title'>You are currently waiting on other members of your household.</Title>
+                <Title className='Title'>Your household has assigned all users.</Title>
                 <Subtitle className='subTitle'>
-                  Return to your household when all users have completed this step to continue.
+                  Please proceed to the assigned user chart to view each members task list.
                 </Subtitle>
+                <ButtonContainer>
+                <Button onClick={handleClick}>VIEW CHART</Button>
+                  </ButtonContainer>
               </CommunityAgreementTitle>
             </CommunityAgreementWrapper>
           : <HouseholdTaskCardBottomRow className="HouseholdTaskCardBottomRow">

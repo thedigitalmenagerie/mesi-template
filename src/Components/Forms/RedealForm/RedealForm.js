@@ -11,13 +11,14 @@ import {
   FormTitle,
   Row,
 } from './RedealFormElements';
-import { getHousehold } from '../../../Helpers/Data/householdData';
-import { getTaskCards } from '../../../Helpers/Data/cardsData';
+import { getHousehold, updateHousehold } from '../../../Helpers/Data/householdData';
+import { getTaskCards, updateCard } from '../../../Helpers/Data/cardsData';
 
-export default function RedealForms({ householdId, cardId }) {
+export default function RedealForms({ householdId }) {
   const history = useHistory();
   const [household, setHousehold] = useState({});
   const [cards, setCards] = useState([]);
+  console.warn(cards);
 
   useEffect(() => {
     getHousehold(householdId).then((resp) => setHousehold(resp));
@@ -35,14 +36,13 @@ export default function RedealForms({ householdId, cardId }) {
         hasRomance: currentHouse.hasRomance,
         stepId: 'BCBD1E56-4601-4A17-8A1C-F23E6975FF5F',
       };
-      console.warn(house);
-    //   updateHousehold(householdId, house);
+      updateHousehold(householdId, house);
     });
     cards.forEach((card) => {
       const cardToUpdate = {
-        assignedUserId: null,
+        assignedUserId: card.null,
         cardDefinition: card.cardDefinition,
-        cardId,
+        id: card.id,
         cardImage: card.cardImage,
         cardName: card.cardName,
         categoryTypeId: card.categoryTypeId,
@@ -54,10 +54,9 @@ export default function RedealForms({ householdId, cardId }) {
         needTypeId: card.needTypeId,
         planning: card.planning,
       };
-      console.warn(cardToUpdate);
-    //   updateCard(card.cardId, cardToUpdate);
+      updateCard(card.id, cardToUpdate);
     });
-    history.push(`/dashboard/${householdId}`);
+    history.push('/dashboard');
   };
 
   return (

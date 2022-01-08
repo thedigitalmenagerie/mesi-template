@@ -31,8 +31,10 @@ export const HouseholdTaskCards = ({
   dailyGrind,
   needTypeName,
   categoryTypeName,
+  setHouseholdTaskCards,
 }) => {
   const history = useHistory();
+  console.warn(setHouseholdTaskCards);
 
   const handleClick = (type) => {
     switch (type) {
@@ -108,6 +110,7 @@ HouseholdTaskCards.propTypes = {
   steps: PropTypes.any,
   needTypeName: PropTypes.string,
   categoryTypeName: PropTypes.string,
+  setHouseholdTaskCards: PropTypes.func,
 };
 
 export default HouseholdTaskCards;

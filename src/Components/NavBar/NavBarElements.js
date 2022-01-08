@@ -49,6 +49,7 @@ export const Img = styled.img`
   width: 30px;
   border-radius: 50%;
   margin-right: 10px;
+  filter: grayscale(100%);
 `;
 
 export const SignOutButtonContianer = styled.div`
